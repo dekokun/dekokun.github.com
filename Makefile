@@ -1,10 +1,10 @@
 .PHONY: deploy clean preview compile
 
 deploy: clean build
-	mv _site/index.html ./index.html
-	mv _site/data/css ./css
-	mv _site/data/posts ./posts
-	mv _site/data/posts.html ./posts.html
+	cp -pr _site/index.html ./index.html
+	cp -pr _site/data/css/ ./css
+	cp -pr _site/data/posts/ ./posts
+	cp -pr _site/posts.html ./posts.html
 
 clean:
 	./gh-pages clean
