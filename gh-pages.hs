@@ -9,27 +9,27 @@ import Data.Monoid (mempty, mconcat)
 import Hakyll
 
 main :: IO ()
-main = hakyll $ do
+main = hakyllWith config $ do
     -- Compress CSS
-    match "css/*" $ do
+    match "data/css/*" $ do
         route idRoute
         compile compressCssCompiler
 
     -- Render posts
-    match "posts/*" $ do
+    match "data/posts/*" $ do
         route $ setExtension ".html"
         compile $ pageCompiler
-            >>> applyTemplateCompiler "templates/post.html"
-            >>> applyTemplateCompiler "templates/default.html"
+            >>> applyTemplateCompiler "data/templates/post.html"
+            >>> applyTemplateCompiler "data/templates/default.html"
             >>> relativizeUrlsCompiler
 
     -- Render posts list
-    match "posts.html" $ route idRoute
+    match "data/templates/posts.html" $ route idRoute
     create "posts.html" $ constA mempty
         >>> arr (setField "title" "All posts")
-        >>> requireAllA "posts/*" addPostList
-        >>> applyTemplateCompiler "templates/posts.html"
-        >>> applyTemplateCompiler "templates/default.html"
+        >>> requireAllA "data/posts/*" addPostList
+        >>> applyTemplateCompiler "data/templates/posts.html"
+        >>> applyTemplateCompiler "data/templates/default.html"
         >>> relativizeUrlsCompiler
 
     -- Index
@@ -37,12 +37,12 @@ main = hakyll $ do
     create "index.html" $ constA mempty
         >>> arr (setField "title" "机上日記")
         >>> requireAllA "posts/*" (id *** arr (take 3 . reverse . sortByBaseName) >>> addPostList)
-        >>> applyTemplateCompiler "templates/index.html"
-        >>> applyTemplateCompiler "templates/default.html"
+        >>> applyTemplateCompiler "data/templates/index.html"
+        >>> applyTemplateCompiler "data/templates/default.html"
         >>> relativizeUrlsCompiler
 
     -- Read templates
-    match "templates/*" $ compile templateCompiler
+    match "data/templates/*" $ compile templateCompiler
 
 -- | Auxiliary compiler: generate a post list from a list of given posts, and
 -- add it to the current page under @$posts@
@@ -50,9 +50,9 @@ main = hakyll $ do
 addPostList :: Compiler (Page String, [Page String]) (Page String)
 addPostList = setFieldA "posts" $
     arr (reverse . sortByBaseName)
-        >>> require "templates/position.html" (\p t -> map (applyTemplate t) p)
+        >>> require "data/templates/position.html" (\p t -> map (applyTemplate t) p)
         >>> arr mconcat
         >>> arr pageBody
 config :: HakyllConfiguration
 config = defaultHakyllConfiguration { deployCommand = deploy }
-  where deploy = "cp -r _site/* . && runghc gh-pages.hs clean"
+  where deploy = "make deploy && make clean"
