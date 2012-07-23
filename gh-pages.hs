@@ -24,9 +24,9 @@ main = hakyllWith config $ do
             >>> relativizeUrlsCompiler
 
     -- Render posts list
-    match "data/templates/posts.html" $ route idRoute
+    match "posts.html" $ route idRoute
     create "posts.html" $ constA mempty
-        >>> arr (setField "title" "All posts")
+        >>> arr (setField "title" "全日記")
         >>> requireAllA "data/posts/*" addPostList
         >>> applyTemplateCompiler "data/templates/posts.html"
         >>> applyTemplateCompiler "data/templates/default.html"
