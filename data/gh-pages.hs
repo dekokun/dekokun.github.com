@@ -11,38 +11,38 @@ import Hakyll
 main :: IO ()
 main = hakyllWith config $ do
     -- Compress CSS
-    match "data/css/*" $ do
+    match "css/*" $ do
         route idRoute
         compile compressCssCompiler
 
     -- Render posts
-    match "data/posts/*" $ do
+    match "posts/*" $ do
         route $ setExtension ".html"
         compile $ pageCompiler
-            >>> applyTemplateCompiler "data/templates/post.html"
-            >>> applyTemplateCompiler "data/templates/default.html"
+            >>> applyTemplateCompiler "templates/post.html"
+            >>> applyTemplateCompiler "templates/default.html"
             >>> relativizeUrlsCompiler
 
     -- Render posts list
     match "posts.html" $ route idRoute
     create "posts.html" $ constA mempty
         >>> arr (setField "title" "全日記")
-        >>> requireAllA "data/posts/*" addPostList
-        >>> applyTemplateCompiler "data/templates/posts.html"
-        >>> applyTemplateCompiler "data/templates/default.html"
+        >>> requireAllA "posts/*" addPostList
+        >>> applyTemplateCompiler "templates/posts.html"
+        >>> applyTemplateCompiler "templates/default.html"
         >>> relativizeUrlsCompiler
 
     -- Index
     match "index.html" $ route idRoute
     create "index.html" $ constA mempty
         >>> arr (setField "title" "机上日記")
-        >>> requireAllA "data/posts/*" (id *** arr (take 3 . reverse . sortByBaseName) >>> addPostList)
-        >>> applyTemplateCompiler "data/templates/index.html"
-        >>> applyTemplateCompiler "data/templates/default.html"
+        >>> requireAllA "posts/*" (id *** arr (take 3 . reverse . sortByBaseName) >>> addPostList)
+        >>> applyTemplateCompiler "templates/index.html"
+        >>> applyTemplateCompiler "templates/default.html"
         >>> relativizeUrlsCompiler
 
     -- Read templates
-    match "data/templates/*" $ compile templateCompiler
+    match "templates/*" $ compile templateCompiler
 
 -- | Auxiliary compiler: generate a post list from a list of given posts, and
 -- add it to the current page under @$posts@
@@ -50,7 +50,7 @@ main = hakyllWith config $ do
 addPostList :: Compiler (Page String, [Page String]) (Page String)
 addPostList = setFieldA "posts" $
     arr (reverse . sortByBaseName)
-        >>> require "data/templates/position.html" (\p t -> map (applyTemplate t) p)
+        >>> require "templates/position.html" (\p t -> map (applyTemplate t) p)
         >>> arr mconcat
         >>> arr pageBody
 config :: HakyllConfiguration
