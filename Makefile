@@ -1,4 +1,4 @@
-.PHONY deploy clean preview compile
+.PHONY: deploy clean preview compile
 
 deploy: clean build
 	mv _site/index.html ./index.html
