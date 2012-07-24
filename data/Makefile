@@ -9,7 +9,7 @@ deploy: clean build
 clean: gh-pages
 	./gh-pages clean
 
-preview: gh-pages deploy
+preview: deploy
 	open ../index.html
 
 build: gh-pages
