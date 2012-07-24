@@ -6,9 +6,9 @@ date: 2012/07/23
 
 ブログ移設だ！！ワッショイワッショイ！！
 
-## 移設の経緯
+## ブログ説明と移設の経緯
 
-* GitHub PagesとHaskellのHakyllで作られております
+* このブログはGitHub PagesとHaskellのHakyllで作られております
 * 勉強会などにも参加するようになった私は「よし、技術ブログを作ろう！！！」と思い立ったのでした
 * 以前よりTumblrにブログを書いていたこともあり、新しい技術ブログもTumblrに開設したのでした
 * これがそのブログ [机上日記](http://www.tumblr.com/blog/dekotech)
