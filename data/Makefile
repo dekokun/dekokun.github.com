@@ -15,5 +15,5 @@ preview: gh-pages deploy
 build: gh-pages
 	./gh-pages build
 
-gh-pages:
+gh-pages: gh-pages.hs
 	ghc --make gh-pages.hs
