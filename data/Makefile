@@ -1,4 +1,4 @@
-.PHONY: deploy clean preview compile
+.PHONY: deploy clean preview
 
 deploy: clean build
 	cp -pr ./_site/index.html ../index.html
@@ -6,14 +6,14 @@ deploy: clean build
 	cp -pr ./_site/posts/ ../posts
 	cp -pr ./_site/posts.html ../posts.html
 
-clean:
+clean: gh-pages
 	./gh-pages clean
 
-preview: deploy
+preview: gh-pages deploy
 	open ../index.html
 
-build:
+build: gh-pages
 	./gh-pages build
 
-compile:
+gh-pages:
 	ghc --make gh-pages.hs
