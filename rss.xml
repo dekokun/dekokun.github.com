@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>机上日記 RSS feed</title>
+        <link>http://dekokun.github.com/</link>
+        <description><![CDATA[机上日記のRSSフィード]]></description>
+        <atom:link href="http://dekokun.github.com//rss.xml" rel="self"
+                   type="application/rss+xml" />
+        <lastBuildDate>No date found.</lastBuildDate>
+        <item>
+    <title>ブログ移設しました！！！</title>
+    <link>http://dekokun.github.com//posts/2012-07-23.html</link>
+    <description><![CDATA[<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>ブログ移設しました！！！</title>
+    <link rel="stylesheet" type="text/css" href="../css/default.css"></link>
+  </head>
+  <body>
+      <h1>ブログ移設しました！！！</h1>
+      <div id="navigation">
+          <a href="../index.html">Home</a>
+          <a href="../posts.html">全日記</a>
+      </div>
+
+      <h1>ブログ移設しました！！！</h1>
+
+<p>by <em><a href="https://twitter.com/dekokun">@dekokun</a></em> on <strong>2012/07/23</strong></p>
+
+<p>ブログ移設だ！！ワッショイワッショイ！！</p>
+<h2 id="ブログ説明と移設の経緯">ブログ説明と移設の経緯</h2>
+<ul>
+<li>このブログはGitHub PagesとHaskellのHakyllで作られております</li>
+<li>勉強会などにも参加するようになった私は「よし、技術ブログを作ろう！！！」と思い立ったのでした</li>
+<li>以前よりTumblrにブログを書いていたこともあり、新しい技術ブログもTumblrに開設したのでした</li>
+<li>右記がそのブログ <a href="http://www.tumblr.com/blog/dekotech">机上日記</a></li>
+<li>会社で技術ブログを作ったことを嬉々として報告していると、隣の方から、「技術者ならGitHubか自前サーバでやれ」「Tumblrは印象がよくない」「どうせなら『すげー』とか思われるようなことしようよ」とご指摘が</li>
+<li>２つ目のご指摘についてはよくわからないですが、3つ目のご指摘については至極最もに思えましたので、では前から気になっていたGitHub Pagesで作りましょうねと相成ったのでした</li>
+<li>さて、GitHub Pages、調べたところ、Ruby製のjekyllなるツールを使えば比較的簡単に使えるそうだ</li>
+<li>実際ローカルで使ってみて問題なさそうだったため、以下のようなツイートをしたのであった</li>
+</ul>
+<blockquote>
+<p>Github Pagesでブログを書くためjekyllを導入した。 <a href="https://twitter.com/dekokun/status/227379652736475137">@dekokun</a></p>
+</blockquote>
+<ul>
+<li>するとこのような返信が…</li>
+</ul>
+<blockquote>
+<p>@dekokun hakyllもあるよ！ <a href="https://twitter.com/dekosuke/status/227379999064330242">@dekosuke</a></p>
+</blockquote>
+<ul>
+<li>なるほどHaskell製のjekyllのようなものらしい</li>
+<li>イバラの道としか思えねど、せっかく最近Haskellを学んでいるということもあり、Hakyllを使ってみることにしたのでした</li>
+<li>めでたしめでたし</li>
+</ul>
+<h2 id="今後">今後</h2>
+<ul>
+<li>現在、スタイルシートを全く適用しておらず、また、1枚のHTMLに全てをぶち込むことしかできていないので、今後うまくやっていきたいなと思いました</li>
+<li>と思ったら頑張ったらできた</li>
+<li>HaskellもよくわからんのにHakyllのソースコードとか読む必要が出てくるのだろうな…(遠い目</li>
+</ul>
+<h2 id="課題">課題</h2>
+<ul>
+<li>h2タグのidが日本語になってるな。。これはいかんでしょ。。Markdownで書いているんだけども、Markdownの変換エンジンによるものだよね。いきなりHaskellコードを読まなくてはならないのかな…</li>
+<li>現在、引用の部分が非常にわかりづらいのでわかりやすくなるようなスタイルを適用したい</li>
+<li>その他、全面的にスタイルを変更したい</li>
+<li>google code prettyでも使ってコードのシンタックスハイライトを実現しましょう</li>
+<li>シンタックスハイライトはgist貼り付けによって実現したほうがいいかもしれない</li>
+<li>このブログの題名「ブログ移設しました！」だけども、まだ移設出来る段階ではないと思われるので、並行稼動してこっちは「どう変えていったか」を綴っていくとしようと思います</li>
+<li>RSS機能追加(隣の方から「RSSがないブログなんて読んでくれないよ！」とのご指摘！ご最も！！)</li>
+</ul>
+
+  </body>
+</html>
+]]></description>
+    <pubDate>No date found.</pubDate>
+    <guid>http://dekokun.github.com//posts/2012-07-23.html</guid>
+</item>
+<item>
+    <title>夏サミ感想</title>
+    <link>http://dekokun.github.com//posts/2012-07-29.html</link>
+    <description><![CDATA[<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>夏サミ感想</title>
+    <link rel="stylesheet" type="text/css" href="../css/default.css"></link>
+  </head>
+  <body>
+      <h1>夏サミ感想</h1>
+      <div id="navigation">
+          <a href="../index.html">Home</a>
+          <a href="../posts.html">全日記</a>
+      </div>
+
+      <h1>夏サミ感想</h1>
+
+<p>by <em><a href="https://twitter.com/dekokun">@dekokun</a></em> on <strong>2012/07/29</strong></p>
+
+<p>「ブログ環境が構築できてないから旧ブログで書こう」というのを繰り返していると新ブログ環境を構築していく気概が失われるのでこちらで書きましょう</p>
+<h2 id="夏サミとは">夏サミとは</h2>
+<ul>
+<li>毎年行われているデブサミの夏バージョン。7/27(金)に開催</li>
+<li>メインテーマは「エンタープライズでのソフトウェア開発技術の革新」だそうです</li>
+<li>参考URL:<a href="http://codezine.jp/article/detail/6701">ソーシャルエンタープライズにフォーカスした「夏サミ2012」、本日開幕！</a></li>
+</ul>
+<h2 id="グリーを支えるソーシャルコーディングのすべてのまとめなど">「グリーを支えるソーシャルコーディングのすべて」のまとめなど</h2>
+<ul>
+<li>このセッションだけ参加しました</li>
+<li>togetterまとめはこちら http://togetter.com/li/345680</li>
+<li>講演してくださったのはグリー株式会社開発本部 CTO室 エンジニアの大場光一郎さん(<a href="https://twitter.com/koichiroo/">@koichiroo</a>)</li>
+<li>大場さんは開発環境全般の改善などを行なっていらっしゃるそう</li>
+<li>グリーがGitHubを導入していたのは一時期話題になっていたので知っており、GitHubを使用してpull requestのワークフローを行なっていることも小耳にはさんでいたため実際にどのようなワークフローを行なっているかを知りたくて参加した</li>
+</ul>
+<h3 id="内容まとめ">内容まとめ</h3>
+<h4 id="グリーの課題">グリーの課題</h4>
+<ul>
+<li><p>急激な増員 現在、月に50人ほどずつ増加中</p></li>
+<li><p>業種の増加 1口にエンジニアと言っても、細分化され(Web、ネイティブアプリ、ネットワークなど)業種が増えてきている</p></li>
+<li><p>国際化 日本にも英語ネイティブが増えており、また、グリーは世界各国に計9拠点あり現地のエンジニアも増えてきている</p></li>
+</ul>
+<h4 id="周辺の動向">周辺の動向</h4>
+<ul>
+<li>SVNからGitへの移行真っ盛り Gitを更に便利にするため、GitHubが出てきている</li>
+</ul>
+<h4 id="githubの利点便利な点">GitHubの利点(便利な点)</h4>
+<ul>
+<li>Forkができる</li>
+<li>pull requestができる(自分でバグを直せば開発元に変更を教えて上げることができる！)</li>
+<li>Githubはソーシャルグラフを持っている(PJ中心ではなく人間が中心になった)</li>
+<li>Git導入により分散repoによって複数人でのシステム開発がやりやすくなったが、GitだけではPJを越えて開発するための機能が足りない</li>
+</ul>
+<h4 id="グリーのバージョン管理の歴史">グリーのバージョン管理の歴史</h4>
+<ul>
+<li>2004~ SVN</li>
+<li>2010~ Git</li>
+<li>2012~ GitHub導入</li>
+</ul>
+<h4 id="github導入の目的">GitHub導入の目的</h4>
+<ul>
+<li>OSS開発でよいとされている手法を導入</li>
+<li>PJ間のコラボレーション機能</li>
+<li>埋もれているプログラムの発掘</li>
+<li>国際化対応(どの国のエンジニアもGitHubは使用しているためアカウント情報だけ教えれば使ってくれる)</li>
+</ul>
+<h4 id="実際の効果">実際の効果</h4>
+<ul>
+<li>以前はgitsisを使用していたのだが、gitsis時代はリポジトリメンテナみたいな人がいて、申請が必要だったした。するとソースコード公開が面倒なので行わなくなる</li>
+<li>GitHub導入によって、リポジトリはひとりいくつでも手軽に作成可能に</li>
+<li>ログイン方法さえ教えておけば、外国の人もすぐ使える！！</li>
+<li>誰が何を開発しているか可視化(あのPJの担当者は誰かとか)</li>
+<li>手元で書き捨てるようなコードも共有可能に</li>
+<li>作った人でなくても修正して使い続けられる</li>
+<li>プログラム作成者が退職したりPJに興味がなくなりメンテされなくなっても、別の人によってメンテされる！！(更新されないプログラムは死ぬが、GitHubはソフトウェアの寿命を伸ばしてくれる)</li>
+</ul>
+<h4 id="ガイドライン">ガイドライン</h4>
+<ul>
+<li>Githubを使用したワークフローとガイドラインをしっかり作るのが課題。現在整備中</li>
+<li>GitHubを企画、デザイナーにどう使っていってもらうか(PJ全体に使ってもらう方法)を模索している</li>
+</ul>
+<h4 id="githubエンタープライズについて">GitHubエンタープライズについて</h4>
+<ul>
+<li>ソースコードを社外に置くのは難しいという会社のためGitHubエンタープライズがある(社内にGitHubサーバを建てられる)</li>
+<li>グリーでは、GitHubエンタープライズを使用(Social or security)(人数が増えれば、エンタープライズでもソーシャル性がある)</li>
+<li>GitHubエンタープライズを使用する場合、使用ユーザが少ないとせっかくのGitHubのソーシャル性が犠牲になる</li>
+<li>実感として、使っているユーザが100人くらいだとGitHubのもつソーシャル機能を活かすのは難しい(現在のグリーの人数ならば大丈夫)</li>
+<li>サーバを自分たちで運用をする必要がある(そんなに手はかからないが、何度かダウンはしている)</li>
+<li>動作が重くなる場合も(リポジトリ数が1000、ユーザ数が500くらいで仮想サーバを増強した)</li>
+<li>GitHubのアップデートに追従するためのアップグレード機能がある</li>
+<li>管理コンソール(SSHでメンテナンスできるような裏コマンドもある)</li>
+<li>LDAP認証可能</li>
+</ul>
+<h4 id="質問など">質問など</h4>
+<p>私の欲していた、GitHubを使用したワークフローに関して質問してみました</p>
+<ul>
+<li>Q. pull requestのワークフローを導入しているという話を聞いたが、実際どうか</li>
+<li>A.チームによる。本流への反映をpull requestのみで行なっているチームもあり、バグ発生が目に見えて下がった</li>
+<li>Q. pull requestのワークフローなど導入する場合、プロジェクトのメンテナがいて、メンテナがpull requestを反映するような形で行なっているのか</li>
+<li>A. メンテナがいるわけではなく、チーム全員でレビューをし、その後pull requestをマージする。ブランチ作成などのワークフローについてはは自社で作成した<a href="http://labs.gree.jp/blog/2011/05/3528/">git daily</a>というツールを使って行なっている</li>
+</ul>
+<p>その他、他の方の質問など</p>
+<ul>
+<li>Q. デザイナやディレクタにGitを使用してもらうためにどのようなことを行なっているか</li>
+<li>A. デザイナなどでアンテナの高い人を探し新GitHub派を作りその人達に教え、他のデザイナには新GitHub派の人から良さや使用法を伝えてもらう</li>
+</ul>
+<p>他にもいくつか質問はありましたがメモしていない…</p>
+<p>以上です。</p>
+<h3 id="感想">感想</h3>
+<p>pull requestのワークフローなどについて、簡単にでも伺えたのでよかったです。また、運用についてなど、実際に導入してしかわからないことが聞けたのもよかったです。</p>
+<p>pull requestのワークフローは自分で少し行なった限りでは非常に使えるものだと思っているので(GitHubのpull requestのUIはコミットとコメントが時系列順に並び、コードレビュー的な観点から非常に強力。「ここ直せ」「直してpushしました」「ナイス!」みたいなやり取りがしやすい)、私のほうでももう少し使って利点を発信していきたいです。</p>
+<p>グリーのGitHubを使用したワークフローについてのブログ記事なども今後出てきて欲しいなど思いました。</p>
+<p>誰が何を行なっているかの可視化もできるというのはある程度大規模な会社では有用だと思った</p>
+<h2 id="その他夏サミに関係ない話">その他夏サミに関係ない話</h2>
+<ul>
+<li>このブログ、スタイルシートなどほとんど使用しておらず、真っ白なブログですね。ヘッダフッタナビゲーションもないし。</li>
+<li><a href="http://kachibito.net/web-design/initializr-with-twitter-bootstrap.html">Initializr</a>使おうかな</li>
+<li>このブログはHakyllを使用しており、HakyllはMarkdownをHTMLに変換するのにpandocを使用しているのだが、pandocの変換エンジンはネストしたリストを取り扱えないようだ。</li>
+</ul>
+
+  </body>
+</html>
+]]></description>
+    <pubDate>No date found.</pubDate>
+    <guid>http://dekokun.github.com//posts/2012-07-29.html</guid>
+</item>
+
+    </channel> 
+</rss>

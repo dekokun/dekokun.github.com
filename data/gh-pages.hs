@@ -44,6 +44,13 @@ main = hakyllWith config $ do
     -- Read templates
     match "templates/*" $ compile templateCompiler
 
+    -- Render RSS feed
+    match "rss.xml" $ route idRoute
+    create "rss.xml" $
+        requireAll_ "posts/*"
+            >>> mapCompiler (arr $ copyBodyToField "description")
+            >>> renderRss feedConfiguration
+
 -- | Auxiliary compiler: generate a post list from a list of given posts, and
 -- add it to the current page under @$posts@
 --
@@ -56,3 +63,11 @@ addPostList = setFieldA "posts" $
 config :: HakyllConfiguration
 config = defaultHakyllConfiguration { deployCommand = deploy }
   where deploy = "make deploy && make clean"
+
+feedConfiguration :: FeedConfiguration
+feedConfiguration = FeedConfiguration
+    { feedTitle       = "机上日記 RSS feed"
+    , feedDescription = "机上日記のRSSフィード"
+    , feedAuthorName  = "dekokun"
+    , feedRoot  = "http://dekokun.github.com/"
+    }
