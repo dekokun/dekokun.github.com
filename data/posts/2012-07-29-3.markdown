@@ -1,0 +1,55 @@
+---
+title: Hakyllで作成したブログにRSS機能追加
+author: @dekokun
+date: 2012/07/29
+---
+
+ブログをどんどん改築していく
+
+## やりたいこと
+
+* RSS機能をつけたい
+
+## シンタックスハイライトその1(入力したコードをハイライト)
+
+* 以下ページを参考にしてできました
+* [tumblr+markdown+google-code-prettyでsyntax highlightingする](http://hackage.haskell.org/packages/archive/hakyll/3.2.7.2/doc/html/Hakyll-Web-Feed.html)
+* 現在、絶賛RSSフィード生成中 http://dekokun.github.com/rss.xml
+* RSS生成ができるようになるためのdiffは以下の通り
+
+```
+diff --git a/data/gh-pages.hs b/data/gh-pages.hs
+index ed05733..6bf60cb 100644
+--- a/data/gh-pages.hs
++++ b/data/gh-pages.hs
+@@ -44,6 +44,13 @@ main = hakyllWith config $ do
+     -- Read templates
+     match "templates/*" $ compile templateCompiler
+ 
++    -- Render RSS feed
++    match "rss.xml" $ route idRoute
++    create "rss.xml" $
++        requireAll_ "posts/*"
++            >>> mapCompiler (arr $ copyBodyToField "description")
++            >>> renderRss feedConfiguration
++
+ -- | Auxiliary compiler: generate a post list from a list of given posts, and
+ -- add it to the current page under @$posts@
+ --
+@@ -56,3 +63,11 @@ addPostList = setFieldA "posts" $
+ config :: HakyllConfiguration
+ config = defaultHakyllConfiguration { deployCommand = deploy }
+   where deploy = "make deploy && make clean"
++
++feedConfiguration :: FeedConfiguration
++feedConfiguration = FeedConfiguration
++    { feedTitle       = "机上日記 RSS feed"
++    , feedDescription = "机上日記のRSSフィード"
++    , feedAuthorName  = "dekokun"
++    , feedRoot  = "http://dekokun.github.com/"
++    }
+```
+
+## 感想
+
+意外と簡単にできました。あとは、ブログのサイドバーに表示するようにしなくては
