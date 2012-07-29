@@ -4,6 +4,22 @@
     <meta charset="UTF-8">
     <title>机上日記</title>
     <link rel="stylesheet" type="text/css" href="./css/default.css"></link>
+    <!-- Code syntax highlight -->
+    <link href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css" type="text/css" rel="stylesheet"></link>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript " src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
+    <script type="text/javascript">
+    $(function(){ 
+        $('pre').css({
+            'overflow-x': 'scroll',
+            'background-color': '#f6f6f6',
+            'border': '1px dotted #ccc',
+            'padding': '0.8em'
+        });
+        $('pre code').addClass('prettyprint');
+        prettyPrint();
+    });
+    </script>
   </head>
   <body>
       <h1>机上日記</h1>
@@ -16,6 +32,10 @@
     <h1>最近の日記</h1>
     <ul>
         <li>
+    <a href="./posts/2012-07-29-2.html">シンタックスハイライト追加</a>
+    - <em>2012/07/29</em> - by <em><a href="https://twitter.com/dekokun">@dekokun</a></em>
+</li>
+<li>
     <a href="./posts/2012-07-29.html">夏サミ感想</a>
     - <em>2012/07/29</em> - by <em><a href="https://twitter.com/dekokun">@dekokun</a></em>
 </li>
