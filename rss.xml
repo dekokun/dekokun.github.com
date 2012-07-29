@@ -16,22 +16,6 @@
     <meta charset="UTF-8">
     <title>ブログ移設しました！！！</title>
     <link rel="stylesheet" type="text/css" href="../css/default.css"></link>
-    <!-- Code syntax highlight -->
-    <link href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css" type="text/css" rel="stylesheet"></link>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript " src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
-    <script type="text/javascript">
-    $(function(){ 
-        $('pre').css({
-            'overflow-x': 'scroll',
-            'background-color': '#f6f6f6',
-            'border': '1px dotted #ccc',
-            'padding': '0.8em'
-        });
-        $('pre code').addClass('prettyprint');
-        prettyPrint();
-    });
-    </script>
   </head>
   <body>
       <h1>ブログ移設しました！！！</h1>
@@ -87,21 +71,6 @@
 <li>RSS機能追加(隣の方から「RSSがないブログなんて読んでくれないよ！」とのご指摘！ご最も！！)</li>
 </ul>
 
-  </body>
-</html>
-]]></description>
-    <pubDate>No date found.</pubDate>
-    <guid>http://dekokun.github.com//posts/2012-07-23.html</guid>
-</item>
-<item>
-    <title>シンタックスハイライト追加</title>
-    <link>http://dekokun.github.com//posts/2012-07-29-2.html</link>
-    <description><![CDATA[<!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="UTF-8">
-    <title>シンタックスハイライト追加</title>
-    <link rel="stylesheet" type="text/css" href="../css/default.css"></link>
     <!-- Code syntax highlight -->
     <link href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css" type="text/css" rel="stylesheet"></link>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -118,6 +87,21 @@
         prettyPrint();
     });
     </script>
+  </body>
+</html>
+]]></description>
+    <pubDate>No date found.</pubDate>
+    <guid>http://dekokun.github.com//posts/2012-07-23.html</guid>
+</item>
+<item>
+    <title>シンタックスハイライト追加</title>
+    <link>http://dekokun.github.com//posts/2012-07-29-2.html</link>
+    <description><![CDATA[<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>シンタックスハイライト追加</title>
+    <link rel="stylesheet" type="text/css" href="../css/default.css"></link>
   </head>
   <body>
       <h1>シンタックスハイライト追加</h1>
@@ -169,21 +153,6 @@ $(function(){
 <h2 id="感想">感想</h2>
 <p>意外と簡単にできました</p>
 
-  </body>
-</html>
-]]></description>
-    <pubDate>Sun, 29 Jul 2012 00:00:00 UT</pubDate>
-    <guid>http://dekokun.github.com//posts/2012-07-29-2.html</guid>
-</item>
-<item>
-    <title>Hakyllで作成したブログにRSS機能追加</title>
-    <link>http://dekokun.github.com//posts/2012-07-29-3.html</link>
-    <description><![CDATA[<!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="UTF-8">
-    <title>Hakyllで作成したブログにRSS機能追加</title>
-    <link rel="stylesheet" type="text/css" href="../css/default.css"></link>
     <!-- Code syntax highlight -->
     <link href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css" type="text/css" rel="stylesheet"></link>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -200,6 +169,21 @@ $(function(){
         prettyPrint();
     });
     </script>
+  </body>
+</html>
+]]></description>
+    <pubDate>Sun, 29 Jul 2012 00:00:00 UT</pubDate>
+    <guid>http://dekokun.github.com//posts/2012-07-29-2.html</guid>
+</item>
+<item>
+    <title>Hakyllで作成したブログにRSS機能追加</title>
+    <link>http://dekokun.github.com//posts/2012-07-29-3.html</link>
+    <description><![CDATA[<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>Hakyllで作成したブログにRSS機能追加</title>
+    <link rel="stylesheet" type="text/css" href="../css/default.css"></link>
   </head>
   <body>
       <h1>Hakyllで作成したブログにRSS機能追加</h1>
@@ -229,21 +213,6 @@ $(function(){
 <h2 id="感想">感想</h2>
 <p>意外と簡単にできました。あとは、ブログのサイドバーに表示するようにしなくては</p>
 
-  </body>
-</html>
-]]></description>
-    <pubDate>Sun, 29 Jul 2012 00:00:00 UT</pubDate>
-    <guid>http://dekokun.github.com//posts/2012-07-29-3.html</guid>
-</item>
-<item>
-    <title>夏サミ感想</title>
-    <link>http://dekokun.github.com//posts/2012-07-29.html</link>
-    <description><![CDATA[<!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="UTF-8">
-    <title>夏サミ感想</title>
-    <link rel="stylesheet" type="text/css" href="../css/default.css"></link>
     <!-- Code syntax highlight -->
     <link href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css" type="text/css" rel="stylesheet"></link>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -260,6 +229,75 @@ $(function(){
         prettyPrint();
     });
     </script>
+  </body>
+</html>
+]]></description>
+    <pubDate>Sun, 29 Jul 2012 00:00:00 UT</pubDate>
+    <guid>http://dekokun.github.com//posts/2012-07-29-3.html</guid>
+</item>
+<item>
+    <title>GitHub Pagesでのビルド失敗</title>
+    <link>http://dekokun.github.com//posts/2012-07-29-4.html</link>
+    <description><![CDATA[<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>GitHub Pagesでのビルド失敗</title>
+    <link rel="stylesheet" type="text/css" href="../css/default.css"></link>
+  </head>
+  <body>
+      <h1>GitHub Pagesでのビルド失敗</h1>
+      <div id="navigation">
+          <a href="../index.html">Home</a>
+          <a href="../posts.html">全日記</a>
+      </div>
+
+      <h1>GitHub Pagesでのビルド失敗</h1>
+
+<p>by <em><a href="https://twitter.com/dekokun">@dekokun</a></em> on <strong>2012/07/23</strong></p>
+
+<h2 id="現象">現象</h2>
+<ul>
+<li>以下ページを作成したら“[dekokun.github.com] Page build failure”なる通知が…</li>
+<li>「Jekyllのビルドが失敗している」とかなんとか</li>
+</ul>
+<blockquote>
+<blockquote>
+<p>github said about 3 hours ago: The page build failed with the following error: Unable to run Jekyll. Please see https://help.github.com/articles/pages-don-t-build-unable-to-run-jekyll for help.</p>
+</blockquote>
+</blockquote>
+
+    <!-- Code syntax highlight -->
+    <link href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css" type="text/css" rel="stylesheet"></link>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript " src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
+    <script type="text/javascript">
+    $(function(){ 
+        $('pre').css({
+            'overflow-x': 'scroll',
+            'background-color': '#f6f6f6',
+            'border': '1px dotted #ccc',
+            'padding': '0.8em'
+        });
+        $('pre code').addClass('prettyprint');
+        prettyPrint();
+    });
+    </script>
+  </body>
+</html>
+]]></description>
+    <pubDate>Sun, 29 Jul 2012 00:00:00 UT</pubDate>
+    <guid>http://dekokun.github.com//posts/2012-07-29-4.html</guid>
+</item>
+<item>
+    <title>夏サミ感想</title>
+    <link>http://dekokun.github.com//posts/2012-07-29.html</link>
+    <description><![CDATA[<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>夏サミ感想</title>
+    <link rel="stylesheet" type="text/css" href="../css/default.css"></link>
   </head>
   <body>
       <h1>夏サミ感想</h1>
@@ -372,6 +410,22 @@ $(function(){
 <li>このブログはHakyllを使用しており、HakyllはMarkdownをHTMLに変換するのにpandocを使用しているのだが、pandocの変換エンジンはネストしたリストを取り扱えないようだ。</li>
 </ul>
 
+    <!-- Code syntax highlight -->
+    <link href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css" type="text/css" rel="stylesheet"></link>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript " src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
+    <script type="text/javascript">
+    $(function(){ 
+        $('pre').css({
+            'overflow-x': 'scroll',
+            'background-color': '#f6f6f6',
+            'border': '1px dotted #ccc',
+            'padding': '0.8em'
+        });
+        $('pre code').addClass('prettyprint');
+        prettyPrint();
+    });
+    </script>
   </body>
 </html>
 ]]></description>

@@ -4,22 +4,6 @@
     <meta charset="UTF-8">
     <title>シンタックスハイライト追加</title>
     <link rel="stylesheet" type="text/css" href="../css/default.css"></link>
-    <!-- Code syntax highlight -->
-    <link href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css" type="text/css" rel="stylesheet"></link>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript " src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
-    <script type="text/javascript">
-    $(function(){ 
-        $('pre').css({
-            'overflow-x': 'scroll',
-            'background-color': '#f6f6f6',
-            'border': '1px dotted #ccc',
-            'padding': '0.8em'
-        });
-        $('pre code').addClass('prettyprint');
-        prettyPrint();
-    });
-    </script>
   </head>
   <body>
       <h1>シンタックスハイライト追加</h1>
@@ -71,5 +55,21 @@ $(function(){
 <h2 id="感想">感想</h2>
 <p>意外と簡単にできました</p>
 
+    <!-- Code syntax highlight -->
+    <link href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css" type="text/css" rel="stylesheet"></link>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript " src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
+    <script type="text/javascript">
+    $(function(){ 
+        $('pre').css({
+            'overflow-x': 'scroll',
+            'background-color': '#f6f6f6',
+            'border': '1px dotted #ccc',
+            'padding': '0.8em'
+        });
+        $('pre code').addClass('prettyprint');
+        prettyPrint();
+    });
+    </script>
   </body>
 </html>
