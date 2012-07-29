@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>机上日記 RSS feed</title>
+        <title>机上日記</title>
         <link>http://dekokun.github.com/</link>
         <description><![CDATA[机上日記のRSSフィード]]></description>
         <atom:link href="http://dekokun.github.com//rss.xml" rel="self"
