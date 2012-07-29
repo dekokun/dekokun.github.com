@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>GitHub Pagesでのビルド失敗</title>
+    <link rel="stylesheet" type="text/css" href="../css/default.css"></link>
+  </head>
+  <body>
+      <h1>GitHub Pagesでのビルド失敗</h1>
+      <div id="navigation">
+          <a href="../index.html">Home</a>
+          <a href="../posts.html">全日記</a>
+      </div>
+
+      <h1>GitHub Pagesでのビルド失敗</h1>
+
+<p>by <em><a href="https://twitter.com/dekokun">@dekokun</a></em> on <strong>2012/07/23</strong></p>
+
+<h2 id="現象">現象</h2>
+<ul>
+<li>以下ページを作成したら“[dekokun.github.com] Page build failure”なる通知が…</li>
+<li><a href="file:///Users/lms29r/work/Hakyll/posts/2012-07-29-3.html">Hakyllで作成したブログにRSS機能追加</a></li>
+<li>「Jekyllのビルドが失敗している」とかなんとか。詳細は以下。</li>
+</ul>
+<blockquote>
+<blockquote>
+<p>github said about 3 hours ago: The page build failed with the following error: Unable to run Jekyll. Please see https://help.github.com/articles/pages-don-t-build-unable-to-run-jekyll for help.</p>
+</blockquote>
+</blockquote>
+<ul>
+<li>Jekyllを走らせられなかったとのことなのだが、そもそもJekyllをビルドには使っていないのだが…(Markdownで書いたものをローカルでコンパイルし静的ファイルをコミットしてプッシュしている)</li>
+</ul>
+<h2 id="調査">調査</h2>
+<ul>
+<li>上記メッセージのリンク先を読んでも、思い当たるフシはない…</li>
+<li>問題のあるコミットをリバートし、対象ファイルから1つ1つファイルを抜き出しコミットしてはプッシュしてを繰り返し、どの部分が悪いかを特定しました(リモートにプッシュしないとテストできないのが辛いところ…)</li>
+<li>どうも、markdownの中に“+”で始まる行が3連続するとJekyllのビルドが失敗するらしい</li>
+<li>今回は、diffをmarkdownの中に埋め込んでいたのでそこがひっかかっていた</li>
+</ul>
+<h2 id="対処">対処</h2>
+<ul>
+<li>コミットとプッシュしまくりにつかれたので、一旦diff部分をgistに記載しそこをブログに埋め込むことで対処した</li>
+<li>もっと検証したいな…</li>
+</ul>
+
+    <!-- Code syntax highlight -->
+    <link href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css" type="text/css" rel="stylesheet"></link>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript " src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
+    <script type="text/javascript">
+    $(function(){ 
+        $('pre').css({
+            'overflow-x': 'scroll',
+            'background-color': '#f6f6f6',
+            'border': '1px dotted #ccc',
+            'padding': '0.8em'
+        });
+        $('pre code').addClass('prettyprint');
+        prettyPrint();
+    });
+    </script>
+  </body>
+</html>
