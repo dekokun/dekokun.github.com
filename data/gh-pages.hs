@@ -19,6 +19,7 @@ main = hakyllWith config $ do
     match "posts/*" $ do
         route $ setExtension ".html"
         compile $ pageCompiler
+            >>> arr (setField "blogTitle" blogTitle)
             >>> applyTemplateCompiler "templates/post.html"
             >>> applyTemplateCompiler "templates/default.html"
             >>> relativizeUrlsCompiler
@@ -26,6 +27,7 @@ main = hakyllWith config $ do
     -- Render posts list
     match "posts.html" $ route idRoute
     create "posts.html" $ constA mempty
+        >>> arr (setField "blogTitle" blogTitle)
         >>> arr (setField "title" blogTitle)
         >>> requireAllA "posts/*" addPostList
         >>> applyTemplateCompiler "templates/posts.html"
@@ -35,6 +37,7 @@ main = hakyllWith config $ do
     -- Index
     match "index.html" $ route idRoute
     create "index.html" $ constA mempty
+        >>> arr (setField "blogTitle" blogTitle)
         >>> arr (setField "title" blogTitle)
         >>> requireAllA "posts/*" (id *** arr (take 3 . reverse . sortByBaseName) >>> addPostList)
         >>> applyTemplateCompiler "templates/index.html"
