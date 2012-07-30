@@ -4,19 +4,19 @@
 ul.social li{
   list-style-type: none;
   float: left !important;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 li.facebook {
-  width: 200px;
+  width: 100px;
 }
 
 li.twitter {
-  width: 120px;
+  width: 100px;
 }
 
 li.hatena-bookmark {
-  width: 80px;
+  width: 60px;
 }
 
 footer {
