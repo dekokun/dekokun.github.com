@@ -77,7 +77,7 @@ feedConfiguration = FeedConfiguration
     { feedTitle       = blogTitle
     , feedDescription = "机上日記のRSSフィード"
     , feedAuthorName  = "dekokun"
-    , feedRoot  = "http://dekokun.github.com/"
+    , feedRoot  = "http://dekokun.github.com"
     }
 
 blogTitle :: String
