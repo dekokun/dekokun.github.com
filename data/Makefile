@@ -13,4 +13,4 @@ build: gh-pages
 	./gh-pages build
 
 gh-pages: gh-pages.hs
-	ghc --make gh-pages.hs
+	ghc --make -Wall gh-pages.hs
