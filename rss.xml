@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>机上日記</title>
-        <link>http://dekokun.github.com/</link>
+        <link>http://dekokun.github.com</link>
         <description><![CDATA[机上日記のRSSフィード]]></description>
-        <atom:link href="http://dekokun.github.com//rss.xml" rel="self"
+        <atom:link href="http://dekokun.github.com/rss.xml" rel="self"
                    type="application/rss+xml" />
         <lastBuildDate>No date found.</lastBuildDate>
         <item>
     <title>ブログ移設しました！！！</title>
-    <link>http://dekokun.github.com//posts/2012-07-23.html</link>
+    <link>http://dekokun.github.com/posts/2012-07-23.html</link>
     <description><![CDATA[<!doctype html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ja"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
@@ -141,11 +141,11 @@
 </html>
 ]]></description>
     <pubDate>No date found.</pubDate>
-    <guid>http://dekokun.github.com//posts/2012-07-23.html</guid>
+    <guid>http://dekokun.github.com/posts/2012-07-23.html</guid>
 </item>
 <item>
     <title>シンタックスハイライト追加</title>
-    <link>http://dekokun.github.com//posts/2012-07-29-2.html</link>
+    <link>http://dekokun.github.com/posts/2012-07-29-2.html</link>
     <description><![CDATA[<!doctype html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ja"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
@@ -273,11 +273,11 @@ $(function(){
 </html>
 ]]></description>
     <pubDate>Sun, 29 Jul 2012 00:00:00 UT</pubDate>
-    <guid>http://dekokun.github.com//posts/2012-07-29-2.html</guid>
+    <guid>http://dekokun.github.com/posts/2012-07-29-2.html</guid>
 </item>
 <item>
     <title>Hakyllで作成したブログにRSS機能追加</title>
-    <link>http://dekokun.github.com//posts/2012-07-29-3.html</link>
+    <link>http://dekokun.github.com/posts/2012-07-29-3.html</link>
     <description><![CDATA[<!doctype html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ja"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
@@ -383,11 +383,11 @@ $(function(){
 </html>
 ]]></description>
     <pubDate>Sun, 29 Jul 2012 00:00:00 UT</pubDate>
-    <guid>http://dekokun.github.com//posts/2012-07-29-3.html</guid>
+    <guid>http://dekokun.github.com/posts/2012-07-29-3.html</guid>
 </item>
 <item>
     <title>GitHub Pagesでのビルド失敗</title>
-    <link>http://dekokun.github.com//posts/2012-07-29-4.html</link>
+    <link>http://dekokun.github.com/posts/2012-07-29-4.html</link>
     <description><![CDATA[<!doctype html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ja"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
@@ -503,11 +503,11 @@ $(function(){
 </html>
 ]]></description>
     <pubDate>Sun, 29 Jul 2012 00:00:00 UT</pubDate>
-    <guid>http://dekokun.github.com//posts/2012-07-29-4.html</guid>
+    <guid>http://dekokun.github.com/posts/2012-07-29-4.html</guid>
 </item>
 <item>
     <title>夏サミ感想(グリーを支えるソーシャルコーディングのすべてについて)</title>
-    <link>http://dekokun.github.com//posts/2012-07-29.html</link>
+    <link>http://dekokun.github.com/posts/2012-07-29.html</link>
     <description><![CDATA[<!doctype html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ja"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
@@ -696,7 +696,7 @@ $(function(){
 </html>
 ]]></description>
     <pubDate>No date found.</pubDate>
-    <guid>http://dekokun.github.com//posts/2012-07-29.html</guid>
+    <guid>http://dekokun.github.com/posts/2012-07-29.html</guid>
 </item>
 
     </channel> 
