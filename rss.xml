@@ -338,7 +338,7 @@ $(function(){
 <h2 id="rss機能をつけてみよう">RSS機能をつけてみよう</h2>
 <ul>
 <li>以下ページを参考にしてできました</li>
-<li><a href="http://hackage.haskell.org/packages/archive/hakyll/3.2.7.2/doc/html/Hakyll-Web-Feed.html">tumblr+markdown+google-code-prettyでsyntax highlightingする</a></li>
+<li><a href="http://hackage.haskell.org/packages/archive/hakyll/3.2.7.2/doc/html/Hakyll-Web-Feed.html">Hakyll.Web.Feed</a></li>
 <li>現在、絶賛RSSフィード生成中 http://dekokun.github.com/rss.xml</li>
 <li>RSS生成ができるようになるためのdiffは以下の通り</li>
 </ul>
