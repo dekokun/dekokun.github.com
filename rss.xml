@@ -56,8 +56,6 @@
         </div>
       </div>
     </div>
-      <a href="https://twitter.com/share" class="twitter-share-button" data-via="dekokun" data-lang="ja">ツイート</a>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
     <div class="container">
       <h1>ブログ移設しました！！！</h1>
@@ -107,12 +105,18 @@
 <li>RSS機能追加(隣の方から「RSSがないブログなんて読んでくれないよ！」とのご指摘！ご最も！！)</li>
 </ul>
 
+      <div class="social-buttons">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="dekokun" data-lang="ja">ツイート</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </div>
       <footer>
         <p>©2012 <a href="https://twitter.com/dekokun">dekokun</a></p>
       </footer>
 
     </div> <!-- /container -->
 
+    <div class="social-buttons">
+    </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../js/libs/jquery-1.7.2.min.js"><\/script>')</script>
 
@@ -194,8 +198,6 @@
         </div>
       </div>
     </div>
-      <a href="https://twitter.com/share" class="twitter-share-button" data-via="dekokun" data-lang="ja">ツイート</a>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
     <div class="container">
       <h1>シンタックスハイライト追加</h1>
@@ -241,12 +243,18 @@ $(function(){
 <h2 id="感想">感想</h2>
 <p>意外と簡単にできました</p>
 
+      <div class="social-buttons">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="dekokun" data-lang="ja">ツイート</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </div>
       <footer>
         <p>©2012 <a href="https://twitter.com/dekokun">dekokun</a></p>
       </footer>
 
     </div> <!-- /container -->
 
+    <div class="social-buttons">
+    </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../js/libs/jquery-1.7.2.min.js"><\/script>')</script>
 
@@ -328,8 +336,6 @@ $(function(){
         </div>
       </div>
     </div>
-      <a href="https://twitter.com/share" class="twitter-share-button" data-via="dekokun" data-lang="ja">ツイート</a>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
     <div class="container">
       <h1>Hakyllで作成したブログにRSS機能追加</h1>
@@ -353,12 +359,18 @@ $(function(){
 <h2 id="感想">感想</h2>
 <p>意外と簡単にできました。あとは、ブログのサイドバーに表示するようにしなくては</p>
 
+      <div class="social-buttons">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="dekokun" data-lang="ja">ツイート</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </div>
       <footer>
         <p>©2012 <a href="https://twitter.com/dekokun">dekokun</a></p>
       </footer>
 
     </div> <!-- /container -->
 
+    <div class="social-buttons">
+    </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../js/libs/jquery-1.7.2.min.js"><\/script>')</script>
 
@@ -440,8 +452,6 @@ $(function(){
         </div>
       </div>
     </div>
-      <a href="https://twitter.com/share" class="twitter-share-button" data-via="dekokun" data-lang="ja">ツイート</a>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
     <div class="container">
       <h1>GitHub Pagesでのビルド失敗</h1>
@@ -475,12 +485,18 @@ $(function(){
 <li>もっと検証したいな…</li>
 </ul>
 
+      <div class="social-buttons">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="dekokun" data-lang="ja">ツイート</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </div>
       <footer>
         <p>©2012 <a href="https://twitter.com/dekokun">dekokun</a></p>
       </footer>
 
     </div> <!-- /container -->
 
+    <div class="social-buttons">
+    </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../js/libs/jquery-1.7.2.min.js"><\/script>')</script>
 
@@ -562,8 +578,6 @@ $(function(){
         </div>
       </div>
     </div>
-      <a href="https://twitter.com/share" class="twitter-share-button" data-via="dekokun" data-lang="ja">ツイート</a>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
     <div class="container">
       <h1>夏サミ感想(グリーを支えるソーシャルコーディングのすべてについて)</h1>
@@ -670,12 +684,18 @@ $(function(){
 <li>このブログはHakyllを使用しており、HakyllはMarkdownをHTMLに変換するのにpandocを使用しているのだが、pandocの変換エンジンはネストしたリストを取り扱えないようだ。</li>
 </ul>
 
+      <div class="social-buttons">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="dekokun" data-lang="ja">ツイート</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </div>
       <footer>
         <p>©2012 <a href="https://twitter.com/dekokun">dekokun</a></p>
       </footer>
 
     </div> <!-- /container -->
 
+    <div class="social-buttons">
+    </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../js/libs/jquery-1.7.2.min.js"><\/script>')</script>
 
