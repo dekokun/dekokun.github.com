@@ -59,7 +59,7 @@
           <div class="nav-collapse">
             <ul class="nav">
               <li><a href="../index.html">Home</a></li>
-              <li><a href="../posts.html">Blog</a></li>
+              <li><a href="../posts.html">Archive</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -210,7 +210,7 @@
           <div class="nav-collapse">
             <ul class="nav">
               <li><a href="../index.html">Home</a></li>
-              <li><a href="../posts.html">Blog</a></li>
+              <li><a href="../posts.html">Archive</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -357,7 +357,7 @@ $(function(){
           <div class="nav-collapse">
             <ul class="nav">
               <li><a href="../index.html">Home</a></li>
-              <li><a href="../posts.html">Blog</a></li>
+              <li><a href="../posts.html">Archive</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -482,7 +482,7 @@ $(function(){
           <div class="nav-collapse">
             <ul class="nav">
               <li><a href="../index.html">Home</a></li>
-              <li><a href="../posts.html">Blog</a></li>
+              <li><a href="../posts.html">Archive</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -617,7 +617,7 @@ $(function(){
           <div class="nav-collapse">
             <ul class="nav">
               <li><a href="../index.html">Home</a></li>
-              <li><a href="../posts.html">Blog</a></li>
+              <li><a href="../posts.html">Archive</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
