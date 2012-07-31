@@ -2,7 +2,7 @@
 title: シンタックスハイライト追加
 author: @dekokun
 date: 2012/07/29
-tags: ブログ作成
+tags: 日記改造
 ---
 
 ブログを改築していく
