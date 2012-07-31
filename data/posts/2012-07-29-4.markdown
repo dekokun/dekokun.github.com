@@ -7,7 +7,7 @@ date: 2012/07/29 15:03
 ## 現象
 
 * 以下ページを作成したら"[dekokun.github.com] Page build failure"なる通知が…
-* [Hakyllで作成したブログにRSS機能追加](file:///Users/lms29r/work/Hakyll/posts/2012-07-29-3.html)
+* [Hakyllで作成したブログにRSS機能追加](http://dekokun.github.com/posts/2012-07-29-3.html)
 * 「Jekyllのビルドが失敗している」とかなんとか。詳細は以下。
 
 >> github said about 3 hours ago:

@@ -109,6 +109,7 @@ feedConfiguration = FeedConfiguration
     , feedDescription = "机上日記のRSSフィード"
     , feedAuthorName  = "dekokun"
     , feedRoot  = "http://dekokun.github.com"
+    , feedAuthorEmail = "shintaro.kurachi@gmail.com"
     }
 
 blogTitle :: String
