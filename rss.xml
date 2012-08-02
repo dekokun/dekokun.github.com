@@ -116,7 +116,8 @@
 <li>RSS機能追加(隣の方から「RSSがないブログなんて読んでくれないよ！」とのご指摘！ご最も！！)</li>
 </ul>
 
-  <div#disqus_thread>
+<p>
+  <div#disqus_thread></div>
   <script type="text/javascript">
     var disqus_shortname = 'dekokun';
 
@@ -141,7 +142,7 @@
   <a href="http://disqus.com" class="dsq-brlink">
     blog comments powered by <span.logo-disqus>Disqus</span>
   </a>
-
+</p>
 
       <ul class="social">
         <li class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="dekokun" data-lang="ja">ツイート</a></li>
@@ -292,7 +293,8 @@ $(function(){
 <h2 id="感想">感想</h2>
 <p>意外と簡単にできました</p>
 
-  <div#disqus_thread>
+<p>
+  <div#disqus_thread></div>
   <script type="text/javascript">
     var disqus_shortname = 'dekokun';
 
@@ -317,7 +319,7 @@ $(function(){
   <a href="http://disqus.com" class="dsq-brlink">
     blog comments powered by <span.logo-disqus>Disqus</span>
   </a>
-
+</p>
 
       <ul class="social">
         <li class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="dekokun" data-lang="ja">ツイート</a></li>
@@ -446,7 +448,8 @@ $(function(){
 <h2 id="感想">感想</h2>
 <p>意外と簡単にできました。あとは、ブログのサイドバーに表示するようにしなくては</p>
 
-  <div#disqus_thread>
+<p>
+  <div#disqus_thread></div>
   <script type="text/javascript">
     var disqus_shortname = 'dekokun';
 
@@ -471,7 +474,7 @@ $(function(){
   <a href="http://disqus.com" class="dsq-brlink">
     blog comments powered by <span.logo-disqus>Disqus</span>
   </a>
-
+</p>
 
       <ul class="social">
         <li class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="dekokun" data-lang="ja">ツイート</a></li>
@@ -610,7 +613,8 @@ $(function(){
 <li>もっと検証したいな…</li>
 </ul>
 
-  <div#disqus_thread>
+<p>
+  <div#disqus_thread></div>
   <script type="text/javascript">
     var disqus_shortname = 'dekokun';
 
@@ -635,7 +639,7 @@ $(function(){
   <a href="http://disqus.com" class="dsq-brlink">
     blog comments powered by <span.logo-disqus>Disqus</span>
   </a>
-
+</p>
 
       <ul class="social">
         <li class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="dekokun" data-lang="ja">ツイート</a></li>
@@ -847,7 +851,8 @@ $(function(){
 <li>このブログはHakyllを使用しており、HakyllはMarkdownをHTMLに変換するのにpandocを使用しているのだが、pandocの変換エンジンはネストしたリストを取り扱えないようだ。</li>
 </ul>
 
-  <div#disqus_thread>
+<p>
+  <div#disqus_thread></div>
   <script type="text/javascript">
     var disqus_shortname = 'dekokun';
 
@@ -872,7 +877,7 @@ $(function(){
   <a href="http://disqus.com" class="dsq-brlink">
     blog comments powered by <span.logo-disqus>Disqus</span>
   </a>
-
+</p>
 
       <ul class="social">
         <li class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="dekokun" data-lang="ja">ツイート</a></li>
