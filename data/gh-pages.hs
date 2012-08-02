@@ -99,6 +99,7 @@ makeTagList tag posts =
     constA (mempty, posts)
         >>> addPostList
         >>> arr (setField "title" ("Posts tagged &#8216;" ++ tag ++ "&#8217;"))
+        >>> arr (setField "blogTitle" blogTitle)
         >>> applyTemplateCompiler "templates/posts.html"
         >>> applyTemplateCompiler "templates/default.html"
         >>> relativizeUrlsCompiler
