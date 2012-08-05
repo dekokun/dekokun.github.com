@@ -1,10 +1,10 @@
 .PHONY: all clean preview
 
 all:
-	cd data; make deploy
+	cd orig_data; make deploy
 
 clean:
-	cd data; make clean
+	cd orig_data; make clean
 
 preview:
-	cd data; make preview
+	cd orig_data; make preview
