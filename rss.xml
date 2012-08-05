@@ -1020,27 +1020,11 @@ $(function(){
 <p>それはいいとして、Maybeモナドとは、失敗する可能性があることを表すMaybe型を返す関数の連鎖をうまくやってくれるように色々してくれるものです。 詳しくはこちらを見るといいのではないでしょうか。 http://www.sampou.org/haskell/a-a-monads/html/maybemonad.html</p>
 <p>もうちょっと具体的には、失敗する可能性のある関数の連鎖において途中で関数が失敗したらその後の関数は実施せず、関数失敗の結果を返すような機構を提供するものという理解。</p>
 <p>Haskellでの具体例は以下の通り(参考：<a href="http://d.hatena.ne.jp/shunsuk/20100917/1284728273">RubyでMabyeモナドを実装してみた。 - このブログは証明できない。</a>)</p>
-<pre><code>db :: [(String, [(String, String)])]
-db = [(&quot;alice&quot;, [(&quot;title&quot;, &quot;Ms.&quot;), (&quot;job&quot;, &quot;sales&quot;)]),
-  (&quot;bob&quot;,   [(&quot;title&quot;, &quot;Mr.&quot;), (&quot;job&quot;, &quot;engineer&quot;)])]
+<script src="https://gist.github.com/3261755.js?file=Maybe.hs"></script>
 
-monad :: Maybe String
-monad = return db &gt;&gt;= lookup &quot;bob&quot; &gt;&gt;= lookup &quot;job&quot;
-
-main :: IO()
-main = print monad
--- Just &quot;engineer&quot;</code></pre>
 <p>途中で計算が失敗する場合は以下の通り</p>
-<pre><code>db :: [(String, [(String, String)])]
-db = [(&quot;alice&quot;, [(&quot;title&quot;, &quot;Ms.&quot;), (&quot;job&quot;, &quot;sales&quot;)]),
-  (&quot;bob&quot;,   [(&quot;title&quot;, &quot;Mr.&quot;), (&quot;job&quot;, &quot;engineer&quot;)])]
+<script src="https://gist.github.com/3261755.js?file=Maybe_fail.hs"></script>
 
-monad :: Maybe String
-monad = return db &gt;&gt;= lookup &quot;chris&quot; &gt;&gt;= lookup &quot;job&quot;
-
-main :: IO()
-main = print monad
--- Nothing</code></pre>
 <p>簡単に言うとすべての計算が成功したら“Just 計算結果”が返ってきて、途中の計算が一つでも失敗すれば“Nothing”が返って来るわけですね</p>
 <h2 id="戦略">戦略</h2>
 <p>シェルスクリプトには、既にMaybeモナドの&gt;&gt;=に似たようなものとしてパイプが存在します。しかし、パイプは、前の関数が失敗した際も次の関数を実施してくれてしまいますので、Maybeモナドの&gt;&gt;=とは異なりますよね。</p>
@@ -1058,105 +1042,12 @@ main = print monad
 <p><code>ls hoge | echo $?</code>(hogeは存在しないファイル)は1ではなく0が出力されてしまうのです…<code>ls hoge; echo $?</code>と同様に1が出力されるとよかったのですが…</p>
 <h2 id="実装">実装</h2>
 <p>前回の<a href="http://dekotech.tumblr.com/post/27909549041">シェルスクリプトでクロージャ(的な何か)</a>とは異なり、ちゃんとbashで動きます。</p>
-<pre><code>#!/bin/bash
+<script src="https://gist.github.com/3261755.js?file=monad.sh"></script>
 
-function Just(){
-  echo &quot;$@&quot;
-  return 0
-}
-
-function Nothing(){
-  echo Nothing
-  return 1
-}
-
-function ret(){
-  Just &quot;$@&quot;
-  return 0
-}
-
-function bind(){
-  local std_in
-  local std_out
-  read std_in
-  if expr &quot;$std_in&quot; : &quot;^Nothing$&quot; &gt;/dev/null;then
-    Nothing
-    return 1
-  else
-    std_out=`eval $1 $std_in`
-    if [ $? = 1 ];then
-      Nothing
-      return 1
-    else
-      Just &quot;$std_out&quot;
-      return 0
-    fi
-  fi
-}
-
-# ユーティリティ
-# パイプの最後につなげることで現在の値がNothingかJustかが分かる
-function show(){
-  local std_in
-  read std_in
-  if expr &quot;$std_in&quot; : &quot;^Nothing$&quot; &gt;/dev/null;then
-    echo Nothing
-    return 1
-  else
-    echo &quot;Just $std_in&quot;
-    return 0
-  fi
-}</code></pre>
 <h2 id="テスト">テスト</h2>
 <p>まずはMaybe型を返す(というか標準出力に出力する)関数を自作する必要があります。</p>
-<pre><code>function maybe_ls(){
-  local output
-  output=`ls &quot;$@&quot;`
-  if [ $? = 0 ]; then
-    Just $output
-    return 0
-  else
-    Nothing
-    return 1
-  fi
-}
+<script src="https://gist.github.com/3261755.js?file=maybe_func.sh"></script>
 
-function maybe_cat(){
-  local output
-  output=`cat &quot;$@&quot;`
-  if [ $? = 0 ]; then
-    Just $output
-    return 0
-  else
-    Nothing
-    return 1
-  fi
-}
-
-function maybe_touch(){
-  local output
-  touch &quot;$@&quot;
-  if [ $? = 0 ]; then
-    Just $@
-    return 0
-  else
-    Nothing
-    return 1
-  fi
-}
-
-function maybe_add_line(){
-  local add_string=$1
-  local file_name=$2
-  echo $add_string &gt;&gt; $file_name
-  if [ $? = 0 ]; then
-    Just $file_name
-    return 0
-  else
-    Nothing
-    return 1
-  fi
-}</code></pre>
 <h3 id="実際に使ってみる">実際に使ってみる</h3>
 <pre><code>ret &quot;hoge&quot; | bind &quot;maybe_add_line hogehoge&quot; | bind &quot;maybe_cat&quot;
 # -&gt; hogehoge
@@ -1166,52 +1057,23 @@ ret &quot;fuga:存在しない&quot; | bind &quot;maybe_ls&quot; | bind &quot;ma
 <h3 id="モナド則のテスト">モナド則のテスト</h3>
 <p>モナドには満たすべき法則があるようで、モナドを作る際はちゃんとそれを満たしてあげましょう。</p>
 <p>Haskellでモナド則を表すとこんな感じらしい</p>
-<pre><code>(return x) &gt;&gt;= f == f x
-m &gt;&gt;= return == m
-(m &gt;&gt;= f) &gt;&gt;= g == m &gt;&gt;= (\x -&gt; f x &gt;&gt;= g)</code></pre>
+<script src="https://gist.github.com/3261755.js?file=monad_law.hs"></script>
+
 <p>今回のシェルスクリプト版ではこうなるんですかね。 標準出力を返り値とみなしているため、標準出力を比較する形となります、</p>
-<pre><code>$((ret x) | bind &quot;f&quot;) と $(f $(echo x)) が等しい
-$(echo m | bind &quot;ret&quot;) と $(echo m) が等しい
-$((echo m | bind &quot;f&quot;) | bind &quot;g&quot;) と $(echo m | bind (\x -&gt; f x &gt;&gt;= gのような関数)) が等しい</code></pre>
+<script src="https://gist.github.com/3261755.js?file=monad_law.sh"></script>
+
 <h4 id="モナド則1つ目">モナド則1つ目</h4>
-<pre><code>source monad.sh
+<script src="https://gist.github.com/3261755.js?file=monad_law1.sh"></script>
 
-echo モナド則テスト1
-test $(ret monad.sh | bind &quot;maybe_ls&quot;) = $(maybe_ls monad.sh)
-echo $?
-# -&gt; 0
-
-test $(ret nothing | bind &quot;maybe_ls&quot; | bind &quot;maybe_cat&quot;) = $(maybe_ls nothing)
-echo $?
-# -&gt; 0</code></pre>
 <h4 id="モナド則2つ目">モナド則2つ目</h4>
-<pre><code>source monad.sh
+<script src="https://gist.github.com/3261755.js?file=monad_law2.sh"></script>
 
-echo モナド則テスト2
-test $(echo monad.sh | bind &quot;ret&quot;) = $(echo monad.sh)
-echo $?
-# -&gt; 0
-
-test $(Nothing | bind &quot;ret&quot;) =  $(Nothing)
-echo $?
-# -&gt; 0</code></pre>
 <h4 id="モナド則3つ目">モナド則3つ目</h4>
-<pre><code>source monad.sh
+<script src="https://gist.github.com/3261755.js?file=monad_law3.sh"></script>
 
-echo モナド則テスト3
-function tmp_func(){
-  eval &quot;$1&quot; &quot;$3&quot; 2&gt;/dev/null | bind &quot;$2&quot;
-}
-test &quot;$((echo monad.sh | bind &quot;maybe_ls&quot;) | bind &quot;maybe_cat&quot;)&quot; = &quot;$(echo monad.sh | bind &quot;tmp_func maybe_ls maybe_cat&quot;)&quot;
-echo $?
-# -&gt; 0
-
-test &quot;$((echo nothing | bind &quot;maybe_ls&quot;) | bind &quot;maybe_cat&quot;)&quot; = &quot;$(echo nothing | bind &quot;tmp_func maybe_ls maybe_cat&quot;)&quot;
-echo $?
-# -&gt; 0</code></pre>
 <p>ご存知のように、Linuxにおいて0は正常ステータスを表しますので、この例においては無事全てのモナド則が満たされていることが分かるかと思います。</p>
 <h2 id="感想">感想</h2>
-<p>本当にこれで正しいのかどうか全くわからんが、まぁそれっぽいのができたので比較的満足している。</p>
+<p>本当にこれで正しいのかどうか全くわからんが、まぁそれっぽいのができたので比較的満足している。 よく見ると、標準出力を出力する関数は全てMaybe型を返す関数となっているのですね。なんかおかしくないかこれ…よくわからん…</p>
 <h2 id="次回への課題">次回への課題</h2>
 <p>上のほうにも書いていますが、終了ステータスが0で標準出力がhogeの場合にJust hoge, 0以外の場合をNothingとなるようにJust,Nothingを定義することにより、Linuxが提供している全てのコマンド/関数が自動的にMaybe型を返す関数になり非常に便利ですので、今度はそういうMaybeモナドを作成したいです。 誰か、パイプでつないだ前の関数の終了ステータスを得る方法を教えて下さい…もしくは、And演算子(&amp;&amp;)でつないだ前の関数の標準出力を得る方法でもいいです…</p>
 
