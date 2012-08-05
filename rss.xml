@@ -8,6 +8,183 @@
                    type="application/rss+xml" />
         <lastBuildDate>No date found.</lastBuildDate>
         <item>
+    <title>「第2回 スタートHaskell2」行ってきた</title>
+    <link>http://dekokun.github.com/posts/2012-07-22.html</link>
+    <description><![CDATA[<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ja"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="ja"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ja"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>「第2回 スタートHaskell2」行ってきた</title>
+    <meta name="description" content>
+    <meta name="author" content>
+
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <style>
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+    </style>
+    <link rel="stylesheet" href="../css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css" type="text/css" rel="stylesheet"></link>
+    <script src="../js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>
+  </head>
+  <body>
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=290782064336516";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="../index.html">机上日記</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../posts.html">Archive</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1>「第2回 スタートHaskell2」行ってきた</h1>
+
+<p>by <em><a href="https://twitter.com/dekokun">@dekokun</a></em> on <strong>2012/07/22 07:28</strong></p>
+
+<p>Tagged as: <a href="../tags/Haskell.html">Haskell</a>, <a href="../tags/勉強会.html">勉強会</a>.</p>
+
+<p>初技術ブログ。スタイリングがイケてない部分はおいおい変えていきましょう。あれ、「つっこみいただけたらと」って書いたけどコメント欄ないんじゃね？</p>
+<h2 id="イベント概要">イベント概要</h2>
+<ul>
+<li>PARTAKE <a href="http://partake.in/events/e2f99b6b-a96f-4819-80d5-c5d61d2b427c">第2回 スタートHaskell2</a></li>
+<li>月に1度くらいのペースで<a href="http://www.amazon.co.jp/すごいHaskellたのしく学ぼう-Miran-Lipovača/dp/4274068854">すごいHaskell楽しく学ぼう</a>をテキストに、セミナーと演習で進んでいく</li>
+</ul>
+<h2 id="内容">内容</h2>
+<ul>
+<li>詳細については以下ブログに詳しいのでそちらにお任せします <a href="http://makopi23.blog.fc2.com/blog-date-20120722.html">makopi23のブログ 「第2回 スタートHaskell2」に参加しました</a></li>
+<li>ちなみに私もSKIコンビネータの話にはついていけませんでした…切ない…</li>
+</ul>
+<h2 id="演習問題発表補足">演習問題発表補足</h2>
+<ul>
+<li>演習問題にて、myAndやmyOrなどの実装(論理演算子(&amp;&amp;)や(||)を自分で実装する)について発表しました</li>
+</ul>
+<h3 id="私の回答は以下">私の回答は以下</h3>
+<pre><code>myNot :: Bool -&gt; Bool
+myNot True = False
+myNot False = True
+
+myAnd :: Bool -&gt; Bool -&gt; Bool
+myAnd True True = True
+myAnd _ _ = False
+
+myOr :: Bool -&gt; Bool -&gt; Bool
+myOr False False = False
+myOr _ _ = True
+
+myXor :: Bool -&gt; Bool -&gt; Bool
+myXor True False = True
+myXor False True = True
+myXor _ _ = False</code></pre>
+<p>で、Twitterを見ていたらツッコミをいただいていたのです。</p>
+<blockquote>
+<p>このmyAndは右の引数に対して正格になるから myAnd False _ = False myAnd _ b = b のほうがいい思うのだけど、これはどうなんじゃろ #start_haskell <a href="https://twitter.com/tanakh/status/226948910785126400">@tanakh</a></p>
+</blockquote>
+<p>確かに、私のmyAndだと最初に両引数を評価してしまいますので遅延評価を行うHaskellの論理演算子とは挙動が違います(よね…？)</p>
+<h3 id="再回答">再回答</h3>
+<p>というわけで、myAndとmyOrについて私が正しいと思うように作りなおしました。</p>
+<p>こんな感じでいいのでしょうか。ツッコミいただけたらと。</p>
+<pre><code>myAnd :: Bool -&gt; Bool -&gt; Bool
+myAnd False _ = False
+myAnd _ b = b
+
+myOr :: Bool -&gt; Bool -&gt; Bool
+myOr True _ = True
+myOr _ b = b</code></pre>
+<p>xorはどうあっても両引数を評価しないとダメという認識</p>
+<p>以上。</p>
+<h2 id="注">注</h2>
+<p>この日記は以前書いた別のブログの日記を移設したものです(2012/08/05)</p>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'dekokun'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      <ul class="social">
+        <li class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="dekokun" data-lang="ja">ツイート</a></li>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        <li class="hatena-bookmark"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></img></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
+        <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
+      </ul>
+      <footer>
+        <p>©2012 <a href="https://twitter.com/dekokun">dekokun</a></p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+
+    <script src="../js/libs/bootstrap/bootstrap.min.js"></script>
+
+    <script src="../js/script.js"></script>
+    <script>
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+    <!-- Code syntax highlight -->
+    <script type="text/javascript " src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
+    <script type="text/javascript">
+    $(function(){ 
+        $('pre').css({
+            'overflow-x': 'scroll',
+            'background-color': '#f6f6f6',
+            'border': '1px dotted #ccc',
+            'padding': '0.8em'
+        });
+        $('pre code').addClass('prettyprint');
+        prettyPrint();
+    });
+    </script>
+  </body>
+</html>
+]]></description>
+    <pubDate>No date found.</pubDate>
+    <guid>http://dekokun.github.com/posts/2012-07-22.html</guid>
+</item>
+<item>
     <title>ブログ移設しました！！！</title>
     <link>http://dekokun.github.com/posts/2012-07-23.html</link>
     <description><![CDATA[<!doctype html>
@@ -174,6 +351,228 @@
 ]]></description>
     <pubDate>No date found.</pubDate>
     <guid>http://dekokun.github.com/posts/2012-07-23.html</guid>
+</item>
+<item>
+    <title>シェルスクリプトでクロージャ(的な何か)</title>
+    <link>http://dekokun.github.com/posts/2012-07-24.html</link>
+    <description><![CDATA[<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ja"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="ja"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ja"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>シェルスクリプトでクロージャ(的な何か)</title>
+    <meta name="description" content>
+    <meta name="author" content>
+
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <style>
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+    </style>
+    <link rel="stylesheet" href="../css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css" type="text/css" rel="stylesheet"></link>
+    <script src="../js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>
+  </head>
+  <body>
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=290782064336516";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="../index.html">机上日記</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../posts.html">Archive</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1>シェルスクリプトでクロージャ(的な何か)</h1>
+
+<p>by <em><a href="https://twitter.com/dekokun">@dekokun</a></em> on <strong>2012/07/24 10:43</strong></p>
+
+<p>Tagged as: <a href="../tags/ShellScript.html">ShellScript</a>.</p>
+
+<h2 id="まえがき">まえがき</h2>
+<p>どうも、社会人生活4年目にしてようやく技術ブログを書き始めました<a href="https://twitter.com/dekokun">@dekokun</a>です。</p>
+<p>変態アドベントカレンダー in Summer(http://atnd.org/events/29918) 11日目となります。</p>
+<p>前回は<a href="http://twitter.com/megascus">@megascusさん</a>の<a href="http://d.hatena.ne.jp/megascus/">大人数開発を支える技術</a>でした。</p>
+<h2 id="やること">やること</h2>
+<p>変態ってなんでしょうね。よくわかりませんが、最近やってて「変態的」と言われたシェルスクリプトに関するTipsを今日は書いていきます。</p>
+<p>というわけで、シェルスクリプトでクロージャ(的な何か)を実装したいと思います。</p>
+<p>クロージャとは何か、ざっくり言えば、関数に環境が紐付いているものですよね多分。</p>
+<p>(ちなみに、クロージャの定義を「親関数の外に参照が渡される内部関数をクロージャと呼ぶ」とかにすると今回のものは全く以てクロージャではなくなります。ですので、このタイトルは「クロージャ(的な何か)」なのです)</p>
+<h2 id="やろうと思った経緯">やろうと思った経緯</h2>
+<p>最近、シェルスクリプトでちょっとしたプログラムを書くことが増えてきて、グローバル変数が漏洩しまくるシェルスクリプトに嫌気がさしたので内部状態を持つ関数をつくってみたのでした。</p>
+<h2 id="実装動作">実装・動作</h2>
+<p>早速、シェルスクリプトで作られたクロージャ(的な何か)の実装を見てみましょう</p>
+<pre><code>#!/bin/zsh
+
+func(){
+  echo 1
+  local pre_func_definition
+  local pre_count
+  local new_func_definition
+  pre_func_definition=$(which func)
+  pre_count=$(echo $pre_func_definition | awk 'NR==2, NR==2 {print $2}')
+  new_count=$(expr $pre_count + 1)
+  new_func_definition=$(echo $pre_func_definition | sed -e &quot;s/echo $pre_count/echo $new_count/&quot;)
+  eval $new_func_definition
+}
+
+echo &quot;1回目&quot;
+func
+echo &quot;2回目&quot;
+func
+echo &quot;3回目&quot;
+func
+echo &quot;4回目&quot;
+func
+echo &quot;5回目&quot;
+func</code></pre>
+<p>こちらを実行した際、出力が何になるか分かるでしょうか？</p>
+<p>正解は以下の通り</p>
+<pre><code>$ ./test.sh
+1回目
+1
+2回目
+2
+3回目
+3
+4回目
+4
+5回目
+5</code></pre>
+<p>関数が呼び出される度に値がインクリメントされているのがお分かりかと思います。</p>
+<h2 id="説明">説明</h2>
+<p>上記関数が呼び出された際に何を行なっているかというと、whichで自分自身の関数定義を文字列として取得し、それをsedで書き換えevalで評価することによって関数定義自体を書き換えて内部状態(?)をもたせています</p>
+<p>では、細かく何を行なっているのか。関数定義をコメント付きでどうぞ。</p>
+<pre><code>func(){
+  # 以下の&quot;1&quot;の部分が関数が呼び出される毎に書き変わっていく
+  echo 1
+
+  # 関数内のみで使用する変数宣言
+  local pre_func_definition
+  local pre_count
+  local new_count
+  local new_func_definition
+
+  # 自分自身(func関数)の定義取得
+  pre_func_definition=$(which func)
+  # 上記echo 1の&quot;1&quot;の部分を取得
+  pre_count=$(echo $pre_func_definition | awk 'NR==2, NR==2 {print $2}')
+  # 上記で得られた値に1を足している
+  new_count=$(expr $pre_count + 1)
+  # sedによって、関数定義の文字列中のechoで出力する値を上記で得られた数値で置き換える
+  new_func_definition=$(echo $pre_func_definition | sed -e &quot;s/echo $pre_count/echo $new_count/&quot;)
+  # 上記で書き換えられた関数定義の文字列をevalで評価し、新たな関数を定義する
+  eval $new_func_definition
+}</code></pre>
+<p>うん、こんなことができるんです。</p>
+<h2 id="問題点">問題点</h2>
+<p>先ほど、「グローバル変数が漏洩しまくるシェルスクリプトに嫌気がさしたので内部状態を持つ関数をつくってみたのでした。」と書きましたが、グローバル変数が漏洩することよりこんなわけのわからないプログラムが記述されているほうが保守コスト圧倒的に上がるよね。</p>
+<p>こんなん私が読まされたらキレるわ。</p>
+<p>まぁそれはいいとして、上記クロージャ(的な何か)には現在、以下問題点を抱えております。</p>
+<ul>
+<li>bashでは動かない…orz</li>
+</ul>
+<p>shebangに“/bin/zsh”とあるところから「何か怪しいぞ」と思った人はご明察、bashで動かないのです。。</p>
+<p>致命的です。。。。zshスクリプトなんて使わねぇよ！！！</p>
+<p>なぜ動かないかといいますと、bashのwhichが関数の文字列をとってきてくれないからです。(他にも、bashだとevalが改行文字含んだ関数定義を解釈してくれないっぽいという問題もあるが、それはどうにでもなる)</p>
+<p>誰か、bashで関数定義の文字列を取得するコマンドを知っていたら教えていただけたらと思います。是非！！！</p>
+<h2 id="質問">質問</h2>
+<p>ちなみに、教えて欲しいのですが、これまで、ずっと「クロージャ(的な何か)」で通してきましたが、実際、こういうのって一般的にクロージャっていうんですか…？？？</p>
+<p>新たな関数を関数内で定義しているだけなので、「内部状態を持つ」とすら言えないのかもしれない…</p>
+<p>ご意見募集中。</p>
+<p>以上、11日目のアドベントカレンダーはこれにて終了。次回はもっと変態的なネタをもってこれたらなと思います。</p>
+<h2 id="今後など">今後など</h2>
+<p>現在、<a href="http://dekokun.github.com/">HaskellとGitHubPagesを使用したブログ</a>への移行遂行中なので、次回はそっちで書けたらなと (というか、アドベントカレンダーって期間が終わるまで何週もするんですね。やばい！もうネタ切れ！！もっと変態ネタ集めなきゃ！！)</p>
+<h2 id="注">注</h2>
+<p>この日記は以前書いた別のブログの日記を移設したものです(2012/08/05)</p>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'dekokun'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      <ul class="social">
+        <li class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="dekokun" data-lang="ja">ツイート</a></li>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        <li class="hatena-bookmark"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></img></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
+        <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
+      </ul>
+      <footer>
+        <p>©2012 <a href="https://twitter.com/dekokun">dekokun</a></p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+
+    <script src="../js/libs/bootstrap/bootstrap.min.js"></script>
+
+    <script src="../js/script.js"></script>
+    <script>
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+    <!-- Code syntax highlight -->
+    <script type="text/javascript " src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
+    <script type="text/javascript">
+    $(function(){ 
+        $('pre').css({
+            'overflow-x': 'scroll',
+            'background-color': '#f6f6f6',
+            'border': '1px dotted #ccc',
+            'padding': '0.8em'
+        });
+        $('pre code').addClass('prettyprint');
+        prettyPrint();
+    });
+    </script>
+  </body>
+</html>
+]]></description>
+    <pubDate>No date found.</pubDate>
+    <guid>http://dekokun.github.com/posts/2012-07-24.html</guid>
 </item>
 <item>
     <title>シンタックスハイライト追加</title>
