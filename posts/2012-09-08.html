@@ -1,0 +1,345 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ja"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="ja"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ja"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>「HTML5 Conference」行ってきた 「次世代Web技術を切り開くゲーム開発者たち」メモ</title>
+    <meta name="description" content>
+    <meta name="author" content>
+
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <style>
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+    </style>
+    <link rel="stylesheet" href="../css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css" type="text/css" rel="stylesheet"></link>
+    <script src="../js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>
+  </head>
+  <body>
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=290782064336516";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="../index.html">机上日記</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../posts.html">Archive</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1>「HTML5 Conference」行ってきた 「次世代Web技術を切り開くゲーム開発者たち」メモ</h1>
+
+<p>by <em><a href="https://twitter.com/dekokun">@dekokun</a></em> on <strong>2012/09/08 16:45</strong></p>
+
+<p>Tagged as: <a href="../tags/HTML5.html">HTML5</a>, <a href="../tags/勉強会.html">勉強会</a>.</p>
+
+<h2 id="まえがき">まえがき</h2>
+<p>前回、「シェルスクリプトでMaybeモナド」の前半部分の記事を起こし、次の変態アドベントカレンダーの順番が回ってきた際に後半部分を起こそうと思っていたのですが気付いたら変態アドベントカレンダー事態が終わっており、まだ原稿も作成しておらず、別の話題になりますなー。 本日慶応の日吉キャンパスで行われたHTML5 Conferenceに行って来まして、その中で「次世代Web技術を切り開くゲーム開発者たち」というのが面白かったのでここに概要というかメモを載せておきます。</p>
+<h2 id="発表者">発表者</h2>
+<ul>
+<li>村岡 正和(バスタイムフィッシュ代表/HTML5-WEST.JP)</li>
+<li>城戸 総史(株式会社ディー・エヌ・エー)</li>
+<li>坂本 一樹(グリー株式会社)</li>
+<li>清水 亮(株式会社ユビキタスエンターテインメント)</li>
+</ul>
+<p>UEIの清水さんの話を聞けたのが個人的には嬉しかったですね。</p>
+<h2 id="html5でゲーム開発する場合に一番重視したこと">html5でゲーム開発する場合に一番重視したこと</h2>
+<h3 id="木戸">木戸</h3>
+<ul>
+<li>如何に早くゲームが立ち上がり、如何にサクサク動くか</li>
+<li>最初の頃はFlashを移植しようとしていた</li>
+<li>CanvasとCSSアニメしかない場合、Flashでオーサリングしたデータをどう持っていくか</li>
+</ul>
+<h3 id="城戸">城戸</h3>
+<ul>
+<li>如何に古い端末の古い標準ブラウザに対応するか</li>
+</ul>
+<h3 id="清水">清水</h3>
+<ul>
+<li>PCと携帯で同じプログラムが動かない touchstartとmousemoveなど</li>
+<li>キーボート向けのゲームなど移植できない</li>
+<li>ゲームデザインの面でPCでもモバイルでも動かしても問題ないものを作るのが難しい</li>
+<li>モバイルのパフォーマンスはそこまで問題ないが、このバージョンではCanvasよりDOM操作などのほうがいいなどあり、全然クロスプラットフォームではない</li>
+</ul>
+<h2 id="html5ならではのしんどかったことはない">HTML5ならではのしんどかったことはない</h2>
+<h3 id="城戸-1">城戸</h3>
+<ul>
+<li>日々しんどい</li>
+<li>アニメーションは世界中で問題になっている</li>
+<li>これといったCanvas向けオーサリングツールがない</li>
+<li>Adobe edgeなどはCSSアニメーションに頼っており、CSSアニメはアンドロイドでうまく動かない</li>
+<li>ChromeとかAndroidとかの新しいブラウザなど出ると「今度はどのバグが出るか」</li>
+<li>リリース後に新端末で動かしたら止まった…とか</li>
+<li>同じOS、同じ端末だが片方の端末はclearectを呼ぶと止まる時があるなどあった…</li>
+</ul>
+<h3 id="坂本">坂本</h3>
+<ul>
+<li>Androidの特定のバージョンだとScaleが2回かかったなど(-1倍したい場合に虚数を使わなくては…)</li>
+<li>Android固有の不具合を如何に潰すか</li>
+<li>如何にユーザ様に新しいバージョンを使ってもらうか</li>
+</ul>
+<h3 id="清水-1">清水</h3>
+<ul>
+<li>webkitのナイトリービルドで回転と移動を同時にやると回転しないとか</li>
+<li>WebGLの実装で変数があまり多いシェーダで動かすとマシンごと落ちる</li>
+<li>「こっちのMacでは動いてもこっちのMacでは動かない」などのWebGLの問題が</li>
+<li>Chromeがおかしくなった少しあとに、同じくwebkitを使っているSafariがおかしくなる</li>
+<li>とにかくマイクロソフト</li>
+<li>海外のイベントでマイクロソフトのエバンジェリストが発表すると席を立つ</li>
+</ul>
+<h2 id="html5やったことでどんなメリットがあった">HTML5やったことでどんなメリットがあった</h2>
+<h3 id="城戸-2">城戸</h3>
+<ul>
+<li>最初からHTML5しか選択肢がなかった</li>
+<li>クロスプラットフォームで動かすには昔はHTMLしかなかった</li>
+<li>Webでしか提供できないもの</li>
+<li>インストール不要(Twitterなどで拡散されたらすぐ使える)</li>
+<li>アップデートが即座</li>
+</ul>
+<h3 id="坂本-1">坂本</h3>
+<ul>
+<li>iOSならコードのダウンロードはダメ</li>
+<li>ダウンロードしてコードを実行する場合はHTML5を使う(UIWebViewみたいな感じ)</li>
+<li>HTML5を選択することで開発コストを下がる場合があるので</li>
+<li>Canvasのほうが全体的に早い</li>
+<li>古いOSをサポートするならCSS</li>
+</ul>
+<h3 id="清水-2">清水</h3>
+<ul>
+<li>関数型プログラミングがJSで使えるのでよい</li>
+<li>意識しないでカリー化、意識しないで高階関数。関数型の良さがわかった</li>
+<li>書く量が非常に少なくて済む</li>
+<li>iOS向けに5万行</li>
+<li>JSだと700行(enchant.js)</li>
+<li>9分でゲームを作るコンテストをしている(4回コンパイルしたら時間が終わってしまう)</li>
+<li>HTML5は、JSとCanvasさえあればよい DOMもいらない</li>
+<li>ソースが隠せないのもとてもよい</li>
+<li>ソースを公開させる(GPL)などを強制する必要がなく強制させられる</li>
+<li>HTML5上の成果は強制的に開示させられるため、人類全体によい</li>
+</ul>
+<h2 id="これからのゲーム製作で期待できる新しいhtml5仕様は">これからのゲーム製作で期待できる新しいHTML5仕様は？</h2>
+<p>こうなってほしいなども含めて</p>
+<h3 id="城戸-3">城戸</h3>
+<ul>
+<li>ローカルキャッシュ系の発展</li>
+<li>ローカルストレージは非同期ではない</li>
+<li>ローカルストレージは5MB</li>
+<li>indexedDBなど非常に期待</li>
+</ul>
+<h3 id="坂本-2">坂本</h3>
+<ul>
+<li>ローカルキャッシュ系</li>
+<li>WebGL系</li>
+<li>Google Native Clientが来たらひっくり返るのでは</li>
+</ul>
+<h3 id="清水-3">清水</h3>
+<ul>
+<li>WebGL</li>
+<li>WebGLはマシン語が書ける感じなので危険ではある</li>
+<li>AppleのWebViewではWebGLは使える。safariでは使えない</li>
+<li>現実的な問題があるので難しい</li>
+<li>CSS3で中途半端で3Dが使えるのがよくない。アレのせいでMSがWebGLをいらないとか言っちゃう</li>
+<li>CSS3とWebGLの中間の3Dを動かすものが欲しい</li>
+<li>立体視</li>
+<li>カメラ系API</li>
+<li>音声系API</li>
+<li>DRM関係のもの</li>
+<li>DRMがないと作らせてもらえないものとかがある</li>
+<li>仕様の中で作られていって、安心してできるようになるとネイティブのように使える</li>
+</ul>
+<h2 id="今まで専用機がプラットフォームだったゲーム業界と比べてどう変わる">今まで専用機がプラットフォームだったゲーム業界と比べてどう変わる？</h2>
+<h3 id="城戸-4">城戸</h3>
+<ul>
+<li>スマートフォンを持っていれば大抵のものが遊べる</li>
+<li>昔は、ゲームセンターにいかないとだめ、次は、ハードウェア、次は、ゲームボーイなどで持ち歩き、今は、みんな持っているスマートフォン上で動く</li>
+<li>欧米ではハイリスク・ハイリターンのゲーム製作をしている(ゲーム一本でハリウッド映画並み)。もっと簡単につくれるHTML5などもあり新しい収益源になるのでは</li>
+</ul>
+<h3 id="坂本-3">坂本</h3>
+<ul>
+<li>今ではネットワークにつながっているのが当たりまえ</li>
+<li>PS2はモデム持っている人と持ってない人で遊び方が違うが、今ではネットワークにつながっているの前提で企画が立てられる</li>
+<li>ユーザに喜んでもらえるために、お金の払い方が変わってきている(フリーとぅ～プレミア？)</li>
+<li>開発的な何かで作り方が大きく変わったかどうかについては、ネットワークにつながっているつながっていないくらいか</li>
+</ul>
+<h3 id="清水-4">清水</h3>
+<ul>
+<li>ゲーム業界はwebゲームというジャンルは西暦2000年に作っていたが存在感はそんなに大きくなかった</li>
+<li>PSやXBOXなどを作っている人から見ると「そんなんあったの」的な</li>
+<li>内部的なエンジンでHTML5を読めるエンジンが乗っている</li>
+<li>あまりにもプログラミング観点、ゲームデザイン的な観点が違いすぎて参入しづらいのでは(HTML5 game conferenceというので出た、ゲームをそのままWebGLに移植したものが16GBメモリが必要だったなど)</li>
+<li>ファミコンで出たゲームを携帯に移植したら儲かるのではと思って、ある程度儲かったが、「勝手が違うな」という印象。「新しいゲームボーイが出た」と思ったら、文化など全く違った</li>
+<li>テクノロジーからしたら、そんなに大したことはいあんが、HTML5が主流になることによりゲーム体験という観点では全く変わってくる</li>
+</ul>
+<h2 id="既存のコンシューマゲームの市場はあるがソーシャルゲームの市場はコンシューマゲームの市場を越えるか">既存のコンシューマゲームの市場はあるが、ソーシャルゲームの市場はコンシューマゲームの市場を越えるか</h2>
+<h3 id="城戸-5">城戸</h3>
+<ul>
+<li>異質なもの。映画とテレビのようなもの。共存可能。タイアップもできる</li>
+<li>Webゲームの市場は伸びるし、ユーザが望む以上はトリプルゲーム市場も残るのでは。どっちも栄える</li>
+</ul>
+<h3 id="坂本-4">坂本</h3>
+<ul>
+<li>同じ意見</li>
+<li>両方とも強くて戦い続けるのがいいのでは</li>
+<li>ユーザが楽しむのであれば、どうでもいい</li>
+</ul>
+<h3 id="清水-5">清水</h3>
+<ul>
+<li>ソーシャルゲームについては本音で話せない</li>
+<li>キャッシュマシンとしてのゲームは、ソーシャルゲームに遠くコンシューマゲームは及んでない</li>
+<li>海外ではコンシューマゲームのほうが売れている</li>
+<li>日本のゲームは海外にて強くない</li>
+<li>全体としてパイがシュリンクしているのでは</li>
+<li>日本のゲームはカルチャーの違いでそんなに海外では売れない</li>
+<li>20億投下して30億回収する戦略より、1000万投下して10億回収できるかもしれないというほうがよいのでは。開発費が上がっているというのはあれど</li>
+<li>日本の映画くらいにシュリンクしたら、困る</li>
+</ul>
+<h2 id="web製作と違うゲーム製作フローを教えて">Web製作と違うゲーム製作フローを教えて！</h2>
+<ul>
+<li>キノトロープさんのワークフローなど公開されている</li>
+</ul>
+<h3 id="城戸-6">城戸</h3>
+<ul>
+<li>ディレクター、サーバサイドエンジニア、フロントサイドエンジニア、UI専門家、ユーザエクスペリエンス専門家など、専門分野化している</li>
+<li>お互い専門分野はあるが、一つのチームとしてどうなればよくなるかを考えゲームを育てる</li>
+</ul>
+<h3 id="坂本-5">坂本</h3>
+<ul>
+<li>キャラクターを動かすのは専用のアニメーターがオーサリングして作るもの</li>
+<li>専用のオーサリングツールなど作り、ムダをなくす</li>
+</ul>
+<h3 id="清水-6">清水</h3>
+<ul>
+<li>最初にシナリオハンティングを行う</li>
+<li>怪盗は燃えない</li>
+<li>ファンタジーかなー</li>
+<li>フランス(チューリッヒ)いこうぜ！</li>
+<li>アビニョンには龍が住んでいるので、龍に会いに</li>
+<li>崖の上の城を見つけて実際に行ってみる
+<ul>
+<li>ここにワイバーンが攻めてきたらどうなるかな</li>
+</ul></li>
+<li>みたいにイメージをふくらませる</li>
+<li>その後企画書を作成し提出</li>
+<li>イラストどうしよう</li>
+<li>角川、講談社にイラストレーターを頼んだら「優秀なのは渡せない」</li>
+<li>Pixiv
+<ul>
+<li>この子は毎日絵を描いているから暇に違いない</li>
+<li>絵がどんどんバージョンアップしている</li>
+<li>そんな感じで、2~30人プロとして集めた</li>
+</ul></li>
+<li>イテレーションも大事だがその前のイマジネーションの段階でどこまで膨らませるか</li>
+<li>興味のない雑誌を読む</li>
+<li>釣りのゲームがヒット</li>
+<li>作るまで釣りをやったことはなかった</li>
+<li>釣っても魚気持ち悪くて触れない</li>
+<li>通りがかりのおっさんがハリを抜いてくれて一緒に釣った</li>
+<li>それをそのままゲームにした
+<ul>
+<li>釣っている最中におっさんに絡まれる</li>
+<li>無視しているとメールが来て、釣れたことが分かる</li>
+</ul></li>
+</ul>
+<h2 id="web製作者がゲーム製作に参加するためのアドバイス">Web製作者がゲーム製作に参加するためのアドバイス</h2>
+<h3 id="城戸-7">城戸</h3>
+<ul>
+<li>ゲームを作る手段、ツールが充実しているので作りたければ作れる</li>
+<li>興味があれば参加してください！！</li>
+<li>弊社も半分以上はWeb製作出身</li>
+<li>特別なことは現場に入って学ぶもの</li>
+<li>エンタメ好き、ゲームづくりが好きな人がいいのでは</li>
+</ul>
+<h3 id="坂本-6">坂本</h3>
+<ul>
+<li>Web製作とかゲーム製作とかくくりがわからないが、作りたければだれでもいいのでは、</li>
+<li>すぐに応募して、実際に働いてみよう！飛び込もう！</li>
+<li>楽しいことしかやってない</li>
+</ul>
+<h3 id="清水-7">清水</h3>
+<ul>
+<li>一緒に仕事をするかもしれない人という感じで考えると、 <em>* 変わった人</em>* カンボジア学科(5人くらいとか) <em>* 普通の人が知らない視点を持っている</em>* 普通の人が興味をもたない視点 <em>* 知らないことと出会うのがエンターテイメント</em>* 清水が知っていることを知っている人はゲーマーにとってはいいのでは <em>* 僕でも楽しみを分かるように落としていこうよ というのがよい</em>* 「関係ないことをしているけど金にならない」くらいがいい ** ゲームはそんなに好きじゃない くらいでもいいのでは</li>
+</ul>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'dekokun'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      <ul class="social">
+        <li class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="dekokun" data-lang="ja">ツイート</a></li>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        <li class="hatena-bookmark"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></img></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
+        <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
+      </ul>
+      <footer>
+        <p>©2012 <a href="https://twitter.com/dekokun">dekokun</a></p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+
+    <script src="../js/libs/bootstrap/bootstrap.min.js"></script>
+
+    <script src="../js/script.js"></script>
+    <script>
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+    <!-- Code syntax highlight -->
+    <script type="text/javascript " src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
+    <script type="text/javascript">
+    $(function(){ 
+        $('pre').css({
+            'overflow-x': 'scroll',
+            'background-color': '#f6f6f6',
+            'border': '1px dotted #ccc',
+            'padding': '0.8em'
+        });
+        $('pre code').addClass('prettyprint');
+        prettyPrint();
+    });
+    </script>
+  </body>
+</html>
