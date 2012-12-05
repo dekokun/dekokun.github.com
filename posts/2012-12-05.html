@@ -1,0 +1,241 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ja"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="ja"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ja"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>PHP5.3にてタイプヒンティングでスカラー型が使える！？(勘違い編)</title>
+    <meta name="description" content>
+    <meta name="author" content>
+
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <style>
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+    </style>
+    <link rel="stylesheet" href="../css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css" type="text/css" rel="stylesheet"></link>
+    <script src="../js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>
+  </head>
+  <body>
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=290782064336516";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="../index.html">机上日記</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../posts.html">Archive</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1>PHP5.3にてタイプヒンティングでスカラー型が使える！？(勘違い編)</h1>
+
+<p>by <em><a href="https://twitter.com/dekokun">@dekokun</a></em> on <strong>2012/12/05 22:13</strong></p>
+
+<p>Tagged as: <a href="../tags/PHP.html">PHP</a>.</p>
+
+<h2 id="まえがき">まえがき</h2>
+<p>どうも、最近PHPとHaskellを学んでおります。今日はPHPネタ。php5.3でスカラー型のタイプヒンティングが使えるという勘違いが発生したお話。</p>
+<h2 id="発端">発端</h2>
+<p>皆さんご存知の通り、PHP5.3までは、arrayもしくはオブジェクトの場合はタイプヒントが使用できるのですが、integerやstringなどのスカラー型に対してはタイプヒントは使えません。</p>
+<ul>
+<li>参考：<a href="http://php.net/manual/ja/language.oop5.typehinting.php">PHP: タイプヒンティング - Manual</a></li>
+</ul>
+<p>しかし、ある日、私はPHPでタイプヒンティングについてググっていたら、下記のようなサイトを発見したのでした</p>
+<ul>
+<li><a href="http://bbs.php.gr.jp/topic-282.html">日本PHPユーザ会 掲示板: PHP 5 » プリミティブな型でもタイプヒンティングが働きます</a></li>
+</ul>
+<p>そこに載っていたコードはこんなです。</p>
+<pre><code>function myfunc(int $i) {}
+myfunc('abc');
+
+-&gt; PHP Catchable fatal error:  Argument 1 passed to myfunc() must be an instance of int, string given, called in - on line 5 and defined in - on line 4
+
+Catchable fatal error: Argument 1 passed to myfunc() must be an instance of int, string given, called in - on line 5 and defined in - on line 4</code></pre>
+<p>ふむふむ確かにエラーメッセージを見た限りではintかどうかを判別しているっぽい。実際に自分でもコードを動かし、同じエラーメッセージが出力されるのを見て、私は以下のように完全に勘違いしてしまいました。</p>
+<blockquote class="twitter-tweet" lang="ja"><p>
+おいPHPのタイプヒンティングってintやstringのような型では使えないんじゃなかったのか。マニュアルにそう書いてあるぞ。
+</p>
+— でこくんさん (@dekokun) <a href="https://twitter.com/dekokun/status/275800555224461314" data-datetime="2012-12-04T03:15:51+00:00">12月 4, 2012</a>
+</blockquote>
+<blockquote class="twitter-tweet" lang="ja"><p>
+php -r ‘function myfunc(int $i) {}; myfunc(“abc”);’ -&gt; PHP Catchable fatal error:Argument 1 passed to myfunc() must be an instance of int
+</p>
+— でこくんさん (@dekokun) <a href="https://twitter.com/dekokun/status/275800590800523264" data-datetime="2012-12-04T03:15:59+00:00">12月 4, 2012</a>
+</blockquote>
+<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>すみません、若干マニュアルをdisってしまいました。。しかし比較的すぐに誤りに気付き、myfuncに実際にint型のものを渡して実験してみました</p>
+<blockquote class="twitter-tweet" lang="ja"><p>
+php -r ’function myfunc(int $i) {}; myfunc(1);’PHP Catchable fatal error:Argument 1 passed to myfunc() must be an instance of int,
+</p>
+— でこくんさん (@dekokun) <a href="https://twitter.com/dekokun/status/275800746795085824" data-datetime="2012-12-04T03:16:36+00:00">12月 4, 2012</a>
+</blockquote>
+
+<p>あれ、intでタイプヒントしているところにintの1を渡してもエラーになっているぞ！？</p>
+<h2 id="解決編">解決編</h2>
+<p>上記の正確なエラーメッセージはこんな感じ</p>
+<blockquote>
+<p>PHP Catchable fatal error: Argument 1 passed to myfunc() must be an instance of int, integer given, called in Command line code on line 1 and defined in Command line code on line 1 PHP Stack trace: PHP 1. {main}() Command line code:0 PHP 2. myfunc() Command line code:1</p>
+</blockquote>
+<p>ここが重要そうなメッセージ</p>
+<blockquote>
+<p>Argument 1 passed to myfunc() must be an instance of int, integer given</p>
+</blockquote>
+<p>このメッセージを見ると、「なるほどタイプヒントに使うべき型名はintじゃなくてintegerだったか」という感じがしますのでintegerに変えてもう一発</p>
+<pre><code>function myfunc(integer $i){};
+myfunc(1);</code></pre>
+<blockquote>
+<p>PHP Catchable fatal error: Argument 1 passed to myfunc() must be an instance of Integer, integer given, called in /Users/dekokun/test.php on line 13 and defined in /Users/dekokun/test.php on line 12 PHP Stack trace: PHP 1. {main}() /Users/dekokun/test.php:0 PHP 2. myfunc() /Users/dekokun/test.php:13</p>
+</blockquote>
+<p>あれ、駄目だ。エラーメッセージを読んでも、問題なさそう。だって、</p>
+<blockquote>
+<p>must be an instance of integer, integer given</p>
+</blockquote>
+<p>「integerである必要があって、integerが与えられた」って、全然エラーじゃないじゃないですか！！！</p>
+<p>まぁ、聡明な皆さんはお気づきかと思いますが、上記エラーメッセージの最初にある_integer_はクラス名を表し、次の_integer_はスカラー型のintegerのことを表しているわけですな。わかりづらいですね。</p>
+<p>上記エラーを回避するためには、Javaのようにラッパークラスを作ってあげなくては…</p>
+<p>というわけで、全くやるきのないラッパークラスを作りました。なんの役にもたちませんね。最低限の礼儀として不変型にしておきました(intは値がコピーされますし不変型になってますよね？)ので許してください。</p>
+<pre><code>class Integer
+{
+  private $i;
+  function __construct($i)
+  {
+    $this-&gt;i = intval($i);
+  }
+
+    public function __get($key)
+    {
+        return $this-&gt;$key;
+    }
+}</code></pre>
+<p>実際に使ってみた</p>
+<pre><code>function myfunc(integer $i){};
+myfunc(new Integer(1));</code></pre>
+<p>エラーは出ませんでした。めでたしめでたし。(どうでもいいですが、クラス名って大文字小文字区別しないんですね。上記実験で初めて知りました。)</p>
+<p>すべては私の勘違いだったのであった(PHPの出力するエラーがわかりづらいというのも間違いなくあると思うが)。</p>
+<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" lang="ja"><p>
+勘違い恥ずかしい。
+</p>
+— でこくんさん (@dekokun) <a href="https://twitter.com/dekokun/status/275800801023238144" data-datetime="2012-12-04T03:16:49+00:00">12月 4, 2012</a>
+</blockquote>
+<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<h2 id="あとがき">あとがき</h2>
+<p>PHP5.4ではintなどに対してもタイプヒントが使えますのでスカラー型のタイプヒントを行いたい方々も多いと思いますが少々お待ち下さい。</p>
+<p>ところで、関係ない話ですが、Rubyとか使ってる人たちは、タイプヒンティングがない世界でどのようにストラテジーパターンなどを実現しているのでしょうか。メソッドの存在を信じるしかないのでしょうか。</p>
+<blockquote class="twitter-tweet" lang="ja"><p>
+ダックタイピング全盛なRubyとかでメソッドを呼び出す時って、メソッドが存在することを信じて呼ぶんだっけ。まさか毎回メソッドを呼ぶ前にメソッドの存在確認をしてから呼ぶということはあるまい。PHPにはインターフェースとタイプヒンティングがあるが。
+</p>
+— でこくんさん (@dekokun) <a href="https://twitter.com/dekokun/status/275457959109218304" data-datetime="2012-12-03T04:34:29+00:00">12月 3, 2012</a>
+</blockquote>
+<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" data-in-reply-to="275457959109218304" lang="ja"><p>
+@<a href="https://twitter.com/dekokun">dekokun</a> メソッドミッシングとかあるし、信じるしかないんじゃないんですかね。よくわかんないけど。
+</p>
+— あやぴー（２１）さん (@ayato_p) <a href="https://twitter.com/ayato_p/status/275458332981092352" data-datetime="2012-12-03T04:35:59+00:00">12月 3, 2012</a>
+</blockquote>
+<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>確かに言われてみればそうかも。</p>
+<blockquote class="twitter-tweet" data-in-reply-to="275457959109218304" lang="ja"><p>
+@<a href="https://twitter.com/dekokun">dekokun</a> railsのコード見ると、respond_to?よく見かける
+</p>
+— くろさん (@closer009) <a href="https://twitter.com/closer009/status/275472170719780865" data-datetime="2012-12-03T05:30:58+00:00">12月 3, 2012</a>
+</blockquote>
+<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>やはり必要なところではメソッドの存在を確認するのか…だるいな…</p>
+<blockquote class="twitter-tweet" lang="ja"><p>
+まぁ、タイプヒンティングがあろうが実行時エラーであることには変わらんが。
+</p>
+— でこくんさん (@dekokun) <a href="https://twitter.com/dekokun/status/275458594533687296" data-datetime="2012-12-03T04:37:01+00:00">12月 3, 2012</a>
+</blockquote>
+<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>以上、最近、静的型付けの言語にとりつかれ気味な私なのでした〜</p>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'dekokun'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      <ul class="social">
+        <li class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="dekokun" data-lang="ja">ツイート</a></li>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        <li class="hatena-bookmark"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></img></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
+        <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
+      </ul>
+      <footer>
+        <p>©2012 <a href="https://twitter.com/dekokun">dekokun</a></p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+
+    <script src="../js/libs/bootstrap/bootstrap.min.js"></script>
+
+    <script src="../js/script.js"></script>
+    <script>
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+    <!-- Code syntax highlight -->
+    <script type="text/javascript " src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
+    <script type="text/javascript">
+    $(function(){ 
+        $('pre').css({
+            'overflow-x': 'scroll',
+            'background-color': '#f6f6f6',
+            'border': '1px dotted #ccc',
+            'padding': '0.8em'
+        });
+        $('pre code').addClass('prettyprint');
+        prettyPrint();
+    });
+    </script>
+  </body>
+</html>
