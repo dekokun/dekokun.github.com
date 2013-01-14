@@ -2252,6 +2252,172 @@ myfunc(new Integer(1));</code></pre>
     <pubDate>No date found.</pubDate>
     <guid>http://dekokun.github.com/posts/2012-12-16.html</guid>
 </item>
+<item>
+    <title>PHPにおいてstaticメソッドの呼び出し元クラスを動的に変更</title>
+    <link>http://dekokun.github.com/posts/2013-01-14.html</link>
+    <description><![CDATA[<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ja"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="ja"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ja"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>PHPにおいてstaticメソッドの呼び出し元クラスを動的に変更</title>
+    <meta name="description" content>
+    <meta name="author" content>
+
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <style>
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+    </style>
+    <link rel="stylesheet" href="../css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css" type="text/css" rel="stylesheet"></link>
+    <script src="../js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>
+  </head>
+  <body>
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=290782064336516";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="../index.html">机上日記</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../posts.html">Archive</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1>PHPにおいてstaticメソッドの呼び出し元クラスを動的に変更</h1>
+
+<p>by <em><a href="https://twitter.com/dekokun">@dekokun</a></em> on <strong>2013/01/14 20:33</strong></p>
+
+<p>Tagged as: <a href="../tags/PHP.html">PHP</a>.</p>
+
+<p>staticメソッドを含むクラスをDIしたかったため、クラスを動的に変更してstaticメソッドを呼び出す方法を調べました。</p>
+<h2 id="呼び出し方">呼び出し方</h2>
+<pre><code>&lt;?php
+class ClassName {
+  public static function method() {
+  }
+}</code></pre>
+<p>のようなstaticメソッドの呼び出し元を動的に変更できるようクラス名から呼び出せるようにしたいですね。</p>
+<p>以下のようにすればよいです。</p>
+<pre><code>$className = 'ClassName';
+$className::method();</code></pre>
+<p>以上、めでたしめでたし。</p>
+<p>クラス名の文字列からnewできることは知っている人も多いかと思いますが、staticメソッドも同様に呼び出せるのでした。</p>
+<h2 id="注意事項">注意事項</h2>
+<p>この注意事項は、クラス名を動的に指定する場合全般に当てはまります。staticメソッドだからどうこうというわけではありません。</p>
+<h3 id="変数に格納しなくてはいけません">変数に格納しなくてはいけません</h3>
+<p><code>new 'ClassName'</code>とか<code>'ClassNeme'::method()</code>とかはできません。パースエラーです。</p>
+<h3 id="完全修飾名を使ってください">完全修飾名を使ってください</h3>
+<pre><code>namespace Hoge\Fuga
+
+class Fuga {
+  public static method() {
+  }
+}</code></pre>
+<p>のようなクラスがあった場合、</p>
+<pre><code>use Hoge\Fuga
+
+$className = 'Fuga';
+$className::method();</code></pre>
+<p>のようにエイリアスを使用したアクセスはできません。</p>
+<pre><code>$className = 'Hoge\Fuga';
+$className::method();</code></pre>
+<p>のように完全修飾名を使用しアクセスしましょう。</p>
+<p>本件について、詳しくは以下PHPマニュアル参照</p>
+<ul>
+<li><a href="http://php.net/manual/ja/language.namespaces.dynamic.php">名前空間と動的言語機能</a></li>
+</ul>
+<h2 id="まとめ">まとめ</h2>
+<p>文字列からnewできることを知っている人はよく知っていることばかりだったかもしれませんね。</p>
+<p>動的にクラス名を指定できるようにしてレッツエンジョイDIライフ！</p>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'dekokun'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      <ul class="social">
+        <li class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="dekokun" data-lang="ja">ツイート</a></li>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        <li class="hatena-bookmark"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></img></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
+        <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
+      </ul>
+      <footer>
+        <p>©2012 <a href="https://twitter.com/dekokun">dekokun</a></p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+
+    <script src="../js/libs/bootstrap/bootstrap.min.js"></script>
+
+    <script src="../js/script.js"></script>
+    <script>
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+    <!-- Code syntax highlight -->
+    <script type="text/javascript " src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
+    <script type="text/javascript">
+    $(function(){ 
+        $('pre').css({
+            'overflow-x': 'scroll',
+            'background-color': '#f6f6f6',
+            'border': '1px dotted #ccc',
+            'padding': '0.8em'
+        });
+        $('pre code').addClass('prettyprint');
+        prettyPrint();
+    });
+    </script>
+  </body>
+</html>
+]]></description>
+    <pubDate>No date found.</pubDate>
+    <guid>http://dekokun.github.com/posts/2013-01-14.html</guid>
+</item>
 
     </channel> 
 </rss>
