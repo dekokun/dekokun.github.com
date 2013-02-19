@@ -2819,7 +2819,7 @@ $className::method();</code></pre>
 <h2 id="gitliteを使用したgitlabのこれまでの問題">Gitliteを使用したGitLabのこれまでの問題</h2>
 <p>これまでのGitoliteを使用したGitLabの問題は以下のとおりだそうです。</p>
 <ul>
-<li>GitLabとgitoliteで不整合起きちゃうよ</li>
+<li>GitLabとGitoliteで不整合起きちゃうよ</li>
 <li>リポジトリ数が増えてくるとGitoliteは遅くなるよ</li>
 <li>GitLabをセットアップするのに2ユーザ(GitoliteのユーザとGitLabのユーザ)が必要で面倒だよね</li>
 <li>GitLabのせいでコードが複雑になって簡単にミスをするようになってるよ</li>
