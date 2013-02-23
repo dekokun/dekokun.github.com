@@ -15,7 +15,7 @@
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="ja"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="ja"> <!--<![endif]-->
-  <head>
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>「第2回 スタートHaskell2」行ってきた</title>
@@ -23,6 +23,12 @@
     <meta name="author" content>
 
     <meta name="viewport" content="width=device-width">
+    <meta property="fb:app_id" content="351187098330864">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="http://dekokun.github.com/img/ogp.png">
+    <meta property="og:title" content="「第2回 スタートHaskell2」行ってきた">
+    <meta property="og:description" content="@dekokunの技術日記">
+    <meta property="og:site_name" content="机上日記">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <style>
@@ -192,7 +198,7 @@ myOr _ b = b</code></pre>
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="ja"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="ja"> <!--<![endif]-->
-  <head>
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>ブログ移設しました！！！</title>
@@ -200,6 +206,12 @@ myOr _ b = b</code></pre>
     <meta name="author" content>
 
     <meta name="viewport" content="width=device-width">
+    <meta property="fb:app_id" content="351187098330864">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="http://dekokun.github.com/img/ogp.png">
+    <meta property="og:title" content="ブログ移設しました！！！">
+    <meta property="og:description" content="@dekokunの技術日記">
+    <meta property="og:site_name" content="机上日記">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <style>
@@ -360,7 +372,7 @@ myOr _ b = b</code></pre>
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="ja"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="ja"> <!--<![endif]-->
-  <head>
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>シェルスクリプトでクロージャ(的な何か)</title>
@@ -368,6 +380,12 @@ myOr _ b = b</code></pre>
     <meta name="author" content>
 
     <meta name="viewport" content="width=device-width">
+    <meta property="fb:app_id" content="351187098330864">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="http://dekokun.github.com/img/ogp.png">
+    <meta property="og:title" content="シェルスクリプトでクロージャ(的な何か)">
+    <meta property="og:description" content="@dekokunの技術日記">
+    <meta property="og:site_name" content="机上日記">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <style>
@@ -582,7 +600,7 @@ func</code></pre>
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="ja"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="ja"> <!--<![endif]-->
-  <head>
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>シンタックスハイライト追加</title>
@@ -590,6 +608,12 @@ func</code></pre>
     <meta name="author" content>
 
     <meta name="viewport" content="width=device-width">
+    <meta property="fb:app_id" content="351187098330864">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="http://dekokun.github.com/img/ogp.png">
+    <meta property="og:title" content="シンタックスハイライト追加">
+    <meta property="og:description" content="@dekokunの技術日記">
+    <meta property="og:site_name" content="机上日記">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <style>
@@ -746,7 +770,7 @@ $(function(){
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="ja"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="ja"> <!--<![endif]-->
-  <head>
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Hakyllで作成したブログにRSS機能追加</title>
@@ -754,6 +778,12 @@ $(function(){
     <meta name="author" content>
 
     <meta name="viewport" content="width=device-width">
+    <meta property="fb:app_id" content="351187098330864">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="http://dekokun.github.com/img/ogp.png">
+    <meta property="og:title" content="Hakyllで作成したブログにRSS機能追加">
+    <meta property="og:description" content="@dekokunの技術日記">
+    <meta property="og:site_name" content="机上日記">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <style>
@@ -888,7 +918,7 @@ $(function(){
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="ja"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="ja"> <!--<![endif]-->
-  <head>
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>GitHub Pagesでのビルド失敗</title>
@@ -896,6 +926,12 @@ $(function(){
     <meta name="author" content>
 
     <meta name="viewport" content="width=device-width">
+    <meta property="fb:app_id" content="351187098330864">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="http://dekokun.github.com/img/ogp.png">
+    <meta property="og:title" content="GitHub Pagesでのビルド失敗">
+    <meta property="og:description" content="@dekokunの技術日記">
+    <meta property="og:site_name" content="机上日記">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <style>
@@ -1040,7 +1076,7 @@ $(function(){
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="ja"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="ja"> <!--<![endif]-->
-  <head>
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>夏サミ感想(グリーを支えるソーシャルコーディングのすべてについて)</title>
@@ -1048,6 +1084,12 @@ $(function(){
     <meta name="author" content>
 
     <meta name="viewport" content="width=device-width">
+    <meta property="fb:app_id" content="351187098330864">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="http://dekokun.github.com/img/ogp.png">
+    <meta property="og:title" content="夏サミ感想(グリーを支えるソーシャルコーディングのすべてについて)">
+    <meta property="og:description" content="@dekokunの技術日記">
+    <meta property="og:site_name" content="机上日記">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <style>
@@ -1265,7 +1307,7 @@ $(function(){
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="ja"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="ja"> <!--<![endif]-->
-  <head>
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>シェルスクリプトでMaybeモナド(その1)</title>
@@ -1273,6 +1315,12 @@ $(function(){
     <meta name="author" content>
 
     <meta name="viewport" content="width=device-width">
+    <meta property="fb:app_id" content="351187098330864">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="http://dekokun.github.com/img/ogp.png">
+    <meta property="og:title" content="シェルスクリプトでMaybeモナド(その1)">
+    <meta property="og:description" content="@dekokunの技術日記">
+    <meta property="og:site_name" content="机上日記">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <style>
@@ -1486,7 +1534,7 @@ ret &quot;fuga:存在しない&quot; | bind &quot;maybe_ls&quot; | bind &quot;ma
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="ja"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="ja"> <!--<![endif]-->
-  <head>
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>「HTML5 Conference」行ってきた 「次世代Web技術を切り開くゲーム開発者たち」メモ</title>
@@ -1494,6 +1542,12 @@ ret &quot;fuga:存在しない&quot; | bind &quot;maybe_ls&quot; | bind &quot;ma
     <meta name="author" content>
 
     <meta name="viewport" content="width=device-width">
+    <meta property="fb:app_id" content="351187098330864">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="http://dekokun.github.com/img/ogp.png">
+    <meta property="og:title" content="「HTML5 Conference」行ってきた 「次世代Web技術を切り開くゲーム開発者たち」メモ">
+    <meta property="og:description" content="@dekokunの技術日記">
+    <meta property="og:site_name" content="机上日記">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <style>
@@ -1847,7 +1901,7 @@ ret &quot;fuga:存在しない&quot; | bind &quot;maybe_ls&quot; | bind &quot;ma
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="ja"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="ja"> <!--<![endif]-->
-  <head>
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>PHP5.3にてタイプヒンティングでスカラー型が使える！？(勘違い編)</title>
@@ -1855,6 +1909,12 @@ ret &quot;fuga:存在しない&quot; | bind &quot;maybe_ls&quot; | bind &quot;ma
     <meta name="author" content>
 
     <meta name="viewport" content="width=device-width">
+    <meta property="fb:app_id" content="351187098330864">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="http://dekokun.github.com/img/ogp.png">
+    <meta property="og:title" content="PHP5.3にてタイプヒンティングでスカラー型が使える！？(勘違い編)">
+    <meta property="og:description" content="@dekokunの技術日記">
+    <meta property="og:site_name" content="机上日記">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <style>
@@ -2095,7 +2155,7 @@ myfunc(new Integer(1));</code></pre>
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="ja"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="ja"> <!--<![endif]-->
-  <head>
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>DevLOVE Conference 2012 に参加した後、これからの私にとって最も大切なこと</title>
@@ -2103,6 +2163,12 @@ myfunc(new Integer(1));</code></pre>
     <meta name="author" content>
 
     <meta name="viewport" content="width=device-width">
+    <meta property="fb:app_id" content="351187098330864">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="http://dekokun.github.com/img/ogp.png">
+    <meta property="og:title" content="DevLOVE Conference 2012 に参加した後、これからの私にとって最も大切なこと">
+    <meta property="og:description" content="@dekokunの技術日記">
+    <meta property="og:site_name" content="机上日記">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <style>
@@ -2260,7 +2326,7 @@ myfunc(new Integer(1));</code></pre>
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="ja"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="ja"> <!--<![endif]-->
-  <head>
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>PHPにおいてstaticメソッドの呼び出し元クラスを動的に変更</title>
@@ -2268,6 +2334,12 @@ myfunc(new Integer(1));</code></pre>
     <meta name="author" content>
 
     <meta name="viewport" content="width=device-width">
+    <meta property="fb:app_id" content="351187098330864">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="http://dekokun.github.com/img/ogp.png">
+    <meta property="og:title" content="PHPにおいてstaticメソッドの呼び出し元クラスを動的に変更">
+    <meta property="og:description" content="@dekokunの技術日記">
+    <meta property="og:site_name" content="机上日記">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <style>
@@ -2426,7 +2498,7 @@ $className::method();</code></pre>
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="ja"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="ja"> <!--<![endif]-->
-  <head>
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>「第7回 スタートHaskell2(最終回)」行ってきた</title>
@@ -2434,6 +2506,12 @@ $className::method();</code></pre>
     <meta name="author" content>
 
     <meta name="viewport" content="width=device-width">
+    <meta property="fb:app_id" content="351187098330864">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="http://dekokun.github.com/img/ogp.png">
+    <meta property="og:title" content="「第7回 スタートHaskell2(最終回)」行ってきた">
+    <meta property="og:description" content="@dekokunの技術日記">
+    <meta property="og:site_name" content="机上日記">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <style>
@@ -2606,7 +2684,7 @@ $className::method();</code></pre>
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="ja"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="ja"> <!--<![endif]-->
-  <head>
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>GREE Tech Talk #2 へ行って来ました</title>
@@ -2614,6 +2692,12 @@ $className::method();</code></pre>
     <meta name="author" content>
 
     <meta name="viewport" content="width=device-width">
+    <meta property="fb:app_id" content="351187098330864">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="http://dekokun.github.com/img/ogp.png">
+    <meta property="og:title" content="GREE Tech Talk #2 へ行って来ました">
+    <meta property="og:description" content="@dekokunの技術日記">
+    <meta property="og:site_name" content="机上日記">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <style>
@@ -2753,7 +2837,7 @@ $className::method();</code></pre>
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="ja"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="ja"> <!--<![endif]-->
-  <head>
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>GitLabにGitoliteが必要なくなるよ いいことばかりじゃないけど</title>
@@ -2761,6 +2845,12 @@ $className::method();</code></pre>
     <meta name="author" content>
 
     <meta name="viewport" content="width=device-width">
+    <meta property="fb:app_id" content="351187098330864">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="http://dekokun.github.com/img/ogp.png">
+    <meta property="og:title" content="GitLabにGitoliteが必要なくなるよ いいことばかりじゃないけど">
+    <meta property="og:description" content="@dekokunの技術日記">
+    <meta property="og:site_name" content="机上日記">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <style>
