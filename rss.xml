@@ -154,9 +154,6 @@ myOr _ b = b</code></pre>
             <li class="hatena-bookmark"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></img></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
             <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
           </ul>
-          <footer>
-            <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
-          </footer>
 
         </div> <!-- /span9 -->
         <div class="span3">
@@ -176,6 +173,9 @@ myOr _ b = b</code></pre>
           </div>
         </div> <!-- /span3 -->
       </div> <!-- /row -->
+      <footer>
+        <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
+      </footer>
     </div> <!-- /container -->
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -348,9 +348,6 @@ myOr _ b = b</code></pre>
             <li class="hatena-bookmark"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></img></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
             <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
           </ul>
-          <footer>
-            <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
-          </footer>
 
         </div> <!-- /span9 -->
         <div class="span3">
@@ -370,6 +367,9 @@ myOr _ b = b</code></pre>
           </div>
         </div> <!-- /span3 -->
       </div> <!-- /row -->
+      <footer>
+        <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
+      </footer>
     </div> <!-- /container -->
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -596,9 +596,6 @@ func</code></pre>
             <li class="hatena-bookmark"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></img></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
             <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
           </ul>
-          <footer>
-            <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
-          </footer>
 
         </div> <!-- /span9 -->
         <div class="span3">
@@ -618,6 +615,9 @@ func</code></pre>
           </div>
         </div> <!-- /span3 -->
       </div> <!-- /row -->
+      <footer>
+        <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
+      </footer>
     </div> <!-- /container -->
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -786,9 +786,6 @@ $(function(){
             <li class="hatena-bookmark"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></img></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
             <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
           </ul>
-          <footer>
-            <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
-          </footer>
 
         </div> <!-- /span9 -->
         <div class="span3">
@@ -808,6 +805,9 @@ $(function(){
           </div>
         </div> <!-- /span3 -->
       </div> <!-- /row -->
+      <footer>
+        <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
+      </footer>
     </div> <!-- /container -->
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -954,9 +954,6 @@ $(function(){
             <li class="hatena-bookmark"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></img></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
             <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
           </ul>
-          <footer>
-            <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
-          </footer>
 
         </div> <!-- /span9 -->
         <div class="span3">
@@ -976,6 +973,9 @@ $(function(){
           </div>
         </div> <!-- /span3 -->
       </div> <!-- /row -->
+      <footer>
+        <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
+      </footer>
     </div> <!-- /container -->
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -1132,9 +1132,6 @@ $(function(){
             <li class="hatena-bookmark"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></img></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
             <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
           </ul>
-          <footer>
-            <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
-          </footer>
 
         </div> <!-- /span9 -->
         <div class="span3">
@@ -1154,6 +1151,9 @@ $(function(){
           </div>
         </div> <!-- /span3 -->
       </div> <!-- /row -->
+      <footer>
+        <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
+      </footer>
     </div> <!-- /container -->
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -1383,9 +1383,6 @@ $(function(){
             <li class="hatena-bookmark"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></img></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
             <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
           </ul>
-          <footer>
-            <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
-          </footer>
 
         </div> <!-- /span9 -->
         <div class="span3">
@@ -1405,6 +1402,9 @@ $(function(){
           </div>
         </div> <!-- /span3 -->
       </div> <!-- /row -->
+      <footer>
+        <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
+      </footer>
     </div> <!-- /container -->
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -1630,9 +1630,6 @@ ret &quot;fuga:存在しない&quot; | bind &quot;maybe_ls&quot; | bind &quot;ma
             <li class="hatena-bookmark"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></img></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
             <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
           </ul>
-          <footer>
-            <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
-          </footer>
 
         </div> <!-- /span9 -->
         <div class="span3">
@@ -1652,6 +1649,9 @@ ret &quot;fuga:存在しない&quot; | bind &quot;maybe_ls&quot; | bind &quot;ma
           </div>
         </div> <!-- /span3 -->
       </div> <!-- /row -->
+      <footer>
+        <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
+      </footer>
     </div> <!-- /container -->
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -2017,9 +2017,6 @@ ret &quot;fuga:存在しない&quot; | bind &quot;maybe_ls&quot; | bind &quot;ma
             <li class="hatena-bookmark"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></img></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
             <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
           </ul>
-          <footer>
-            <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
-          </footer>
 
         </div> <!-- /span9 -->
         <div class="span3">
@@ -2039,6 +2036,9 @@ ret &quot;fuga:存在しない&quot; | bind &quot;maybe_ls&quot; | bind &quot;ma
           </div>
         </div> <!-- /span3 -->
       </div> <!-- /row -->
+      <footer>
+        <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
+      </footer>
     </div> <!-- /container -->
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -2291,9 +2291,6 @@ myfunc(new Integer(1));</code></pre>
             <li class="hatena-bookmark"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></img></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
             <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
           </ul>
-          <footer>
-            <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
-          </footer>
 
         </div> <!-- /span9 -->
         <div class="span3">
@@ -2313,6 +2310,9 @@ myfunc(new Integer(1));</code></pre>
           </div>
         </div> <!-- /span3 -->
       </div> <!-- /row -->
+      <footer>
+        <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
+      </footer>
     </div> <!-- /container -->
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -2482,9 +2482,6 @@ myfunc(new Integer(1));</code></pre>
             <li class="hatena-bookmark"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></img></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
             <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
           </ul>
-          <footer>
-            <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
-          </footer>
 
         </div> <!-- /span9 -->
         <div class="span3">
@@ -2504,6 +2501,9 @@ myfunc(new Integer(1));</code></pre>
           </div>
         </div> <!-- /span3 -->
       </div> <!-- /row -->
+      <footer>
+        <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
+      </footer>
     </div> <!-- /container -->
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -2674,9 +2674,6 @@ $className::method();</code></pre>
             <li class="hatena-bookmark"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></img></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
             <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
           </ul>
-          <footer>
-            <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
-          </footer>
 
         </div> <!-- /span9 -->
         <div class="span3">
@@ -2696,6 +2693,9 @@ $className::method();</code></pre>
           </div>
         </div> <!-- /span3 -->
       </div> <!-- /row -->
+      <footer>
+        <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
+      </footer>
     </div> <!-- /container -->
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -2880,9 +2880,6 @@ $className::method();</code></pre>
             <li class="hatena-bookmark"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></img></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
             <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
           </ul>
-          <footer>
-            <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
-          </footer>
 
         </div> <!-- /span9 -->
         <div class="span3">
@@ -2902,6 +2899,9 @@ $className::method();</code></pre>
           </div>
         </div> <!-- /span3 -->
       </div> <!-- /row -->
+      <footer>
+        <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
+      </footer>
     </div> <!-- /container -->
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -3053,9 +3053,6 @@ $className::method();</code></pre>
             <li class="hatena-bookmark"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></img></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
             <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
           </ul>
-          <footer>
-            <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
-          </footer>
 
         </div> <!-- /span9 -->
         <div class="span3">
@@ -3075,6 +3072,9 @@ $className::method();</code></pre>
           </div>
         </div> <!-- /span3 -->
       </div> <!-- /row -->
+      <footer>
+        <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
+      </footer>
     </div> <!-- /container -->
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -3236,9 +3236,6 @@ $className::method();</code></pre>
             <li class="hatena-bookmark"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></img></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
             <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
           </ul>
-          <footer>
-            <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
-          </footer>
 
         </div> <!-- /span9 -->
         <div class="span3">
@@ -3258,6 +3255,9 @@ $className::method();</code></pre>
           </div>
         </div> <!-- /span3 -->
       </div> <!-- /row -->
+      <footer>
+        <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
+      </footer>
     </div> <!-- /container -->
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -3445,9 +3445,6 @@ $className::method();</code></pre>
             <li class="hatena-bookmark"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></img></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
             <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
           </ul>
-          <footer>
-            <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
-          </footer>
 
         </div> <!-- /span9 -->
         <div class="span3">
@@ -3467,6 +3464,9 @@ $className::method();</code></pre>
           </div>
         </div> <!-- /span3 -->
       </div> <!-- /row -->
+      <footer>
+        <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
+      </footer>
     </div> <!-- /container -->
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
