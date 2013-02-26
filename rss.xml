@@ -160,7 +160,7 @@ myOr _ b = b</code></pre>
           <div class="sidebar-module">
             <div class="title">プロフィール</div>
             <p class="id"><a href="https://twitter.com/dekokun">dekokun</a></p>
-            <p><img src="../img/dekokun.png"></p>
+            <p><a href="https://twitter.com/dekokun"><img src="../img/dekokun.png"></a></p>
           </div>
           <div class="sidebar-module visible-desktop">
             <div class="title">twitter</div>
@@ -354,7 +354,7 @@ myOr _ b = b</code></pre>
           <div class="sidebar-module">
             <div class="title">プロフィール</div>
             <p class="id"><a href="https://twitter.com/dekokun">dekokun</a></p>
-            <p><img src="../img/dekokun.png"></p>
+            <p><a href="https://twitter.com/dekokun"><img src="../img/dekokun.png"></a></p>
           </div>
           <div class="sidebar-module visible-desktop">
             <div class="title">twitter</div>
@@ -602,7 +602,7 @@ func</code></pre>
           <div class="sidebar-module">
             <div class="title">プロフィール</div>
             <p class="id"><a href="https://twitter.com/dekokun">dekokun</a></p>
-            <p><img src="../img/dekokun.png"></p>
+            <p><a href="https://twitter.com/dekokun"><img src="../img/dekokun.png"></a></p>
           </div>
           <div class="sidebar-module visible-desktop">
             <div class="title">twitter</div>
@@ -792,7 +792,7 @@ $(function(){
           <div class="sidebar-module">
             <div class="title">プロフィール</div>
             <p class="id"><a href="https://twitter.com/dekokun">dekokun</a></p>
-            <p><img src="../img/dekokun.png"></p>
+            <p><a href="https://twitter.com/dekokun"><img src="../img/dekokun.png"></a></p>
           </div>
           <div class="sidebar-module visible-desktop">
             <div class="title">twitter</div>
@@ -960,7 +960,7 @@ $(function(){
           <div class="sidebar-module">
             <div class="title">プロフィール</div>
             <p class="id"><a href="https://twitter.com/dekokun">dekokun</a></p>
-            <p><img src="../img/dekokun.png"></p>
+            <p><a href="https://twitter.com/dekokun"><img src="../img/dekokun.png"></a></p>
           </div>
           <div class="sidebar-module visible-desktop">
             <div class="title">twitter</div>
@@ -1138,7 +1138,7 @@ $(function(){
           <div class="sidebar-module">
             <div class="title">プロフィール</div>
             <p class="id"><a href="https://twitter.com/dekokun">dekokun</a></p>
-            <p><img src="../img/dekokun.png"></p>
+            <p><a href="https://twitter.com/dekokun"><img src="../img/dekokun.png"></a></p>
           </div>
           <div class="sidebar-module visible-desktop">
             <div class="title">twitter</div>
@@ -1389,7 +1389,7 @@ $(function(){
           <div class="sidebar-module">
             <div class="title">プロフィール</div>
             <p class="id"><a href="https://twitter.com/dekokun">dekokun</a></p>
-            <p><img src="../img/dekokun.png"></p>
+            <p><a href="https://twitter.com/dekokun"><img src="../img/dekokun.png"></a></p>
           </div>
           <div class="sidebar-module visible-desktop">
             <div class="title">twitter</div>
@@ -1636,7 +1636,7 @@ ret &quot;fuga:存在しない&quot; | bind &quot;maybe_ls&quot; | bind &quot;ma
           <div class="sidebar-module">
             <div class="title">プロフィール</div>
             <p class="id"><a href="https://twitter.com/dekokun">dekokun</a></p>
-            <p><img src="../img/dekokun.png"></p>
+            <p><a href="https://twitter.com/dekokun"><img src="../img/dekokun.png"></a></p>
           </div>
           <div class="sidebar-module visible-desktop">
             <div class="title">twitter</div>
@@ -2023,7 +2023,7 @@ ret &quot;fuga:存在しない&quot; | bind &quot;maybe_ls&quot; | bind &quot;ma
           <div class="sidebar-module">
             <div class="title">プロフィール</div>
             <p class="id"><a href="https://twitter.com/dekokun">dekokun</a></p>
-            <p><img src="../img/dekokun.png"></p>
+            <p><a href="https://twitter.com/dekokun"><img src="../img/dekokun.png"></a></p>
           </div>
           <div class="sidebar-module visible-desktop">
             <div class="title">twitter</div>
@@ -2297,7 +2297,7 @@ myfunc(new Integer(1));</code></pre>
           <div class="sidebar-module">
             <div class="title">プロフィール</div>
             <p class="id"><a href="https://twitter.com/dekokun">dekokun</a></p>
-            <p><img src="../img/dekokun.png"></p>
+            <p><a href="https://twitter.com/dekokun"><img src="../img/dekokun.png"></a></p>
           </div>
           <div class="sidebar-module visible-desktop">
             <div class="title">twitter</div>
@@ -2488,7 +2488,7 @@ myfunc(new Integer(1));</code></pre>
           <div class="sidebar-module">
             <div class="title">プロフィール</div>
             <p class="id"><a href="https://twitter.com/dekokun">dekokun</a></p>
-            <p><img src="../img/dekokun.png"></p>
+            <p><a href="https://twitter.com/dekokun"><img src="../img/dekokun.png"></a></p>
           </div>
           <div class="sidebar-module visible-desktop">
             <div class="title">twitter</div>
@@ -2680,7 +2680,7 @@ $className::method();</code></pre>
           <div class="sidebar-module">
             <div class="title">プロフィール</div>
             <p class="id"><a href="https://twitter.com/dekokun">dekokun</a></p>
-            <p><img src="../img/dekokun.png"></p>
+            <p><a href="https://twitter.com/dekokun"><img src="../img/dekokun.png"></a></p>
           </div>
           <div class="sidebar-module visible-desktop">
             <div class="title">twitter</div>
@@ -2886,7 +2886,7 @@ $className::method();</code></pre>
           <div class="sidebar-module">
             <div class="title">プロフィール</div>
             <p class="id"><a href="https://twitter.com/dekokun">dekokun</a></p>
-            <p><img src="../img/dekokun.png"></p>
+            <p><a href="https://twitter.com/dekokun"><img src="../img/dekokun.png"></a></p>
           </div>
           <div class="sidebar-module visible-desktop">
             <div class="title">twitter</div>
@@ -3059,7 +3059,7 @@ $className::method();</code></pre>
           <div class="sidebar-module">
             <div class="title">プロフィール</div>
             <p class="id"><a href="https://twitter.com/dekokun">dekokun</a></p>
-            <p><img src="../img/dekokun.png"></p>
+            <p><a href="https://twitter.com/dekokun"><img src="../img/dekokun.png"></a></p>
           </div>
           <div class="sidebar-module visible-desktop">
             <div class="title">twitter</div>
@@ -3242,7 +3242,7 @@ $className::method();</code></pre>
           <div class="sidebar-module">
             <div class="title">プロフィール</div>
             <p class="id"><a href="https://twitter.com/dekokun">dekokun</a></p>
-            <p><img src="../img/dekokun.png"></p>
+            <p><a href="https://twitter.com/dekokun"><img src="../img/dekokun.png"></a></p>
           </div>
           <div class="sidebar-module visible-desktop">
             <div class="title">twitter</div>
@@ -3451,7 +3451,7 @@ $className::method();</code></pre>
           <div class="sidebar-module">
             <div class="title">プロフィール</div>
             <p class="id"><a href="https://twitter.com/dekokun">dekokun</a></p>
-            <p><img src="../img/dekokun.png"></p>
+            <p><a href="https://twitter.com/dekokun"><img src="../img/dekokun.png"></a></p>
           </div>
           <div class="sidebar-module visible-desktop">
             <div class="title">twitter</div>
