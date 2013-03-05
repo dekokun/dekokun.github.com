@@ -3603,7 +3603,9 @@ $className::method();</code></pre>
 <li>今回の記事とは関係ないですが、JenkinsのPhingプラグインの設定のPHING_HOME欄の入力は間違えやすいので注意。Phingの実行ファイルを指定するのではなく、Phingのclassesとbinディレクトリが存在するディレクトリを指定する必要があります。phingの実行ファイルを指定しても、“/hoge/fuga/phing/bin/phingが存在しません。”というエラーが出ます。ググったところ同じような現象で悩んでいる人がちらほらいるようですね。</li>
 </ul>
 <h2 id="あとがき">あとがき</h2>
-<p>どうでもいいですが、Phing使ってるPHPユーザってどれくらいいるんだろうか… Phingのプロジェクトを作成しながら、「2013年にもなってなぜAntのことを調べているんだ私は」という思いがひしひしとしました。 みんな<a href="http://www.php-maven.org/">Maven for PHP</a>使ってたりするのかな。</p>
+<p>どうでもいいですが、Phing使ってるPHPユーザってどれくらいいるんだろうか…</p>
+<p>Phingのプロジェクトを作成しながら、「2013年にもなってなぜAntのことを調べているんだ私は」という思いがひしひしとしました。</p>
+<p>みんな<a href="http://www.php-maven.org/">Maven for PHP</a>使ってたりするのかな。</p>
 
 <div id="disqus_thread"></div>
 <script type="text/javascript">
