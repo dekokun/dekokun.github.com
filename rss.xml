@@ -3591,12 +3591,16 @@ $className::method();</code></pre>
 
 <p>Tagged as: <a href="../tags/Composer.html">Composer</a>, <a href="../tags/PHP.html">PHP</a>, <a href="../tags/Phing.html">Phing</a>, <a href="../tags/Jenkins.html">Jenkins</a>.</p>
 
+<p>皆さん、<a href="http://ant.apache.org/">Apache Ant</a>をベースとしたPHPのプロジェクトビルドシステム、<a href="http://www.phing.info/">Phing</a>を使ってますか？</p>
+<p>今日はComposerでインストールしたPhingをJenkinsから起動する方法について</p>
 <h2 id="概要">概要</h2>
 <p>Jenkinsからのビルド中に<code>php composer.phar install</code>でインストールしたPhingを使用しビルドを行う方法について。 ついでに、JenkinsのPhingプラグインのハマりどころなど(今回の解決策ではPhingプラグインを使ってないけど)</p>
 <h2 id="解答">解答</h2>
 <p>ジョブの設定の「シェルの実行」から</p>
 <p><code>vendor/bin/phing -logger phing.listener.DefaultLogger</code></p>
-<p>めでたしめでたし。-loggerの部分を指定しないとJenkinsの「コンソール出力」上で確認できるログに、ターミナル上で色をつけるための制御文字が出力され表示が崩れます。</p>
+<p>-loggerの部分を指定しないとJenkinsの「コンソール出力」上で確認できるログに、ターミナル上で色をつけるための制御文字が出力され表示が崩れます。</p>
+<p>めでたしめでたし。…こんな誰でも思いつく方法ですみませんすみません＞＜</p>
+<p>結論としては、JenkinsのPhingプラグインの現在の挙動では要件を満たせないという話なのでした。</p>
 <h2 id="jenkinsのphingプラグインについて">JenkinsのPhingプラグインについて</h2>
 <ul>
 <li>今回はプロジェクト内にビルドの一環でインストールするPhingを相対パス指定で実行したかったわけですが、Phingプラグインは絶対パスでの指定かつ、すでに存在しているPhingでないと実行してくれなかったため使うのはやめました。これはこれで妥当な挙動だとは思うので、pull requestを送るかどうかは要検討(Jenkinsのプラグインがどのようにできているかを知らないため、その勉強の意味でやってみようかしら)。</li>
