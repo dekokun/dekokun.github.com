@@ -3587,7 +3587,7 @@ $className::method();</code></pre>
         <div class="span9">
           <h1>Composerからプロジェクト内にインストールしたPhingをJenkinsで実行</h1>
 
-<p>by <em><a href="https://twitter.com/dekokun">@dekokun</a></em> on <strong>2012/07/22 07:28</strong></p>
+<p>by <em><a href="https://twitter.com/dekokun">@dekokun</a></em> on <strong>2013/03/06 7:34</strong></p>
 
 <p>Tagged as: <a href="../tags/Composer.html">Composer</a>, <a href="../tags/PHP.html">PHP</a>, <a href="../tags/Phing.html">Phing</a>, <a href="../tags/Jenkins.html">Jenkins</a>.</p>
 
