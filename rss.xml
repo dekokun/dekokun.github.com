@@ -53,28 +53,30 @@
       fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
     </script>
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="../index.html">机上日記</a>
-          <div class="nav-collapse">
-            <ul class="nav">
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="../posts.html">Archive</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
+    <header>
+      <nav class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="../index.html">机上日記</a>
+            <div class="nav-collapse">
+              <ul class="nav">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../posts.html">Archive</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
         </div>
-      </div>
-    </div>
+      </nav>
+    </header>
 
     <div class="container">
       <div class="row">
-        <div class="span9">
+        <article class="span9">
           <h1>「第2回 スタートHaskell2」行ってきた</h1>
 
 <p>by <em><a href="https://twitter.com/dekokun">@dekokun</a></em> on <strong>2012/07/22 07:28</strong></p>
@@ -149,13 +151,14 @@ myOr _ b = b</code></pre>
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
           <ul class="social">
+            <li class="kindle"><div class="kindleWidget"><img style="vertical-align:middle;" src="https://d1xnn692s7u6t6.cloudfront.net/white-15.png"></img><span style="vertical-align:middle;margin-left:3px;">Send to Kindle</span></div></li>
+            <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
             <li class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="dekokun" data-lang="ja">ツイート</a></li>
             <li class="hatena-bookmark"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
-            <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
           </ul>
 
-        </div> <!-- /span9 -->
-        <div class="span3">
+        </article>
+        <aside class="span3">
           <div class="sidebar-module">
             <div class="title">プロフィール</div>
             <p class="id"><a href="https://twitter.com/dekokun">dekokun</a></p>
@@ -170,7 +173,7 @@ myOr _ b = b</code></pre>
             <div class="title">RSS</div>
             <p><a href="../rss.xml"><img src="../img/rss.gif" alt="rss"></a></p>
           </div>
-        </div> <!-- /span3 -->
+        </aside> <!-- /span3 -->
       </div> <!-- /row -->
       <footer>
         <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
@@ -205,6 +208,8 @@ myOr _ b = b</code></pre>
         prettyPrint();
     });
     </script>
+    <script type="text/javascript" src="https://d1xnn692s7u6t6.cloudfront.net/widget.js"></script>
+    <script type="text/javascript">(function k(){window.$SendToKindle&&window.$SendToKindle.Widget?$SendToKindle.Widget.init({"content":"article"}):setTimeout(k,500);})();</script>
   </body>
 </html>
 ]]></description>
@@ -257,28 +262,30 @@ myOr _ b = b</code></pre>
       fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
     </script>
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="../index.html">机上日記</a>
-          <div class="nav-collapse">
-            <ul class="nav">
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="../posts.html">Archive</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
+    <header>
+      <nav class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="../index.html">机上日記</a>
+            <div class="nav-collapse">
+              <ul class="nav">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../posts.html">Archive</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
         </div>
-      </div>
-    </div>
+      </nav>
+    </header>
 
     <div class="container">
       <div class="row">
-        <div class="span9">
+        <article class="span9">
           <h1>ブログ移設しました！！！</h1>
 
 <p>by <em><a href="https://twitter.com/dekokun">@dekokun</a></em> on <strong>2012/07/23</strong></p>
@@ -344,13 +351,14 @@ myOr _ b = b</code></pre>
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
           <ul class="social">
+            <li class="kindle"><div class="kindleWidget"><img style="vertical-align:middle;" src="https://d1xnn692s7u6t6.cloudfront.net/white-15.png"></img><span style="vertical-align:middle;margin-left:3px;">Send to Kindle</span></div></li>
+            <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
             <li class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="dekokun" data-lang="ja">ツイート</a></li>
             <li class="hatena-bookmark"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
-            <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
           </ul>
 
-        </div> <!-- /span9 -->
-        <div class="span3">
+        </article>
+        <aside class="span3">
           <div class="sidebar-module">
             <div class="title">プロフィール</div>
             <p class="id"><a href="https://twitter.com/dekokun">dekokun</a></p>
@@ -365,7 +373,7 @@ myOr _ b = b</code></pre>
             <div class="title">RSS</div>
             <p><a href="../rss.xml"><img src="../img/rss.gif" alt="rss"></a></p>
           </div>
-        </div> <!-- /span3 -->
+        </aside> <!-- /span3 -->
       </div> <!-- /row -->
       <footer>
         <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
@@ -400,6 +408,8 @@ myOr _ b = b</code></pre>
         prettyPrint();
     });
     </script>
+    <script type="text/javascript" src="https://d1xnn692s7u6t6.cloudfront.net/widget.js"></script>
+    <script type="text/javascript">(function k(){window.$SendToKindle&&window.$SendToKindle.Widget?$SendToKindle.Widget.init({"content":"article"}):setTimeout(k,500);})();</script>
   </body>
 </html>
 ]]></description>
@@ -452,28 +462,30 @@ myOr _ b = b</code></pre>
       fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
     </script>
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="../index.html">机上日記</a>
-          <div class="nav-collapse">
-            <ul class="nav">
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="../posts.html">Archive</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
+    <header>
+      <nav class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="../index.html">机上日記</a>
+            <div class="nav-collapse">
+              <ul class="nav">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../posts.html">Archive</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
         </div>
-      </div>
-    </div>
+      </nav>
+    </header>
 
     <div class="container">
       <div class="row">
-        <div class="span9">
+        <article class="span9">
           <h1>シェルスクリプトでクロージャ(的な何か)</h1>
 
 <p>by <em><a href="https://twitter.com/dekokun">@dekokun</a></em> on <strong>2012/07/24 10:43</strong></p>
@@ -593,13 +605,14 @@ func</code></pre>
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
           <ul class="social">
+            <li class="kindle"><div class="kindleWidget"><img style="vertical-align:middle;" src="https://d1xnn692s7u6t6.cloudfront.net/white-15.png"></img><span style="vertical-align:middle;margin-left:3px;">Send to Kindle</span></div></li>
+            <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
             <li class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="dekokun" data-lang="ja">ツイート</a></li>
             <li class="hatena-bookmark"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
-            <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
           </ul>
 
-        </div> <!-- /span9 -->
-        <div class="span3">
+        </article>
+        <aside class="span3">
           <div class="sidebar-module">
             <div class="title">プロフィール</div>
             <p class="id"><a href="https://twitter.com/dekokun">dekokun</a></p>
@@ -614,7 +627,7 @@ func</code></pre>
             <div class="title">RSS</div>
             <p><a href="../rss.xml"><img src="../img/rss.gif" alt="rss"></a></p>
           </div>
-        </div> <!-- /span3 -->
+        </aside> <!-- /span3 -->
       </div> <!-- /row -->
       <footer>
         <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
@@ -649,6 +662,8 @@ func</code></pre>
         prettyPrint();
     });
     </script>
+    <script type="text/javascript" src="https://d1xnn692s7u6t6.cloudfront.net/widget.js"></script>
+    <script type="text/javascript">(function k(){window.$SendToKindle&&window.$SendToKindle.Widget?$SendToKindle.Widget.init({"content":"article"}):setTimeout(k,500);})();</script>
   </body>
 </html>
 ]]></description>
@@ -701,28 +716,30 @@ func</code></pre>
       fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
     </script>
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="../index.html">机上日記</a>
-          <div class="nav-collapse">
-            <ul class="nav">
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="../posts.html">Archive</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
+    <header>
+      <nav class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="../index.html">机上日記</a>
+            <div class="nav-collapse">
+              <ul class="nav">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../posts.html">Archive</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
         </div>
-      </div>
-    </div>
+      </nav>
+    </header>
 
     <div class="container">
       <div class="row">
-        <div class="span9">
+        <article class="span9">
           <h1>シンタックスハイライト追加</h1>
 
 <p>by <em><a href="https://twitter.com/dekokun">@dekokun</a></em> on <strong>2012/07/29</strong></p>
@@ -784,13 +801,14 @@ $(function(){
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
           <ul class="social">
+            <li class="kindle"><div class="kindleWidget"><img style="vertical-align:middle;" src="https://d1xnn692s7u6t6.cloudfront.net/white-15.png"></img><span style="vertical-align:middle;margin-left:3px;">Send to Kindle</span></div></li>
+            <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
             <li class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="dekokun" data-lang="ja">ツイート</a></li>
             <li class="hatena-bookmark"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
-            <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
           </ul>
 
-        </div> <!-- /span9 -->
-        <div class="span3">
+        </article>
+        <aside class="span3">
           <div class="sidebar-module">
             <div class="title">プロフィール</div>
             <p class="id"><a href="https://twitter.com/dekokun">dekokun</a></p>
@@ -805,7 +823,7 @@ $(function(){
             <div class="title">RSS</div>
             <p><a href="../rss.xml"><img src="../img/rss.gif" alt="rss"></a></p>
           </div>
-        </div> <!-- /span3 -->
+        </aside> <!-- /span3 -->
       </div> <!-- /row -->
       <footer>
         <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
@@ -840,6 +858,8 @@ $(function(){
         prettyPrint();
     });
     </script>
+    <script type="text/javascript" src="https://d1xnn692s7u6t6.cloudfront.net/widget.js"></script>
+    <script type="text/javascript">(function k(){window.$SendToKindle&&window.$SendToKindle.Widget?$SendToKindle.Widget.init({"content":"article"}):setTimeout(k,500);})();</script>
   </body>
 </html>
 ]]></description>
@@ -892,28 +912,30 @@ $(function(){
       fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
     </script>
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="../index.html">机上日記</a>
-          <div class="nav-collapse">
-            <ul class="nav">
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="../posts.html">Archive</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
+    <header>
+      <nav class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="../index.html">机上日記</a>
+            <div class="nav-collapse">
+              <ul class="nav">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../posts.html">Archive</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
         </div>
-      </div>
-    </div>
+      </nav>
+    </header>
 
     <div class="container">
       <div class="row">
-        <div class="span9">
+        <article class="span9">
           <h1>Hakyllで作成したブログにRSS機能追加</h1>
 
 <p>by <em><a href="https://twitter.com/dekokun">@dekokun</a></em> on <strong>2012/07/29</strong></p>
@@ -953,13 +975,14 @@ $(function(){
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
           <ul class="social">
+            <li class="kindle"><div class="kindleWidget"><img style="vertical-align:middle;" src="https://d1xnn692s7u6t6.cloudfront.net/white-15.png"></img><span style="vertical-align:middle;margin-left:3px;">Send to Kindle</span></div></li>
+            <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
             <li class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="dekokun" data-lang="ja">ツイート</a></li>
             <li class="hatena-bookmark"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
-            <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
           </ul>
 
-        </div> <!-- /span9 -->
-        <div class="span3">
+        </article>
+        <aside class="span3">
           <div class="sidebar-module">
             <div class="title">プロフィール</div>
             <p class="id"><a href="https://twitter.com/dekokun">dekokun</a></p>
@@ -974,7 +997,7 @@ $(function(){
             <div class="title">RSS</div>
             <p><a href="../rss.xml"><img src="../img/rss.gif" alt="rss"></a></p>
           </div>
-        </div> <!-- /span3 -->
+        </aside> <!-- /span3 -->
       </div> <!-- /row -->
       <footer>
         <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
@@ -1009,6 +1032,8 @@ $(function(){
         prettyPrint();
     });
     </script>
+    <script type="text/javascript" src="https://d1xnn692s7u6t6.cloudfront.net/widget.js"></script>
+    <script type="text/javascript">(function k(){window.$SendToKindle&&window.$SendToKindle.Widget?$SendToKindle.Widget.init({"content":"article"}):setTimeout(k,500);})();</script>
   </body>
 </html>
 ]]></description>
@@ -1061,28 +1086,30 @@ $(function(){
       fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
     </script>
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="../index.html">机上日記</a>
-          <div class="nav-collapse">
-            <ul class="nav">
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="../posts.html">Archive</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
+    <header>
+      <nav class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="../index.html">机上日記</a>
+            <div class="nav-collapse">
+              <ul class="nav">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../posts.html">Archive</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
         </div>
-      </div>
-    </div>
+      </nav>
+    </header>
 
     <div class="container">
       <div class="row">
-        <div class="span9">
+        <article class="span9">
           <h1>GitHub Pagesでのビルド失敗</h1>
 
 <p>by <em><a href="https://twitter.com/dekokun">@dekokun</a></em> on <strong>2012/07/29 15:03</strong></p>
@@ -1132,13 +1159,14 @@ $(function(){
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
           <ul class="social">
+            <li class="kindle"><div class="kindleWidget"><img style="vertical-align:middle;" src="https://d1xnn692s7u6t6.cloudfront.net/white-15.png"></img><span style="vertical-align:middle;margin-left:3px;">Send to Kindle</span></div></li>
+            <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
             <li class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="dekokun" data-lang="ja">ツイート</a></li>
             <li class="hatena-bookmark"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
-            <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
           </ul>
 
-        </div> <!-- /span9 -->
-        <div class="span3">
+        </article>
+        <aside class="span3">
           <div class="sidebar-module">
             <div class="title">プロフィール</div>
             <p class="id"><a href="https://twitter.com/dekokun">dekokun</a></p>
@@ -1153,7 +1181,7 @@ $(function(){
             <div class="title">RSS</div>
             <p><a href="../rss.xml"><img src="../img/rss.gif" alt="rss"></a></p>
           </div>
-        </div> <!-- /span3 -->
+        </aside> <!-- /span3 -->
       </div> <!-- /row -->
       <footer>
         <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
@@ -1188,6 +1216,8 @@ $(function(){
         prettyPrint();
     });
     </script>
+    <script type="text/javascript" src="https://d1xnn692s7u6t6.cloudfront.net/widget.js"></script>
+    <script type="text/javascript">(function k(){window.$SendToKindle&&window.$SendToKindle.Widget?$SendToKindle.Widget.init({"content":"article"}):setTimeout(k,500);})();</script>
   </body>
 </html>
 ]]></description>
@@ -1240,28 +1270,30 @@ $(function(){
       fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
     </script>
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="../index.html">机上日記</a>
-          <div class="nav-collapse">
-            <ul class="nav">
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="../posts.html">Archive</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
+    <header>
+      <nav class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="../index.html">机上日記</a>
+            <div class="nav-collapse">
+              <ul class="nav">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../posts.html">Archive</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
         </div>
-      </div>
-    </div>
+      </nav>
+    </header>
 
     <div class="container">
       <div class="row">
-        <div class="span9">
+        <article class="span9">
           <h1>夏サミ感想(グリーを支えるソーシャルコーディングのすべてについて)</h1>
 
 <p>by <em><a href="https://twitter.com/dekokun">@dekokun</a></em> on <strong>2012/07/29</strong></p>
@@ -1384,13 +1416,14 @@ $(function(){
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
           <ul class="social">
+            <li class="kindle"><div class="kindleWidget"><img style="vertical-align:middle;" src="https://d1xnn692s7u6t6.cloudfront.net/white-15.png"></img><span style="vertical-align:middle;margin-left:3px;">Send to Kindle</span></div></li>
+            <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
             <li class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="dekokun" data-lang="ja">ツイート</a></li>
             <li class="hatena-bookmark"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
-            <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
           </ul>
 
-        </div> <!-- /span9 -->
-        <div class="span3">
+        </article>
+        <aside class="span3">
           <div class="sidebar-module">
             <div class="title">プロフィール</div>
             <p class="id"><a href="https://twitter.com/dekokun">dekokun</a></p>
@@ -1405,7 +1438,7 @@ $(function(){
             <div class="title">RSS</div>
             <p><a href="../rss.xml"><img src="../img/rss.gif" alt="rss"></a></p>
           </div>
-        </div> <!-- /span3 -->
+        </aside> <!-- /span3 -->
       </div> <!-- /row -->
       <footer>
         <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
@@ -1440,6 +1473,8 @@ $(function(){
         prettyPrint();
     });
     </script>
+    <script type="text/javascript" src="https://d1xnn692s7u6t6.cloudfront.net/widget.js"></script>
+    <script type="text/javascript">(function k(){window.$SendToKindle&&window.$SendToKindle.Widget?$SendToKindle.Widget.init({"content":"article"}):setTimeout(k,500);})();</script>
   </body>
 </html>
 ]]></description>
@@ -1492,28 +1527,30 @@ $(function(){
       fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
     </script>
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="../index.html">机上日記</a>
-          <div class="nav-collapse">
-            <ul class="nav">
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="../posts.html">Archive</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
+    <header>
+      <nav class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="../index.html">机上日記</a>
+            <div class="nav-collapse">
+              <ul class="nav">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../posts.html">Archive</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
         </div>
-      </div>
-    </div>
+      </nav>
+    </header>
 
     <div class="container">
       <div class="row">
-        <div class="span9">
+        <article class="span9">
           <h1>シェルスクリプトでMaybeモナド(その1)</h1>
 
 <p>by <em><a href="https://twitter.com/dekokun">@dekokun</a></em> on <strong>2012/08/05 13:46</strong></p>
@@ -1632,13 +1669,14 @@ ret &quot;fuga:存在しない&quot; | bind &quot;maybe_ls&quot; | bind &quot;ma
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
           <ul class="social">
+            <li class="kindle"><div class="kindleWidget"><img style="vertical-align:middle;" src="https://d1xnn692s7u6t6.cloudfront.net/white-15.png"></img><span style="vertical-align:middle;margin-left:3px;">Send to Kindle</span></div></li>
+            <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
             <li class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="dekokun" data-lang="ja">ツイート</a></li>
             <li class="hatena-bookmark"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
-            <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
           </ul>
 
-        </div> <!-- /span9 -->
-        <div class="span3">
+        </article>
+        <aside class="span3">
           <div class="sidebar-module">
             <div class="title">プロフィール</div>
             <p class="id"><a href="https://twitter.com/dekokun">dekokun</a></p>
@@ -1653,7 +1691,7 @@ ret &quot;fuga:存在しない&quot; | bind &quot;maybe_ls&quot; | bind &quot;ma
             <div class="title">RSS</div>
             <p><a href="../rss.xml"><img src="../img/rss.gif" alt="rss"></a></p>
           </div>
-        </div> <!-- /span3 -->
+        </aside> <!-- /span3 -->
       </div> <!-- /row -->
       <footer>
         <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
@@ -1688,6 +1726,8 @@ ret &quot;fuga:存在しない&quot; | bind &quot;maybe_ls&quot; | bind &quot;ma
         prettyPrint();
     });
     </script>
+    <script type="text/javascript" src="https://d1xnn692s7u6t6.cloudfront.net/widget.js"></script>
+    <script type="text/javascript">(function k(){window.$SendToKindle&&window.$SendToKindle.Widget?$SendToKindle.Widget.init({"content":"article"}):setTimeout(k,500);})();</script>
   </body>
 </html>
 ]]></description>
@@ -1740,28 +1780,30 @@ ret &quot;fuga:存在しない&quot; | bind &quot;maybe_ls&quot; | bind &quot;ma
       fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
     </script>
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="../index.html">机上日記</a>
-          <div class="nav-collapse">
-            <ul class="nav">
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="../posts.html">Archive</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
+    <header>
+      <nav class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="../index.html">机上日記</a>
+            <div class="nav-collapse">
+              <ul class="nav">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../posts.html">Archive</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
         </div>
-      </div>
-    </div>
+      </nav>
+    </header>
 
     <div class="container">
       <div class="row">
-        <div class="span9">
+        <article class="span9">
           <h1>「HTML5 Conference」行ってきた 「次世代Web技術を切り開くゲーム開発者たち」メモ</h1>
 
 <p>by <em><a href="https://twitter.com/dekokun">@dekokun</a></em> on <strong>2012/09/08 16:45</strong></p>
@@ -2020,13 +2062,14 @@ ret &quot;fuga:存在しない&quot; | bind &quot;maybe_ls&quot; | bind &quot;ma
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
           <ul class="social">
+            <li class="kindle"><div class="kindleWidget"><img style="vertical-align:middle;" src="https://d1xnn692s7u6t6.cloudfront.net/white-15.png"></img><span style="vertical-align:middle;margin-left:3px;">Send to Kindle</span></div></li>
+            <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
             <li class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="dekokun" data-lang="ja">ツイート</a></li>
             <li class="hatena-bookmark"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
-            <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
           </ul>
 
-        </div> <!-- /span9 -->
-        <div class="span3">
+        </article>
+        <aside class="span3">
           <div class="sidebar-module">
             <div class="title">プロフィール</div>
             <p class="id"><a href="https://twitter.com/dekokun">dekokun</a></p>
@@ -2041,7 +2084,7 @@ ret &quot;fuga:存在しない&quot; | bind &quot;maybe_ls&quot; | bind &quot;ma
             <div class="title">RSS</div>
             <p><a href="../rss.xml"><img src="../img/rss.gif" alt="rss"></a></p>
           </div>
-        </div> <!-- /span3 -->
+        </aside> <!-- /span3 -->
       </div> <!-- /row -->
       <footer>
         <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
@@ -2076,6 +2119,8 @@ ret &quot;fuga:存在しない&quot; | bind &quot;maybe_ls&quot; | bind &quot;ma
         prettyPrint();
     });
     </script>
+    <script type="text/javascript" src="https://d1xnn692s7u6t6.cloudfront.net/widget.js"></script>
+    <script type="text/javascript">(function k(){window.$SendToKindle&&window.$SendToKindle.Widget?$SendToKindle.Widget.init({"content":"article"}):setTimeout(k,500);})();</script>
   </body>
 </html>
 ]]></description>
@@ -2128,28 +2173,30 @@ ret &quot;fuga:存在しない&quot; | bind &quot;maybe_ls&quot; | bind &quot;ma
       fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
     </script>
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="../index.html">机上日記</a>
-          <div class="nav-collapse">
-            <ul class="nav">
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="../posts.html">Archive</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
+    <header>
+      <nav class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="../index.html">机上日記</a>
+            <div class="nav-collapse">
+              <ul class="nav">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../posts.html">Archive</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
         </div>
-      </div>
-    </div>
+      </nav>
+    </header>
 
     <div class="container">
       <div class="row">
-        <div class="span9">
+        <article class="span9">
           <h1>PHP5.3にてタイプヒンティングでスカラー型が使える！？(勘違い編)</h1>
 
 <p>by <em><a href="https://twitter.com/dekokun">@dekokun</a></em> on <strong>2012/12/05 22:13</strong></p>
@@ -2295,13 +2342,14 @@ myfunc(new Integer(1));</code></pre>
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
           <ul class="social">
+            <li class="kindle"><div class="kindleWidget"><img style="vertical-align:middle;" src="https://d1xnn692s7u6t6.cloudfront.net/white-15.png"></img><span style="vertical-align:middle;margin-left:3px;">Send to Kindle</span></div></li>
+            <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
             <li class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="dekokun" data-lang="ja">ツイート</a></li>
             <li class="hatena-bookmark"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
-            <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
           </ul>
 
-        </div> <!-- /span9 -->
-        <div class="span3">
+        </article>
+        <aside class="span3">
           <div class="sidebar-module">
             <div class="title">プロフィール</div>
             <p class="id"><a href="https://twitter.com/dekokun">dekokun</a></p>
@@ -2316,7 +2364,7 @@ myfunc(new Integer(1));</code></pre>
             <div class="title">RSS</div>
             <p><a href="../rss.xml"><img src="../img/rss.gif" alt="rss"></a></p>
           </div>
-        </div> <!-- /span3 -->
+        </aside> <!-- /span3 -->
       </div> <!-- /row -->
       <footer>
         <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
@@ -2351,6 +2399,8 @@ myfunc(new Integer(1));</code></pre>
         prettyPrint();
     });
     </script>
+    <script type="text/javascript" src="https://d1xnn692s7u6t6.cloudfront.net/widget.js"></script>
+    <script type="text/javascript">(function k(){window.$SendToKindle&&window.$SendToKindle.Widget?$SendToKindle.Widget.init({"content":"article"}):setTimeout(k,500);})();</script>
   </body>
 </html>
 ]]></description>
@@ -2403,28 +2453,30 @@ myfunc(new Integer(1));</code></pre>
       fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
     </script>
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="../index.html">机上日記</a>
-          <div class="nav-collapse">
-            <ul class="nav">
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="../posts.html">Archive</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
+    <header>
+      <nav class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="../index.html">机上日記</a>
+            <div class="nav-collapse">
+              <ul class="nav">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../posts.html">Archive</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
         </div>
-      </div>
-    </div>
+      </nav>
+    </header>
 
     <div class="container">
       <div class="row">
-        <div class="span9">
+        <article class="span9">
           <h1>DevLOVE Conference 2012 に参加した後、これからの私にとって最も大切なこと</h1>
 
 <p>by <em><a href="https://twitter.com/dekokun">@dekokun</a></em> on <strong>2012/12/17 00:38</strong></p>
@@ -2487,13 +2539,14 @@ myfunc(new Integer(1));</code></pre>
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
           <ul class="social">
+            <li class="kindle"><div class="kindleWidget"><img style="vertical-align:middle;" src="https://d1xnn692s7u6t6.cloudfront.net/white-15.png"></img><span style="vertical-align:middle;margin-left:3px;">Send to Kindle</span></div></li>
+            <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
             <li class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="dekokun" data-lang="ja">ツイート</a></li>
             <li class="hatena-bookmark"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
-            <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
           </ul>
 
-        </div> <!-- /span9 -->
-        <div class="span3">
+        </article>
+        <aside class="span3">
           <div class="sidebar-module">
             <div class="title">プロフィール</div>
             <p class="id"><a href="https://twitter.com/dekokun">dekokun</a></p>
@@ -2508,7 +2561,7 @@ myfunc(new Integer(1));</code></pre>
             <div class="title">RSS</div>
             <p><a href="../rss.xml"><img src="../img/rss.gif" alt="rss"></a></p>
           </div>
-        </div> <!-- /span3 -->
+        </aside> <!-- /span3 -->
       </div> <!-- /row -->
       <footer>
         <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
@@ -2543,6 +2596,8 @@ myfunc(new Integer(1));</code></pre>
         prettyPrint();
     });
     </script>
+    <script type="text/javascript" src="https://d1xnn692s7u6t6.cloudfront.net/widget.js"></script>
+    <script type="text/javascript">(function k(){window.$SendToKindle&&window.$SendToKindle.Widget?$SendToKindle.Widget.init({"content":"article"}):setTimeout(k,500);})();</script>
   </body>
 </html>
 ]]></description>
@@ -2595,28 +2650,30 @@ myfunc(new Integer(1));</code></pre>
       fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
     </script>
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="../index.html">机上日記</a>
-          <div class="nav-collapse">
-            <ul class="nav">
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="../posts.html">Archive</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
+    <header>
+      <nav class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="../index.html">机上日記</a>
+            <div class="nav-collapse">
+              <ul class="nav">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../posts.html">Archive</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
         </div>
-      </div>
-    </div>
+      </nav>
+    </header>
 
     <div class="container">
       <div class="row">
-        <div class="span9">
+        <article class="span9">
           <h1>PHPにおいてstaticメソッドの呼び出し元クラスを動的に変更</h1>
 
 <p>by <em><a href="https://twitter.com/dekokun">@dekokun</a></em> on <strong>2013/01/14 20:33</strong></p>
@@ -2680,13 +2737,14 @@ $className::method();</code></pre>
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
           <ul class="social">
+            <li class="kindle"><div class="kindleWidget"><img style="vertical-align:middle;" src="https://d1xnn692s7u6t6.cloudfront.net/white-15.png"></img><span style="vertical-align:middle;margin-left:3px;">Send to Kindle</span></div></li>
+            <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
             <li class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="dekokun" data-lang="ja">ツイート</a></li>
             <li class="hatena-bookmark"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
-            <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
           </ul>
 
-        </div> <!-- /span9 -->
-        <div class="span3">
+        </article>
+        <aside class="span3">
           <div class="sidebar-module">
             <div class="title">プロフィール</div>
             <p class="id"><a href="https://twitter.com/dekokun">dekokun</a></p>
@@ -2701,7 +2759,7 @@ $className::method();</code></pre>
             <div class="title">RSS</div>
             <p><a href="../rss.xml"><img src="../img/rss.gif" alt="rss"></a></p>
           </div>
-        </div> <!-- /span3 -->
+        </aside> <!-- /span3 -->
       </div> <!-- /row -->
       <footer>
         <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
@@ -2736,6 +2794,8 @@ $className::method();</code></pre>
         prettyPrint();
     });
     </script>
+    <script type="text/javascript" src="https://d1xnn692s7u6t6.cloudfront.net/widget.js"></script>
+    <script type="text/javascript">(function k(){window.$SendToKindle&&window.$SendToKindle.Widget?$SendToKindle.Widget.init({"content":"article"}):setTimeout(k,500);})();</script>
   </body>
 </html>
 ]]></description>
@@ -2788,28 +2848,30 @@ $className::method();</code></pre>
       fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
     </script>
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="../index.html">机上日記</a>
-          <div class="nav-collapse">
-            <ul class="nav">
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="../posts.html">Archive</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
+    <header>
+      <nav class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="../index.html">机上日記</a>
+            <div class="nav-collapse">
+              <ul class="nav">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../posts.html">Archive</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
         </div>
-      </div>
-    </div>
+      </nav>
+    </header>
 
     <div class="container">
       <div class="row">
-        <div class="span9">
+        <article class="span9">
           <h1>「第7回 スタートHaskell2(最終回)」行ってきた</h1>
 
 <p>by <em><a href="https://twitter.com/dekokun">@dekokun</a></em> on <strong>2013/01/20 19:26</strong></p>
@@ -2887,13 +2949,14 @@ $className::method();</code></pre>
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
           <ul class="social">
+            <li class="kindle"><div class="kindleWidget"><img style="vertical-align:middle;" src="https://d1xnn692s7u6t6.cloudfront.net/white-15.png"></img><span style="vertical-align:middle;margin-left:3px;">Send to Kindle</span></div></li>
+            <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
             <li class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="dekokun" data-lang="ja">ツイート</a></li>
             <li class="hatena-bookmark"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
-            <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
           </ul>
 
-        </div> <!-- /span9 -->
-        <div class="span3">
+        </article>
+        <aside class="span3">
           <div class="sidebar-module">
             <div class="title">プロフィール</div>
             <p class="id"><a href="https://twitter.com/dekokun">dekokun</a></p>
@@ -2908,7 +2971,7 @@ $className::method();</code></pre>
             <div class="title">RSS</div>
             <p><a href="../rss.xml"><img src="../img/rss.gif" alt="rss"></a></p>
           </div>
-        </div> <!-- /span3 -->
+        </aside> <!-- /span3 -->
       </div> <!-- /row -->
       <footer>
         <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
@@ -2943,6 +3006,8 @@ $className::method();</code></pre>
         prettyPrint();
     });
     </script>
+    <script type="text/javascript" src="https://d1xnn692s7u6t6.cloudfront.net/widget.js"></script>
+    <script type="text/javascript">(function k(){window.$SendToKindle&&window.$SendToKindle.Widget?$SendToKindle.Widget.init({"content":"article"}):setTimeout(k,500);})();</script>
   </body>
 </html>
 ]]></description>
@@ -2995,28 +3060,30 @@ $className::method();</code></pre>
       fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
     </script>
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="../index.html">机上日記</a>
-          <div class="nav-collapse">
-            <ul class="nav">
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="../posts.html">Archive</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
+    <header>
+      <nav class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="../index.html">机上日記</a>
+            <div class="nav-collapse">
+              <ul class="nav">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../posts.html">Archive</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
         </div>
-      </div>
-    </div>
+      </nav>
+    </header>
 
     <div class="container">
       <div class="row">
-        <div class="span9">
+        <article class="span9">
           <h1>GREE Tech Talk #2 へ行って来ました</h1>
 
 <p>by <em><a href="https://twitter.com/dekokun">@dekokun</a></em> on <strong>2013/01/28 23:30</strong></p>
@@ -3061,13 +3128,14 @@ $className::method();</code></pre>
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
           <ul class="social">
+            <li class="kindle"><div class="kindleWidget"><img style="vertical-align:middle;" src="https://d1xnn692s7u6t6.cloudfront.net/white-15.png"></img><span style="vertical-align:middle;margin-left:3px;">Send to Kindle</span></div></li>
+            <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
             <li class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="dekokun" data-lang="ja">ツイート</a></li>
             <li class="hatena-bookmark"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
-            <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
           </ul>
 
-        </div> <!-- /span9 -->
-        <div class="span3">
+        </article>
+        <aside class="span3">
           <div class="sidebar-module">
             <div class="title">プロフィール</div>
             <p class="id"><a href="https://twitter.com/dekokun">dekokun</a></p>
@@ -3082,7 +3150,7 @@ $className::method();</code></pre>
             <div class="title">RSS</div>
             <p><a href="../rss.xml"><img src="../img/rss.gif" alt="rss"></a></p>
           </div>
-        </div> <!-- /span3 -->
+        </aside> <!-- /span3 -->
       </div> <!-- /row -->
       <footer>
         <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
@@ -3117,6 +3185,8 @@ $className::method();</code></pre>
         prettyPrint();
     });
     </script>
+    <script type="text/javascript" src="https://d1xnn692s7u6t6.cloudfront.net/widget.js"></script>
+    <script type="text/javascript">(function k(){window.$SendToKindle&&window.$SendToKindle.Widget?$SendToKindle.Widget.init({"content":"article"}):setTimeout(k,500);})();</script>
   </body>
 </html>
 ]]></description>
@@ -3169,28 +3239,30 @@ $className::method();</code></pre>
       fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
     </script>
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="../index.html">机上日記</a>
-          <div class="nav-collapse">
-            <ul class="nav">
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="../posts.html">Archive</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
+    <header>
+      <nav class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="../index.html">机上日記</a>
+            <div class="nav-collapse">
+              <ul class="nav">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../posts.html">Archive</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
         </div>
-      </div>
-    </div>
+      </nav>
+    </header>
 
     <div class="container">
       <div class="row">
-        <div class="span9">
+        <article class="span9">
           <h1>GitLabにGitoliteが必要なくなるよ いいことばかりじゃないけど</h1>
 
 <p>by <em><a href="https://twitter.com/dekokun">@dekokun</a></em> on <strong>2013/02/19 23:28</strong></p>
@@ -3245,13 +3317,14 @@ $className::method();</code></pre>
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
           <ul class="social">
+            <li class="kindle"><div class="kindleWidget"><img style="vertical-align:middle;" src="https://d1xnn692s7u6t6.cloudfront.net/white-15.png"></img><span style="vertical-align:middle;margin-left:3px;">Send to Kindle</span></div></li>
+            <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
             <li class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="dekokun" data-lang="ja">ツイート</a></li>
             <li class="hatena-bookmark"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
-            <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
           </ul>
 
-        </div> <!-- /span9 -->
-        <div class="span3">
+        </article>
+        <aside class="span3">
           <div class="sidebar-module">
             <div class="title">プロフィール</div>
             <p class="id"><a href="https://twitter.com/dekokun">dekokun</a></p>
@@ -3266,7 +3339,7 @@ $className::method();</code></pre>
             <div class="title">RSS</div>
             <p><a href="../rss.xml"><img src="../img/rss.gif" alt="rss"></a></p>
           </div>
-        </div> <!-- /span3 -->
+        </aside> <!-- /span3 -->
       </div> <!-- /row -->
       <footer>
         <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
@@ -3301,6 +3374,8 @@ $className::method();</code></pre>
         prettyPrint();
     });
     </script>
+    <script type="text/javascript" src="https://d1xnn692s7u6t6.cloudfront.net/widget.js"></script>
+    <script type="text/javascript">(function k(){window.$SendToKindle&&window.$SendToKindle.Widget?$SendToKindle.Widget.init({"content":"article"}):setTimeout(k,500);})();</script>
   </body>
 </html>
 ]]></description>
@@ -3353,28 +3428,30 @@ $className::method();</code></pre>
       fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
     </script>
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="../index.html">机上日記</a>
-          <div class="nav-collapse">
-            <ul class="nav">
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="../posts.html">Archive</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
+    <header>
+      <nav class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="../index.html">机上日記</a>
+            <div class="nav-collapse">
+              <ul class="nav">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../posts.html">Archive</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
         </div>
-      </div>
-    </div>
+      </nav>
+    </header>
 
     <div class="container">
       <div class="row">
-        <div class="span9">
+        <article class="span9">
           <h1>SQLアンチパターンを読みました</h1>
 
 <p>by <em><a href="https://twitter.com/dekokun">@dekokun</a></em> on <strong>2013/02/26 8:15</strong></p>
@@ -3455,13 +3532,14 @@ $className::method();</code></pre>
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
           <ul class="social">
+            <li class="kindle"><div class="kindleWidget"><img style="vertical-align:middle;" src="https://d1xnn692s7u6t6.cloudfront.net/white-15.png"></img><span style="vertical-align:middle;margin-left:3px;">Send to Kindle</span></div></li>
+            <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
             <li class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="dekokun" data-lang="ja">ツイート</a></li>
             <li class="hatena-bookmark"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
-            <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
           </ul>
 
-        </div> <!-- /span9 -->
-        <div class="span3">
+        </article>
+        <aside class="span3">
           <div class="sidebar-module">
             <div class="title">プロフィール</div>
             <p class="id"><a href="https://twitter.com/dekokun">dekokun</a></p>
@@ -3476,7 +3554,7 @@ $className::method();</code></pre>
             <div class="title">RSS</div>
             <p><a href="../rss.xml"><img src="../img/rss.gif" alt="rss"></a></p>
           </div>
-        </div> <!-- /span3 -->
+        </aside> <!-- /span3 -->
       </div> <!-- /row -->
       <footer>
         <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
@@ -3511,6 +3589,8 @@ $className::method();</code></pre>
         prettyPrint();
     });
     </script>
+    <script type="text/javascript" src="https://d1xnn692s7u6t6.cloudfront.net/widget.js"></script>
+    <script type="text/javascript">(function k(){window.$SendToKindle&&window.$SendToKindle.Widget?$SendToKindle.Widget.init({"content":"article"}):setTimeout(k,500);})();</script>
   </body>
 </html>
 ]]></description>
@@ -3563,28 +3643,30 @@ $className::method();</code></pre>
       fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
     </script>
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="../index.html">机上日記</a>
-          <div class="nav-collapse">
-            <ul class="nav">
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="../posts.html">Archive</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
+    <header>
+      <nav class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="../index.html">机上日記</a>
+            <div class="nav-collapse">
+              <ul class="nav">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../posts.html">Archive</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
         </div>
-      </div>
-    </div>
+      </nav>
+    </header>
 
     <div class="container">
       <div class="row">
-        <div class="span9">
+        <article class="span9">
           <h1>Composerからプロジェクト内にインストールしたPhingをJenkinsで実行</h1>
 
 <p>by <em><a href="https://twitter.com/dekokun">@dekokun</a></em> on <strong>2013/03/06 7:34</strong></p>
@@ -3627,13 +3709,14 @@ $className::method();</code></pre>
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
           <ul class="social">
+            <li class="kindle"><div class="kindleWidget"><img style="vertical-align:middle;" src="https://d1xnn692s7u6t6.cloudfront.net/white-15.png"></img><span style="vertical-align:middle;margin-left:3px;">Send to Kindle</span></div></li>
+            <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
             <li class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="dekokun" data-lang="ja">ツイート</a></li>
             <li class="hatena-bookmark"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
-            <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
           </ul>
 
-        </div> <!-- /span9 -->
-        <div class="span3">
+        </article>
+        <aside class="span3">
           <div class="sidebar-module">
             <div class="title">プロフィール</div>
             <p class="id"><a href="https://twitter.com/dekokun">dekokun</a></p>
@@ -3648,7 +3731,7 @@ $className::method();</code></pre>
             <div class="title">RSS</div>
             <p><a href="../rss.xml"><img src="../img/rss.gif" alt="rss"></a></p>
           </div>
-        </div> <!-- /span3 -->
+        </aside> <!-- /span3 -->
       </div> <!-- /row -->
       <footer>
         <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
@@ -3683,6 +3766,8 @@ $className::method();</code></pre>
         prettyPrint();
     });
     </script>
+    <script type="text/javascript" src="https://d1xnn692s7u6t6.cloudfront.net/widget.js"></script>
+    <script type="text/javascript">(function k(){window.$SendToKindle&&window.$SendToKindle.Widget?$SendToKindle.Widget.init({"content":"article"}):setTimeout(k,500);})();</script>
   </body>
 </html>
 ]]></description>

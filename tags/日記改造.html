@@ -41,28 +41,30 @@
       fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
     </script>
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="../index.html">机上日記</a>
-          <div class="nav-collapse">
-            <ul class="nav">
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="../posts.html">Archive</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
+    <header>
+      <nav class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="../index.html">机上日記</a>
+            <div class="nav-collapse">
+              <ul class="nav">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../posts.html">Archive</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
         </div>
-      </div>
-    </div>
+      </nav>
+    </header>
 
     <div class="container">
       <div class="row">
-        <div class="span9">
+        <article class="span9">
           <h1>Archive</h1>
 <ul>
     <li>
@@ -85,13 +87,14 @@
 </ul>
 
           <ul class="social">
+            <li class="kindle"><div class="kindleWidget"><img style="vertical-align:middle;" src="https://d1xnn692s7u6t6.cloudfront.net/white-15.png"></img><span style="vertical-align:middle;margin-left:3px;">Send to Kindle</span></div></li>
+            <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
             <li class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="dekokun" data-lang="ja">ツイート</a></li>
             <li class="hatena-bookmark"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
-            <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
           </ul>
 
-        </div> <!-- /span9 -->
-        <div class="span3">
+        </article>
+        <aside class="span3">
           <div class="sidebar-module">
             <div class="title">プロフィール</div>
             <p class="id"><a href="https://twitter.com/dekokun">dekokun</a></p>
@@ -106,7 +109,7 @@
             <div class="title">RSS</div>
             <p><a href="../rss.xml"><img src="../img/rss.gif" alt="rss"></a></p>
           </div>
-        </div> <!-- /span3 -->
+        </aside> <!-- /span3 -->
       </div> <!-- /row -->
       <footer>
         <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
@@ -141,5 +144,7 @@
         prettyPrint();
     });
     </script>
+    <script type="text/javascript" src="https://d1xnn692s7u6t6.cloudfront.net/widget.js"></script>
+    <script type="text/javascript">(function k(){window.$SendToKindle&&window.$SendToKindle.Widget?$SendToKindle.Widget.init({"content":"article"}):setTimeout(k,500);})();</script>
   </body>
 </html>
