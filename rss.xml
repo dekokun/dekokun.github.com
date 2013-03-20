@@ -3863,10 +3863,12 @@ $className::method();</code></pre>
 <li>“Choose your button style”で見た目を選択</li>
 <li>“How do you mark the title, author, and publication date on your pages?”の部分は、facebookボタンなどでOGP設定を行なっている場合は“Open Graph”を選択し、それ以外の場合は“Custom CSS Selectors”を選択しタイトルや作者の名前を、CSSセレクタ形式で選択
 <ul>
+<li>scheme.org, hNewsの方法で指定することもできるが、私は両形式に詳しくないため割愛</li>
 <li>私の場合はすでにOGP設定を行なっていたため“Open Graph”で</li>
 </ul></li>
 <li>“How do you mark the main body of content on your pages?”の部分は、実際に配信したい部分をCSSセレクタ形式で選択
 <ul>
+<li>こちらもscheme.org, hNewsの方法で指定することもできるが、私は両形式に詳しくないため割愛</li>
 <li>私の場合はarticleタグ内を全て配信したかったため、“article”で</li>
 </ul></li>
 <li>“Do you sell a periodicals subscription on Kindle?”は“No”で
