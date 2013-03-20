@@ -3846,7 +3846,7 @@ $className::method();</code></pre>
         <article class="span9">
           <h1>ブログにSend to Kindleボタンを追加してKindleでブログを読めるようにしよう</h1>
 
-<p>by <em><a href="https://twitter.com/dekokun">@dekokun</a></em> on <strong>2013/03/21 7:30</strong></p>
+<p>by <em><a href="https://twitter.com/dekokun">@dekokun</a></em> on <strong>2013/03/21 1:30</strong></p>
 
 <p>Tagged as: <a href="../tags/Kindle.html">Kindle</a>, <a href="../tags/日記改造.html">日記改造</a>.</p>
 
@@ -3857,6 +3857,7 @@ $className::method();</code></pre>
 <ul>
 <li><a href="http://wordpress.org/extend/plugins/send-to-kindle/">Send to Kindle</a></li>
 </ul>
+<p>それでは、以下、簡単な説明。</p>
 <ol style="list-style-type: decimal">
 <li><a href="http://www.amazon.com/gp/sendtokindle/developers/button">The Send to Kindle Button for Websites</a>に行く
 <ul>
@@ -3906,6 +3907,12 @@ $className::method();</code></pre>
 <p>他に、どんな嬉しいことがあるのかな。誰か教えてください。</p>
 <p>まぁ、そもそも、amazon.co.jpのアカウントに対応したKindleで読めなくちゃほとんど嬉しくないですけどね…</p>
 <p>以上、めでたしめでたし</p>
+<h2 id="追記">2013/03/21 1:41 追記</h2>
+<p>あ、すでに同様の記事を書いているかたがいらっしゃった。こちらは写真入りだー！</p>
+<p>こちらのタイトルなどの指定方法は、schema.org方式ですね。</p>
+<ul>
+<li><a href="http://www.kaoritter.com/archives/2013/0320_211756.html">早速ブログに Send to Kindle ボタンを導入してみたのだが・・・</a></li>
+</ul>
 
 <div id="disqus_thread"></div>
 <script type="text/javascript">
