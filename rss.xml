@@ -3897,7 +3897,7 @@ $className::method();</code></pre>
 <li>読者A「おっ、[Send to Kindle]だって。Kindleに送れるのか！ポチッとな」…「あれ、対応デバイスが無いって出てる。死ね」みたいな</li>
 </ul></li>
 </ul></li>
-<li>amazon.comのアカウントに紐づく対応クライアントがない場合は、以下のようなメッセージが表示される</li>
+<li>amazon.comのアカウントに紐づく対応クライアントがない場合は、Send to Kindleボタンを押した際に以下のようなメッセージが表示される</li>
 </ul>
 <blockquote>
 <p>You don’t have a supported Kindle device or reading app. For a list of supported devices, click <a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=200767340#usb">here</a>.</p>
