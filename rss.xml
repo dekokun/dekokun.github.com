@@ -4340,7 +4340,7 @@ def develop(user='vagrant'):
         'toolservers': ['host2'],
         })
 
-@roles('sebserver')
+@roles('webserver')
 def webserver_deploy
     ...
 
