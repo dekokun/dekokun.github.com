@@ -283,9 +283,9 @@ def printenv():
 # $ fab -c fabricrc printenv
 # 上記で'fuga'と出力される</code></pre>
 <h2 id="env.hostsを別ファイルに切り出したい">env.hostsを別ファイルに切り出したい</h2>
-<p>fabricをデプロイツールとして見た際に、やはりデプロイ先は別ファイルとして切り出したい感じありますよね。productionとdevelopそれぞれに1ファイルずつあるとわかりやすいのではないかと。</p>
+<p>fabricをデプロイツールとして見た際に、やはりデプロイ先は別ファイルとして切り出したい感じありますよね。実際、<a href="https://twitter.com/ume3_/status/321304849612423168">そのような内容のツイートをいただきました</a>。productionとdevelopそれぞれに1ファイルずつあるとわかりやすいのではないかと。</p>
 <h3 id="解決策-12">解決策</h3>
-<p>力技で行きます。ファイルを行で分割して配列に格納します。本当にこの方法しかないのかな…過去にgithubのfabricのリポジトリ上で「env.hostsは設定ファイルで指定したい」「yamlがいいんじゃないか」と議論していたのですが、特にその辺りの成果は出ていないようです。</p>
+<p>力技で行きます。ファイルを行で分割して配列に格納します。本当にこの方法しかないのかな…過去にgithubのfabricのリポジトリ上で「env.hostsは設定ファイルで指定したい」「yamlがいいんじゃないか」等と議論していたのですが、特にその辺りの成果は出ていないようです。</p>
 <p>以下でも力技の解決策で人々が頑張っている姿がみうけられます。</p>
 <ul>
 <li><a href="http://stackoverflow.com/questions/10391377/setting-fabric-hosts-list-from-an-external-hosts-file">Setting fabric hosts list from an external hosts file</a></li>
