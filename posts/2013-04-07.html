@@ -300,14 +300,23 @@ server2</code></pre>
 
 def product():
   env.user = 'pro_user'
-  env.hosts = open('production.conf', 'r').readlines()
+  env.hosts = _get_servers('production.conf')
 
 def develop():
   env.user = 'dev_user'
-  env.hosts = open('development.conf', 'r').readlines()
+  env.hosts = _get_servers('development.conf')
 
 def deploy():
-  run('./deploy.sh')
+  run('deploy.sh')
+
+def _get_servers(file_name):
+  servers = map((lambda x: x.rstrip()), open(file_name, 'r').readlines())
+  while(True):
+    try:
+      servers.remove(&quot;&quot;)
+    except ValueError:
+      break
+  return servers
 # fab product deploy でserver1, server2にデプロイ</code></pre>
 <h2 id="感想">感想</h2>
 <p>Fabric、シンプルでいいですね。やりたいことが簡単にできます。 最近、Pythonを書く機会がじわじわと増えてきており、今年はへび年だしそういうものなのかなと感じております。 私自体初心者であるため、もしかしたらもっといい方法があるかもしれません。ツッコミお願い致します。</p>
