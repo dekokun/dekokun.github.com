@@ -4591,7 +4591,7 @@ def webserver_deploy
 <p>でhoge関数の第一引数に’fuga’を渡すことができます。</p>
 <p>$ fab hello:name=Jeff とかね。最初に提示したチュートリアル(<a href="http://docs.fabfile.org/en/1.6/tutorial.html">Overview and Tutorial</a>)に載っているから詳しくはそっち参考にしてね。</p>
 <h2 id="ssh_configの設定を使用したい">ssh_configの設定を使用したい</h2>
-<p>何もせずに.ssh/configの設定を使用しようとしても、.ssh/configを使用せずにsshで接続しようとしてしまいます。</p>
+<p>何もせずに.ssh/configの設定を使用しようとしても、.ssh/configを使用せずにsshで接続しようとしてしまいます。<code>Fatal error: Name lookup failed for server1</code>とかエラーメッセージが出たりしますよね。</p>
 <h3 id="解決策-7">解決策</h3>
 <p>以下1行を書いておけば、.ssh/configを使用してsshで接続してくれます。</p>
 <pre><code>env.use_ssh_config = True</code></pre>
