@@ -4483,6 +4483,7 @@ def exittest():
 ## Executed: /bin/bash -l -c &quot;exit 1&quot;</code></pre>
 <h2 id="scpがしたい">SCPがしたい</h2>
 <p>デプロイの際など、ローカルのファイルをリモートに送りたい場合などありますよね。local(‘scp hoge fuga@host:…’)などしてもいいですが、もっといい方法があります。</p>
+<p>(2013/04/13 追記) コメントいただきました。fabricのputはSCPではなくSFTPなのですね(参照：fabric/operations.py 及び fabric/sftp.py)。ありがとうございます。</p>
 <h3 id="解決策">解決策</h3>
 <p>put関数を使いましょう。</p>
 <pre><code>from fabric.api import put
