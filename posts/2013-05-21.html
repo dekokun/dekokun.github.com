@@ -6,7 +6,7 @@
   <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Posts tagged ‘Fabric’</title>
+    <title>デプロイツール比較 CapistranoとFabric</title>
     <meta name="description" content>
     <meta name="author" content>
 
@@ -14,7 +14,7 @@
     <meta property="fb:app_id" content="351187098330864">
     <meta property="og:type" content="article">
     <meta property="og:image" content="http://dekokun.github.com/img/dekokun.png">
-    <meta property="og:title" content="Posts tagged ‘Fabric’">
+    <meta property="og:title" content="デプロイツール比較 CapistranoとFabric">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
 
@@ -74,18 +74,97 @@
     <div class="container">
       <div class="row">
         <article class="span9">
-          <h1>Archive</h1>
-<ul>
-    <li>
-    <a href="../posts/2013-05-21.html">デプロイツール比較 CapistranoとFabric</a>
-    - <em>2013/05/21 23:46</em> - by <em><a href="https://twitter.com/dekokun">@dekokun</a></em>
-</li>
-<li>
-    <a href="../posts/2013-04-07.html">Python製デプロイツール Fabricを初めて使う際に役立つTips</a>
-    - <em>2013/04/07 19:30</em> - by <em><a href="https://twitter.com/dekokun">@dekokun</a></em>
-</li>
+          <h1>デプロイツール比較 CapistranoとFabric</h1>
 
+<p>by <em><a href="https://twitter.com/dekokun">@dekokun</a></em> on <strong>2013/05/21 23:46</strong></p>
+
+<p>Tagged as: <a href="../tags/Capistrano.html">Capistrano</a>, <a href="../tags/Fabric.html">Fabric</a>.</p>
+
+<p>最近、<a href="http://docs.fabfile.org/en/1.6/">Fabric</a>, <a href="https://github.com/capistrano/capistrano/wiki">Capistrano</a>と立て続けに2種類のデプロイツールを使ってデプロイ環境を構築する機会がありましたので、その際に感じた両者の利点を書いてみたいと思います。</p>
+<h2 id="両者の簡単な解説">両者の簡単な解説</h2>
+<p>そもそもCapistrano, Fabricについて、「片方は知っているけど片方は知らないよ」という人がいるかと思いますので、簡単な説明をします。</p>
+<p>両方とも何かを知らない人は…「自動デプロイ」とかそのあたりで検索してみるといいんじゃないですかね。</p>
+<h3 id="capistranoとは">Capistranoとは</h3>
+<p>Ruby製のFabricみたいなものです</p>
+<h3 id="fabricとは">Fabricとは</h3>
+<p>Python製のCapistranoみたいなものです</p>
+<p>Fabricは私の中ではデプロイツールという認識なのですが、最近Chefと比較されることが多い気がします。<a href="http://cuisine.readthedocs.org/en/latest/">Cuisine</a>の登場によって冪等性を保証した操作もできるようになったからでしょうか。</p>
+<p>個人的には、Chefと比較されるべきPythonツールはAnsibleなのではないかという気がしていますが、どうなんですかね。</p>
+<h2 id="fabricの利点">Fabricの利点</h2>
+<ul>
+<li>Capistranoとくらべて薄いフレームワークであるため動きを把握しやすい
+<ul>
+<li>テストを除いたコードの行数を比較すると、Capistranoが9000行くらいでFabricが7000行くらいでした。コード行数だけでは一概に比較できないですが…(行数に思ったより差がついてなくて驚いた)</li>
+<li>Fabricのほうが圧倒的に「わかりやすい」というイメージが強いんですよね。CapistranoはDSLを提供してくれていたりデフォルトのdeployタスクがあったりして、「覚えることが多い」というイメージが強い</li>
+<li>「Capistranoを使う場合でもデフォルトdeployタスクを使わなければ分かりやすさには大差ないのでは」という話はもちろんある</li>
+</ul></li>
+<li>DSLを覚えなくても普通にPythonを書く感覚で書ける
+<ul>
+<li>「関数がタスクになるよ」「run関数使おうね」くらいを知っていればひとまず使えるイメージ</li>
+<li>Capistranoは、「まず、taskでタスクを登録して…」「勝手に作られているこのデプロイタスクはなんですか」と、最初の導入の際に知るべきことが少し多い</li>
+</ul></li>
+<li><a href="http://cuisine.readthedocs.org/en/latest/">Cuisine</a>によりChef的に使える
+<ul>
+<li>このあたり、話には聞くんですけども、よく知らないです</li>
+</ul></li>
 </ul>
+<h2 id="capistranoの利点">Capistranoの利点</h2>
+<ul>
+<li>デフォルトのデプロイタスクが存在する
+<ul>
+<li>これはRails使いにはたまりませんね。ほんの少し設定を行うだけでRailsのデプロイが可能になります</li>
+<li>Railsにかぎらず、設定を適切にすればPHPなど多言語のデプロイにも使えますしね</li>
+<li>Capistranoのデフォルトのデプロイタスクで私は「シンボリックリンクを使用したデプロイ」という概念を初めて知り感動したのでした</li>
+<li>デフォルトのデプロイタスクを使わない場合も、デフォルトのデプロイタスクはデプロイタスクを書く上で非常に参考になりますね</li>
+</ul></li>
+<li>日本語のドキュメントが多い
+<ul>
+<li>やはり、日本はPythonよりRubyのほうが強いイメージがありますね</li>
+<li>最近、VagrantやChefなどのRubyツールの勢い強いですよね</li>
+<li>私はPython製のAnsible, Fabricを陰ながら応援しています。今年はへび年ですしね</li>
+</ul></li>
+<li>ストリームが簡単に扱える
+<ul>
+<li>Capistranoはstreamメソッドで簡単に<code>tail -f</code>の結果を一箇所で見たりすることが可能ですよね</li>
+<li>Fabricで同様のことを行いたい場合はどうすればいいんでしょうか。私が方法を知らないだけですかね…</li>
+<li>デプロイツールという意味ではこの機能は不要ですが、せっかくデプロイツールで大量のサーバに対して色々できる環境が整ったのであれば、デプロイ以外でも使うべきですよね</li>
+</ul></li>
+</ul>
+<h2 id="その他感じたこと">その他感じたこと</h2>
+<ul>
+<li>Fabricのputはファイルをアップロードするのに対して、Capistranoのputは引数の文字列が中身のファイルを作成するのですね。驚きました。Capistranoでのファイルアップロードはuploadですね</li>
+<li>Fabricが基本的に直列実行であるのに対してCapistranoは基本的に並列実行ですよね。まぁ、どちらも、直列/並列を切り替えることが可能ですが
+<ul>
+<li>Fabricの同時並列実行数の指定はデコレータの引数で行うのに対して、Capistranoの同時並列実行数の指定はメソッドのオプションを使うというのが、それぞれの言語っぽさがあって素敵だなと思いました。</li>
+</ul></li>
+</ul>
+<h2 id="まとめ">まとめ</h2>
+<p>ちゃんと、両方ともロールが扱えたり、少し手を加えればプロダクション環境やデベロップ環境の使い分けも可能ですし、デプロイのための最低限の機能は両方共に揃っていると思います。</p>
+<p>まぁ、PythonやRubyのプロダクトを扱っているのであればそれぞれの言語のデプロイツールを使えばいいんじゃないんですかね知らんけど。PerlだったらCinnamonもありますしね。</p>
+<p>問題はPHPのデプロイですよ。Phingを使うためにXMLを書きたくないなという感じなのですよ(あぁ、<a href="http://kohkimakimoto.hatenablog.com/entry/2013/03/12/201330">Altax</a>をちゃんと触っていない私がこんなことを言っていていいのだろうか)</p>
+<p>眠くなってきた。正直、「ハマった時にソースを読んで解決したいのであればFabric, 日本語でググって解決したいのであればCapistrano」とかそんな感じで適当に決めればいいんじゃないですか。まぁ、日本語の文献がたくさんあるというのはやはり強いので、Capistrano優勢かなとは思っています。</p>
+<p>「デコレータ？よくわからんしそういう知らない言語の謎機能は使えません」とか言うバカはcapistranoを使っていればいいんじゃないですかね。</p>
+<p>なお、以下の理由でこの記事はCapistrano推しに寄っている可能性があります</p>
+<ol style="list-style-type: decimal">
+<li>私はFabricよりもCapistranoのデプロイ構築経験のほうが多い(人生初のデプロイ自動化はCapistranoを使ったものでした)</li>
+<li>私はPythonよりもRubyを書いた経験のほうが多い(昔はRuby大好きっ子だったのです)</li>
+</ol>
+<p>あ、ちなみに現在の私はPHP書きです。</p>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'dekokun'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
           <ul class="social">
             <li class="kindle"><div class="kindleWidget"><img style="vertical-align:middle;" src="https://d1xnn692s7u6t6.cloudfront.net/white-15.png"></img><span style="vertical-align:middle;margin-left:3px;">Send to Kindle</span></div></li>
