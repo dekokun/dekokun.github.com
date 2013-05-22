@@ -5169,24 +5169,6 @@ def _get_servers(file_name):
 <p>Python製のCapistranoみたいなものです</p>
 <p>Fabricは私の中ではデプロイツールという認識なのですが、最近Chefと比較されることが多い気がします。<a href="http://cuisine.readthedocs.org/en/latest/">Cuisine</a>の登場によって冪等性を保証した操作もできるようになったからでしょうか。</p>
 <p>個人的には、Chefと比較されるべきPythonツールはAnsibleなのではないかという気がしていますが、どうなんですかね。</p>
-<h2 id="fabricの利点">Fabricの利点</h2>
-<ul>
-<li>Capistranoとくらべて薄いフレームワークであるため動きを把握しやすい
-<ul>
-<li>テストを除いたコードの行数を比較すると、Capistranoが9000行くらいでFabricが7000行くらいでした。コード行数だけでは一概に比較できないですが…(行数に思ったより差がついてなくて驚いた)</li>
-<li>Fabricのほうが圧倒的に「わかりやすい」というイメージが強いんですよね。CapistranoはDSLを提供してくれていたりデフォルトのdeployタスクがあったりして、「覚えることが多い」というイメージが強い</li>
-<li>「Capistranoを使う場合でもデフォルトdeployタスクを使わなければ分かりやすさには大差ないのでは」という話はもちろんある</li>
-</ul></li>
-<li>DSLを覚えなくても普通にPythonを書く感覚で書ける
-<ul>
-<li>「関数がタスクになるよ」「run関数使おうね」くらいを知っていればひとまず使えるイメージ</li>
-<li>Capistranoは、「まず、taskでタスクを登録して…」「勝手に作られているこのデプロイタスクはなんですか」と、最初の導入の際に知るべきことが少し多い</li>
-</ul></li>
-<li><a href="http://cuisine.readthedocs.org/en/latest/">Cuisine</a>によりChef的に使える
-<ul>
-<li>このあたり、話には聞くんですけども、よく知らないです</li>
-</ul></li>
-</ul>
 <h2 id="capistranoの利点">Capistranoの利点</h2>
 <ul>
 <li>デフォルトのデプロイタスクが存在する
@@ -5207,6 +5189,24 @@ def _get_servers(file_name):
 <li>Capistranoはstreamメソッドで簡単に<code>tail -f</code>の結果を一箇所で見たりすることが可能ですよね</li>
 <li>Fabricで同様のことを行いたい場合はどうすればいいんでしょうか。私が方法を知らないだけですかね…</li>
 <li>デプロイツールという意味ではこの機能は不要ですが、せっかくデプロイツールで大量のサーバに対して色々できる環境が整ったのであれば、デプロイ以外でも使うべきですよね</li>
+</ul></li>
+</ul>
+<h2 id="fabricの利点">Fabricの利点</h2>
+<ul>
+<li>Capistranoとくらべて薄いフレームワークであるため動きを把握しやすい
+<ul>
+<li>テストを除いたコードの行数を比較すると、Capistranoが9000行くらいでFabricが7000行くらいでした。コード行数だけでは一概に比較できないですが…(行数に思ったより差がついてなくて驚いた)</li>
+<li>Fabricのほうが圧倒的に「わかりやすい」というイメージが強いんですよね。CapistranoはDSLを提供してくれていたりデフォルトのdeployタスクがあったりして、「覚えることが多い」というイメージが強い</li>
+<li>「Capistranoを使う場合でもデフォルトdeployタスクを使わなければ分かりやすさには大差ないのでは」という話はもちろんある</li>
+</ul></li>
+<li>DSLを覚えなくても普通にPythonを書く感覚で書ける
+<ul>
+<li>「関数がタスクになるよ」「run関数使おうね」くらいを知っていればひとまず使えるイメージ</li>
+<li>Capistranoは、「まず、taskでタスクを登録して…」「勝手に作られているこのデプロイタスクはなんですか」と、最初の導入の際に知るべきことが少し多い</li>
+</ul></li>
+<li><a href="http://cuisine.readthedocs.org/en/latest/">Cuisine</a>によりChef的に使える
+<ul>
+<li>このあたり、話には聞くんですけども、よく知らないです</li>
 </ul></li>
 </ul>
 <h2 id="その他感じたこと">その他感じたこと</h2>
