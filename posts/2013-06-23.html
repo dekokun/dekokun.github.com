@@ -81,11 +81,11 @@
 <p>Tagged as: <a href="../tags/httpd.html">httpd</a>.</p>
 
 <p>今回は技術的に大したネタではないですが切なさが募ったので投稿</p>
-<p>Apache, configtestではステータスコード0が返ってきているのに再起動が失敗すると切ないですよね。</p>
+<p>Apacheなんですが、configtestではステータスコード0が返ってきているのに再起動が失敗すると切ないですよね。</p>
 <p>デプロイの際にcapistranoでhttpd.confを書き換えてconfigtestを行い成功したらhttpdの再起動を行なっていたのですが、configtestはステータスコード0で成功したのにhttpdの起動が失敗してヒヤリとしました。</p>
 <p>capistranoで並列実行数を絞ってhttpdを再起動していたため影響は全台には及ばなかったのでそんなに問題はないですけども。</p>
 <p>少し試してみたら、いろいろなパターンでhttpdが起動したりしなかったりconfigtestが成功したりしなかったりしますね。</p>
-<p>なお、以下はhttpdの2.2.23ですよ</p>
+<p>なお、以下はApacheの2.2.23での挙動ですよ</p>
 <p>例1： ログディレクトリが存在しない場合</p>
 <pre><code># service httpd configtest; echo $?; service httpd restart
 Syntax OK
@@ -113,6 +113,7 @@ DocumentRoot must be a directory
                                                            [FAILED]</code></pre>
 <p>configtestで失敗し、もちろん起動もしない。まぁ、この挙動は自然ですね。</p>
 <p>(このあたり、詳しくはhttpdのソースのserver/core.c内のset_document_rootあたりを読むといいと思いますよ多分) このページとか参考にしながら。 <a href="http://dsas.blog.klab.org/archives/50596409.html#s28">ディレクティブの処理と設定値の利用 (apache module 開発事初め その3)</a></p>
+<p>まぁ、なんというか、今回、初めてhttpdのソースを読みました。めでたしめでたし。</p>
 
 <div id="disqus_thread"></div>
 <script type="text/javascript">
