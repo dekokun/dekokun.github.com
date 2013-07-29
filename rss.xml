@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>でこてっくろぐ</title>
-        <link>http://dekokun.github.com</link>
+        <link>http://dekokun.github.io</link>
         <description><![CDATA[でこてっくろぐのRSSフィード]]></description>
-        <atom:link href="http://dekokun.github.com/rss.xml" rel="self"
+        <atom:link href="http://dekokun.github.io/rss.xml" rel="self"
                    type="application/rss+xml" />
         <lastBuildDate>No date found.</lastBuildDate>
         <item>
     <title>「第2回 スタートHaskell2」行ってきた</title>
-    <link>http://dekokun.github.com/posts/2012-07-22.html</link>
+    <link>http://dekokun.github.io/posts/2012-07-22.html</link>
     <description><![CDATA[<!doctype html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ja"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
@@ -249,11 +249,11 @@ myOr _ b = b</code></pre>
 </html>
 ]]></description>
     <pubDate>No date found.</pubDate>
-    <guid>http://dekokun.github.com/posts/2012-07-22.html</guid>
+    <guid>http://dekokun.github.io/posts/2012-07-22.html</guid>
 </item>
 <item>
     <title>ブログ移設しました！！！</title>
-    <link>http://dekokun.github.com/posts/2012-07-23.html</link>
+    <link>http://dekokun.github.io/posts/2012-07-23.html</link>
     <description><![CDATA[<!doctype html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ja"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
@@ -484,11 +484,11 @@ myOr _ b = b</code></pre>
 </html>
 ]]></description>
     <pubDate>No date found.</pubDate>
-    <guid>http://dekokun.github.com/posts/2012-07-23.html</guid>
+    <guid>http://dekokun.github.io/posts/2012-07-23.html</guid>
 </item>
 <item>
     <title>シェルスクリプトでクロージャ(的な何か)</title>
-    <link>http://dekokun.github.com/posts/2012-07-24.html</link>
+    <link>http://dekokun.github.io/posts/2012-07-24.html</link>
     <description><![CDATA[<!doctype html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ja"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
@@ -773,11 +773,11 @@ func</code></pre>
 </html>
 ]]></description>
     <pubDate>No date found.</pubDate>
-    <guid>http://dekokun.github.com/posts/2012-07-24.html</guid>
+    <guid>http://dekokun.github.io/posts/2012-07-24.html</guid>
 </item>
 <item>
     <title>シンタックスハイライト追加</title>
-    <link>http://dekokun.github.com/posts/2012-07-29-2.html</link>
+    <link>http://dekokun.github.io/posts/2012-07-29-2.html</link>
     <description><![CDATA[<!doctype html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ja"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
@@ -1004,11 +1004,11 @@ $(function(){
 </html>
 ]]></description>
     <pubDate>Sun, 29 Jul 2012 00:00:00 UT</pubDate>
-    <guid>http://dekokun.github.com/posts/2012-07-29-2.html</guid>
+    <guid>http://dekokun.github.io/posts/2012-07-29-2.html</guid>
 </item>
 <item>
     <title>Hakyllで作成したブログにRSS機能追加</title>
-    <link>http://dekokun.github.com/posts/2012-07-29-3.html</link>
+    <link>http://dekokun.github.io/posts/2012-07-29-3.html</link>
     <description><![CDATA[<!doctype html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ja"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
@@ -1213,11 +1213,11 @@ $(function(){
 </html>
 ]]></description>
     <pubDate>Sun, 29 Jul 2012 00:00:00 UT</pubDate>
-    <guid>http://dekokun.github.com/posts/2012-07-29-3.html</guid>
+    <guid>http://dekokun.github.io/posts/2012-07-29-3.html</guid>
 </item>
 <item>
     <title>GitHub Pagesでのビルド失敗</title>
-    <link>http://dekokun.github.com/posts/2012-07-29-4.html</link>
+    <link>http://dekokun.github.io/posts/2012-07-29-4.html</link>
     <description><![CDATA[<!doctype html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ja"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
@@ -1432,11 +1432,11 @@ $(function(){
 </html>
 ]]></description>
     <pubDate>Sun, 29 Jul 2012 00:00:00 UT</pubDate>
-    <guid>http://dekokun.github.com/posts/2012-07-29-4.html</guid>
+    <guid>http://dekokun.github.io/posts/2012-07-29-4.html</guid>
 </item>
 <item>
     <title>夏サミ感想(グリーを支えるソーシャルコーディングのすべてについて)</title>
-    <link>http://dekokun.github.com/posts/2012-07-29.html</link>
+    <link>http://dekokun.github.io/posts/2012-07-29.html</link>
     <description><![CDATA[<!doctype html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ja"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
@@ -1724,11 +1724,11 @@ $(function(){
 </html>
 ]]></description>
     <pubDate>No date found.</pubDate>
-    <guid>http://dekokun.github.com/posts/2012-07-29.html</guid>
+    <guid>http://dekokun.github.io/posts/2012-07-29.html</guid>
 </item>
 <item>
     <title>シェルスクリプトでMaybeモナド(その1)</title>
-    <link>http://dekokun.github.com/posts/2012-08-05.html</link>
+    <link>http://dekokun.github.io/posts/2012-08-05.html</link>
     <description><![CDATA[<!doctype html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ja"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
@@ -2012,11 +2012,11 @@ ret &quot;fuga:存在しない&quot; | bind &quot;maybe_ls&quot; | bind &quot;ma
 </html>
 ]]></description>
     <pubDate>No date found.</pubDate>
-    <guid>http://dekokun.github.com/posts/2012-08-05.html</guid>
+    <guid>http://dekokun.github.io/posts/2012-08-05.html</guid>
 </item>
 <item>
     <title>「HTML5 Conference」行ってきた 「次世代Web技術を切り開くゲーム開発者たち」メモ</title>
-    <link>http://dekokun.github.com/posts/2012-09-08.html</link>
+    <link>http://dekokun.github.io/posts/2012-09-08.html</link>
     <description><![CDATA[<!doctype html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ja"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
@@ -2440,11 +2440,11 @@ ret &quot;fuga:存在しない&quot; | bind &quot;maybe_ls&quot; | bind &quot;ma
 </html>
 ]]></description>
     <pubDate>No date found.</pubDate>
-    <guid>http://dekokun.github.com/posts/2012-09-08.html</guid>
+    <guid>http://dekokun.github.io/posts/2012-09-08.html</guid>
 </item>
 <item>
     <title>PHP5.3にてタイプヒンティングでスカラー型が使える！？(勘違い編)</title>
-    <link>http://dekokun.github.com/posts/2012-12-05.html</link>
+    <link>http://dekokun.github.io/posts/2012-12-05.html</link>
     <description><![CDATA[<!doctype html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ja"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
@@ -2755,11 +2755,11 @@ myfunc(new Integer(1));</code></pre>
 </html>
 ]]></description>
     <pubDate>No date found.</pubDate>
-    <guid>http://dekokun.github.com/posts/2012-12-05.html</guid>
+    <guid>http://dekokun.github.io/posts/2012-12-05.html</guid>
 </item>
 <item>
     <title>DevLOVE Conference 2012 に参加した後、これからの私にとって最も大切なこと</title>
-    <link>http://dekokun.github.com/posts/2012-12-16.html</link>
+    <link>http://dekokun.github.io/posts/2012-12-16.html</link>
     <description><![CDATA[<!doctype html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ja"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
@@ -2987,11 +2987,11 @@ myfunc(new Integer(1));</code></pre>
 </html>
 ]]></description>
     <pubDate>No date found.</pubDate>
-    <guid>http://dekokun.github.com/posts/2012-12-16.html</guid>
+    <guid>http://dekokun.github.io/posts/2012-12-16.html</guid>
 </item>
 <item>
     <title>PHPにおいてstaticメソッドの呼び出し元クラスを動的に変更</title>
-    <link>http://dekokun.github.com/posts/2013-01-14.html</link>
+    <link>http://dekokun.github.io/posts/2013-01-14.html</link>
     <description><![CDATA[<!doctype html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ja"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
@@ -3220,11 +3220,11 @@ $className::method();</code></pre>
 </html>
 ]]></description>
     <pubDate>No date found.</pubDate>
-    <guid>http://dekokun.github.com/posts/2013-01-14.html</guid>
+    <guid>http://dekokun.github.io/posts/2013-01-14.html</guid>
 </item>
 <item>
     <title>「第7回 スタートHaskell2(最終回)」行ってきた</title>
-    <link>http://dekokun.github.com/posts/2013-01-20.html</link>
+    <link>http://dekokun.github.io/posts/2013-01-20.html</link>
     <description><![CDATA[<!doctype html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ja"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
@@ -3467,11 +3467,11 @@ $className::method();</code></pre>
 </html>
 ]]></description>
     <pubDate>No date found.</pubDate>
-    <guid>http://dekokun.github.com/posts/2013-01-20.html</guid>
+    <guid>http://dekokun.github.io/posts/2013-01-20.html</guid>
 </item>
 <item>
     <title>GREE Tech Talk #2 へ行って来ました</title>
-    <link>http://dekokun.github.com/posts/2013-01-28.html</link>
+    <link>http://dekokun.github.io/posts/2013-01-28.html</link>
     <description><![CDATA[<!doctype html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ja"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
@@ -3681,11 +3681,11 @@ $className::method();</code></pre>
 </html>
 ]]></description>
     <pubDate>No date found.</pubDate>
-    <guid>http://dekokun.github.com/posts/2013-01-28.html</guid>
+    <guid>http://dekokun.github.io/posts/2013-01-28.html</guid>
 </item>
 <item>
     <title>GitLabにGitoliteが必要なくなるよ いいことばかりじゃないけど</title>
-    <link>http://dekokun.github.com/posts/2013-02-19.html</link>
+    <link>http://dekokun.github.io/posts/2013-02-19.html</link>
     <description><![CDATA[<!doctype html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ja"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
@@ -3905,11 +3905,11 @@ $className::method();</code></pre>
 </html>
 ]]></description>
     <pubDate>No date found.</pubDate>
-    <guid>http://dekokun.github.com/posts/2013-02-19.html</guid>
+    <guid>http://dekokun.github.io/posts/2013-02-19.html</guid>
 </item>
 <item>
     <title>SQLアンチパターンを読みました</title>
-    <link>http://dekokun.github.com/posts/2013-02-24.html</link>
+    <link>http://dekokun.github.io/posts/2013-02-24.html</link>
     <description><![CDATA[<!doctype html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ja"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
@@ -4155,11 +4155,11 @@ $className::method();</code></pre>
 </html>
 ]]></description>
     <pubDate>No date found.</pubDate>
-    <guid>http://dekokun.github.com/posts/2013-02-24.html</guid>
+    <guid>http://dekokun.github.io/posts/2013-02-24.html</guid>
 </item>
 <item>
     <title>Composerからプロジェクト内にインストールしたPhingをJenkinsで実行</title>
-    <link>http://dekokun.github.com/posts/2013-03-06.html</link>
+    <link>http://dekokun.github.io/posts/2013-03-06.html</link>
     <description><![CDATA[<!doctype html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ja"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
@@ -4367,11 +4367,11 @@ $className::method();</code></pre>
 </html>
 ]]></description>
     <pubDate>No date found.</pubDate>
-    <guid>http://dekokun.github.com/posts/2013-03-06.html</guid>
+    <guid>http://dekokun.github.io/posts/2013-03-06.html</guid>
 </item>
 <item>
     <title>ブログにSend to Kindleボタンを追加してKindleでブログを読めるようにしよう</title>
-    <link>http://dekokun.github.com/posts/2013-03-21.html</link>
+    <link>http://dekokun.github.io/posts/2013-03-21.html</link>
     <description><![CDATA[<!doctype html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ja"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
@@ -4624,11 +4624,11 @@ $className::method();</code></pre>
 </html>
 ]]></description>
     <pubDate>No date found.</pubDate>
-    <guid>http://dekokun.github.com/posts/2013-03-21.html</guid>
+    <guid>http://dekokun.github.io/posts/2013-03-21.html</guid>
 </item>
 <item>
     <title>Python製デプロイツール Fabricを初めて使う際に役立つTips</title>
-    <link>http://dekokun.github.com/posts/2013-04-07.html</link>
+    <link>http://dekokun.github.io/posts/2013-04-07.html</link>
     <description><![CDATA[<!doctype html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ja"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
@@ -5072,11 +5072,11 @@ def _get_servers(file_name):
 </html>
 ]]></description>
     <pubDate>No date found.</pubDate>
-    <guid>http://dekokun.github.com/posts/2013-04-07.html</guid>
+    <guid>http://dekokun.github.io/posts/2013-04-07.html</guid>
 </item>
 <item>
     <title>デプロイツール比較 CapistranoとFabric</title>
-    <link>http://dekokun.github.com/posts/2013-05-21.html</link>
+    <link>http://dekokun.github.io/posts/2013-05-21.html</link>
     <description><![CDATA[<!doctype html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ja"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
@@ -5346,11 +5346,11 @@ def _get_servers(file_name):
 </html>
 ]]></description>
     <pubDate>No date found.</pubDate>
-    <guid>http://dekokun.github.com/posts/2013-05-21.html</guid>
+    <guid>http://dekokun.github.io/posts/2013-05-21.html</guid>
 </item>
 <item>
     <title>httpdでconfigtestが成功しても起動できない時の切なさ</title>
-    <link>http://dekokun.github.com/posts/2013-06-23.html</link>
+    <link>http://dekokun.github.io/posts/2013-06-23.html</link>
     <description><![CDATA[<!doctype html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ja"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
@@ -5573,11 +5573,11 @@ DocumentRoot must be a directory
 </html>
 ]]></description>
     <pubDate>No date found.</pubDate>
-    <guid>http://dekokun.github.com/posts/2013-06-23.html</guid>
+    <guid>http://dekokun.github.io/posts/2013-06-23.html</guid>
 </item>
 <item>
     <title>Chef Server 11系にてadminのパスワードがわからなくなった場合の対処法</title>
-    <link>http://dekokun.github.com/posts/2013-06-24.html</link>
+    <link>http://dekokun.github.io/posts/2013-06-24.html</link>
     <description><![CDATA[<!doctype html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ja"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
@@ -5789,7 +5789,7 @@ COMMIT;</code></pre>
 </html>
 ]]></description>
     <pubDate>No date found.</pubDate>
-    <guid>http://dekokun.github.com/posts/2013-06-24.html</guid>
+    <guid>http://dekokun.github.io/posts/2013-06-24.html</guid>
 </item>
 
     </channel> 
