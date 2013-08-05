@@ -6148,6 +6148,22 @@ postgres=# select * from hstore_tbl where hstore-&gt;'hoge' = '0.083903817925602
 Time: 0.604 ms</code></pre>
 <p>hstore型なカラムの検索、ド派手に遅くなるんじゃないかと思っておりましたが意外とそんなことはないんですね。</p>
 <p>インデックスも貼れますし、今後使用を検討してもいいかもしれませんね。</p>
+<p>最後に、<a href="https://twitter.com/r_rudi">@r_rudy</a>さんとのやり取り</p>
+<blockquote class="twitter-tweet"><p>
+<a href="https://twitter.com/dekokun">@dekokun</a> かなり便利ですよ。indexも貼れますし。ただ、データの取り出しがちょっと遅いので、普段使う分には問題ないですが、速度がものすごく重要なところには使わないほうがいいかと思います。
+</p>
+— しろう (@r_rudi) <a href="https://twitter.com/r_rudi/statuses/364370906103033858">August 5, 2013</a>
+</blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet"><p>
+<a href="https://twitter.com/dekokun">@dekokun</a> 遅いのは内部実装がTextという文字列で持っているからなのですが、そこをmsgpackにするという試験実装をされた方がいまして、数倍速くなったそうです。PostgreSQLにはほかにもいろいろ便利な機能があるのでぜひ使ってください！
+</p>
+— しろう (@r_rudi) <a href="https://twitter.com/r_rudi/statuses/364372885256671232">August 5, 2013</a>
+</blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>FDWとかも私、興味あります</p>
 
 <div id="disqus_thread"></div>
 <script type="text/javascript">
