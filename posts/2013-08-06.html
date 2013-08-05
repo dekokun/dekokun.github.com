@@ -122,10 +122,10 @@ Time: 0.605 ms</code></pre>
                   hstore                   |       fuga
 -------------------------------------------+-------------------
  &quot;fuga&quot;=&gt;&quot;2&quot;, &quot;hoge&quot;=&gt;&quot;0.0839038179256022&quot; | 0.392216250766069
-(1 row)</code></pre>
+(1 row)
+Time: 205.692 ms</code></pre>
 <p>hstoreなカラムの検索</p>
-<pre><code>Time: 205.692 ms
-postgres=# select * from hstore_tbl where hstore-&gt;'hoge' = '0.0839038179256022';
+<pre><code>postgres=# select * from hstore_tbl where hstore-&gt;'hoge' = '0.0839038179256022';
                   hstore                   |       fuga
 -------------------------------------------+-------------------
  &quot;fuga&quot;=&gt;&quot;2&quot;, &quot;hoge&quot;=&gt;&quot;0.0839038179256022&quot; | 0.392216250766069
