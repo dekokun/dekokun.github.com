@@ -6125,7 +6125,7 @@ Time: 302.522 ms</code></pre>
  &quot;fuga&quot;=&gt;&quot;2&quot;, &quot;hoge&quot;=&gt;&quot;0.0839038179256022&quot; | 0.392216250766069
 (1 row)
 Time: 205.692 ms</code></pre>
-<p>やはりhstoreな検索よりは早いですねぇ。</p>
+<p>やはりhstoreな検索よりは早いですねぇ(一回実施した時の時間だけじゃなんとも言えないというのが正しい見方ですが、まぁ、何回か同じクエリを流してみてこんな感じだったので、雰囲気hstoreのほうが少し遅い、といっても速度比1.5倍ですが、まぁ。。という感じでいいでしょう)</p>
 <p>インデックスを貼ってみた</p>
 <pre><code>postgres=# CREATE INDEX hstore_index ON hstore_tbl ((hstore-&gt;'hoge'));
 CREATE INDEX
