@@ -6821,7 +6821,7 @@ fi</code></pre>
     <guid>http://dekokun.github.io/posts/2013-09-30.html</guid>
 </item>
 <item>
-    <title>ISUCON予選にPHP実装で参加して3位になりましたー</title>
+    <title>ISUCON予選にPHP実装で参加して3位になりましたー やったことなどまとめ</title>
     <link>http://dekokun.github.io/posts/2013-10-06.html</link>
     <description><![CDATA[<!doctype html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ja"> <![endif]-->
@@ -6831,7 +6831,7 @@ fi</code></pre>
   <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>ISUCON予選にPHP実装で参加して3位になりましたー</title>
+    <title>ISUCON予選にPHP実装で参加して3位になりましたー やったことなどまとめ</title>
     <meta name="description" content>
     <meta name="author" content>
 
@@ -6839,7 +6839,7 @@ fi</code></pre>
     <meta property="fb:app_id" content="351187098330864">
     <meta property="og:type" content="article">
     <meta property="og:image" content="http://dekokun.github.com/img/dekokun.png">
-    <meta property="og:title" content="ISUCON予選にPHP実装で参加して3位になりましたー">
+    <meta property="og:title" content="ISUCON予選にPHP実装で参加して3位になりましたー やったことなどまとめ">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
 
@@ -6899,7 +6899,7 @@ fi</code></pre>
     <div class="container">
       <div class="row">
         <article class="span9">
-          <h1>ISUCON予選にPHP実装で参加して3位になりましたー</h1>
+          <h1>ISUCON予選にPHP実装で参加して3位になりましたー やったことなどまとめ</h1>
 
 <p>by <em><a href="https://twitter.com/dekokun">@dekokun</a></em> on <strong>2013/10/06 20:15</strong></p>
 
@@ -6907,6 +6907,7 @@ fi</code></pre>
 
 <p>今日(10/6)は<a href="http://isucon.net/">ISUCON3</a>の予選2日目に参加しました。</p>
 <p>「予選落ちだろうなー」と思いながら挑んだら、意外と3位(暫定。運営の方が提出したAMIを起動しベンチマーク実行し、提出したスコアと比べてあまりにもスコアが低かった場合は失格となる)で本選進出が決まったので嬉しくてブログ書いてます。</p>
+<p>スコアは14379で、予選1日目と合わせて9位。</p>
 <p>「チームたこやき」という名前で後輩2人と参加しました。</p>
 <h2 id="基本的にやってたこと">基本的にやってたこと</h2>
 <p>以下、恒常的にやってたこと一覧と、その効果を。</p>
@@ -6949,7 +6950,7 @@ fi</code></pre>
 <li>git pullによるデプロイ</li>
 <li>isuコマンドという、いろいろなもののラッパースクリプトを作成したりもしました。“isu deploy”とか“isu slow-show(mysqldumoslowを使ってスロークエリを見る)”とか</li>
 </ul>
-<h2 id="実際に行った作業">実際に行った作業</h2>
+<h2 id="実際に行った作業覚えている範囲で">実際に行った作業(覚えている範囲で)</h2>
 <p>以下、特にPHPのロジック変更周りは基本的に後輩2人がやってくれたので私はあまり関与していませんが、記憶している限り書きます</p>
 <h3 id="セッションにmemcacheを使用しない">セッションにmemcacheを使用しない</h3>
 <ul>
@@ -6982,7 +6983,7 @@ fi</code></pre>
 <ul>
 <li>is_privateではないmemosの全件をcountしている部分が遅かったため、専用のcountテーブルを作成し、insertする度に件数をupdateするなどした</li>
 </ul>
-<h3 id="unixソケットを使用した接続">Unixソケットを使用した接続</h3>
+<h3 id="unixドメインソケットを使用した接続">Unixドメインソケットを使用した接続</h3>
 <ul>
 <li>同じサーバなのでわざわざTCPを使用することもないなと思いソケットファイルを使用した通信に</li>
 <li>実施が簡単なので実施したが、特に効果はみられなかった</li>
@@ -7004,7 +7005,8 @@ fi</code></pre>
 <li>今回、トップページを高速化すれば全体のスコアが上がるようなアプリだったため、「トップページのxhprofを見る」-&gt;「遅いところを直す」だけで良かったが、本来ならアクセスログから遅いページを割り出すなどする必要があったなぁ。と思っております。アクセスログにかかった時間をマイクロ秒単位で出力するようにしたものの最後までそれが使われることはなかった…</li>
 <li>ISUCON応募締め切り10分前くらいに後輩にISUCONのこと話したら後輩も乗り気だったため締め切り3分前くらいに応募を完了したんだけど、出てよかったなと覆いました</li>
 <li>NHN選抜チームを抜けそうだったので、本選では抜きたいと思います</li>
-<li>運営の追試による失格にならないか怖くて仕方がない</li>
+<li>白金動物園を抜けて結構うれしい</li>
+<li>運営の追試によって失格にならないか怖くて仕方がない</li>
 </ul>
 
 <div id="disqus_thread"></div>
