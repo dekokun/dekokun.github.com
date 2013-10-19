@@ -84,7 +84,7 @@
 <p>表題の件ですが、Chef Serverを使用していると、デフォルト状態では1つのクックブックの実行に15分以上かかるとエラーになります。 気をつけましょう。</p>
 <p>どうにかしたい場合は、Chef Server上で/etc/chef-server/chef-server.rb を作成し、</p>
 <pre><code>erchef['s3_url_ttl'] = 3600</code></pre>
-<p>と記述した後に、 chef-server-ctl reconfigureしましょう。</p>
+<p>と記述した後に、 chef-server-ctl reconfigureしましょう。これで、制限時間が15分から1時間まで伸びます。</p>
 <p>なお、私はOpscodeから提供されているChef自体のクックブックでChefサーバを作成したりしているのですが、それの実行時のアトリビュートを以下のように設定することで対処することもできますよ。</p>
 <pre><code>    &quot;chef-server&quot;: {
   &quot;configuration&quot;: {
