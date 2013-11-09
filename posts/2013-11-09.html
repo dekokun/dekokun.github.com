@@ -1,0 +1,263 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ja"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="ja"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ja"> <!--<![endif]-->
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>#isucon 本選惨敗！！！！</title>
+    <meta name="description" content>
+    <meta name="author" content>
+
+    <meta name="viewport" content="width=device-width">
+    <meta property="fb:app_id" content="351187098330864">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="http://dekokun.github.com/img/dekokun.png">
+    <meta property="og:title" content="#isucon 本選惨敗！！！！">
+    <meta property="og:description" content="@dekokunの技術日記">
+    <meta property="og:site_name" content="でこてっくろぐ">
+
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+    </style>
+    <link href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css" type="text/css" rel="stylesheet">
+    <script src="../js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-39650556-1', 'github.com');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <body>
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=351187098330864";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <header>
+      <nav class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="../index.html">でこてっくろぐ</a>
+            <div class="nav-collapse">
+              <ul class="nav">
+                <li><a href="../index.html">ほーむ</a></li>
+                <li><a href="../posts.html">あーかいぶ</a></li>
+                <li><a href="../aboutme.html">あばうとみー</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="row">
+        <article class="span9">
+          <h1>#isucon 本選惨敗！！！！</h1>
+
+<p>by <em><a href="https://twitter.com/dekokun">@dekokun</a></em> on <strong>2013/11/09 15:33</strong></p>
+
+<p>Tagged as: <a href="../tags/contest.html">contest</a>.</p>
+
+<p>今日はISUCON本選でした！！！！！</p>
+<p>後輩二人(<a href="https://twitter.com/jyegan">@jyegan</a>, <a href="https://twitter.com/Altsencturel://twitter.com/Altsencturely">@Altsencturely</a>)と参加してきました！！！</p>
+<p>今回は私のせいで相当時間をロスさせてしまい、最終的にfailして懺悔懺悔です！！！！(懺悔内容は最下部に記載)</p>
+<p>が、まぁ、今回もやったことなどをまとめていきたいと思います。今回は、私が発生させた謎のエラーにハマり続けたのであまりいろいろできなかったのですが…</p>
+<p>failしなかったチームは7チームでして、一応順位としては8位(まぁ、8位かつ最下位なわけだが)になるんですかね</p>
+<h2 id="今回のお題アプリケーションについて">今回のお題アプリケーションについて</h2>
+<ul>
+<li>画像投稿版Twitterみたいなもの</li>
+<li>公開範囲を決めて画像投稿可能
+<ul>
+<li>これにより、安易に画像の静的配信はできませんよ</li>
+</ul></li>
+<li>サーバが1台あたり100Mbpsに絞られているという話だったため、画像投稿サイトということもあり、そこがボトルネックになるかなぁと思っておりましたがそれ以前の問題だった(ように見えるがそもそも通信量とかみてなかったのでなんとも)</li>
+</ul>
+<h2 id="基本的にやっていたこと">基本的にやっていたこと</h2>
+<h3 id="xhprofでのプロファイリング">xhprofでのプロファイリング</h3>
+<p>今回も素晴らしい効果を発揮する…はずでしたが、最初に「execが圧倒的に遅い」というところが判明した以降は、そのボトルネックを最後まで解消せずに終わってしまいました…</p>
+<h3 id="new-relicでのプロファイリング">New Relicでのプロファイリング</h3>
+<p>画像表示部分が圧倒的に遅いですね！xhprofでの結果と併せて、execが遅いせいですね！という結論が出た以降状態が変わらず終わりました。 New RelicといえばRubyで注目されがちですが、本来はPHPでもめちゃくちゃ便利なツールなんですけどね。</p>
+<h3 id="スロークエリログの解析">スロークエリログの解析</h3>
+<p>「DBが全くボトルネックじゃないね」ということがわかった以降何も進まず終わった</p>
+<h2 id="その他やったこと">その他やったこと</h2>
+<p>ある程度時系列順に</p>
+<ul>
+<li>全グループメンバーから全サーバ及び全サーバから他の全サーバに対してsshのパスワードなしで接続できるように設定</li>
+<li>各自の開発環境を同じサーバ上の別ポートで立ち上げ、git管理した</li>
+<li>git pullによる各サーバへのデプロイ環境を構築した(“isu deploy”コマンドを打つことによって開発環境からpushして全サーバへのデプロイ可能に)
+<ul>
+<li>が、結局サーバは1台だけしか使えず終わった…</li>
+</ul></li>
+<li>上記“isu deploy”以外にも予選から使用していた“isu”コマンドの機能拡充
+<ul>
+<li>“isu allcommand”で全ホストにコマンドをばらまくとか、isu currentで前回のベンチマーク結果を取得できるとか、“isu slow-show”でmysqldumpslowの結果を出力して見られるとか</li>
+</ul></li>
+<li>my.cnfを編集し、127.0.0.1以外からもアクセス可能なように修正
+<ul>
+<li>「mysqlDBの中のuserテーブルの中ではちゃんと設定されているのになぁ」などと若干ハマった…</li>
+</ul></li>
+<li>上記各種プロファイリングの設定</li>
+<li>思えばここまではまだ順調だった…</li>
+<li>画像にアクセスが来る度に画像生成していたため、一度生成した画像はディレクトリに置いて次からのアクセスはそれを返すようにした</li>
+<li>このあたりから、以下懺悔しているような状態が発生しベンチマークが失敗し続けいろいろ巻き戻したりが始まった。ラスト1時間くらいまでベンチマークが失敗し続けていた。辛かった</li>
+<li>最終的に、ラスト30分くらいで、「DBではなくexecがネックなので他のサーバを使用すれば使用した分だけスケールするのはわかりきったこと！！スケールアウトしよう！ローカルに保存している画像はMemcachedにしよう！」という実装をガツッとやりましたが、一部うまくいかず結局スケールアウトはできず</li>
+<li>最終的にfailして終了</li>
+<li>なお、Memcachedが1キーに対してデフォルト1MBまでしか保存できないのは知らなかった
+<ul>
+<li>この辺りはいい勉強になりましたね</li>
+</ul></li>
+</ul>
+<h2 id="感想">感想</h2>
+<ul>
+<li>前回予選でちょっと良い成績だったからと言って色々調子乗った発言(「LINE選抜を抜けそうだったが抜けなかった。次は抜く」だとか「白金動物園に勝てて嬉しい」とか)を繰り返していましたが今回ダメだった。めちゃくちゃ悔しい</li>
+<li>「くらげとみかんと江戸幕府」チームが前回PHPで出場していたため、「PHP仲間だー」と思っていたら今回PHP実装は我々だけだった
+<ul>
+<li>これに伴い(?)最後までApacheで戦ったのも我々のチームだけでしたね</li>
+<li>PHPの威光を世に知らしめたかったが全くもって力及ばず</li>
+<li>「くらげとみかんと江戸幕府」は今回はRubyだったとのこと</li>
+</ul></li>
+<li>優勝チームのtagomorisさんとお話しまして、「最初の一時間半くらいはひたすら戦略をねっていた」という話を聞き、最後に勝つのはちゃんと最初に戦略をたててチームかという思いが強く残った</li>
+<li>来年(あれば)必ずリベンジしたい</li>
+</ul>
+<h2 id="チームメイトへの懺悔">チームメイトへの懺悔</h2>
+<p>ベンチマークスクリプトのオプションを誤り(サーバ指定するオプションとワークロード指定するオプションを逆にみていた)、「よし、ワークロードを2に増やそう」と言ってワークロードではなくアクセス先のサーバIDのほうを編集してしまい、その後、その変更によってまだアプリケーションが動いていないサーバ2に対してベンチマークが走りベンチマークが失敗し続け原因解明に2~3時間くらいかかってしまったのではないでしょうか…</p>
+<p>ベンチマーク実施した瞬間になぜか正しいサーバにもアクセスが来ていたように見えていた(原因は不明。UAはちゃんとISUCONのベンチマークツールだったように思っていたが。まぁ当時は焦っていたからあまり記憶はあてになりませんね…)ため、全然きづけなかった　…「何度やってもfailし続ける！しかもログ上では200番を返している！！！gitで最初の状態にアプリケーションを巻き戻してもダメ！！！！」という感じだった。</p>
+<p>すみませんすみません。。。これのせいでかなりの時間を無駄にしてしまいましたね。。。</p>
+<h3 id="懺悔からわかる反省点">懺悔からわかる反省点</h3>
+<ul>
+<li>ベンチマークをラップするようなコマンドを作成しており、それが誤っていたせいでベンチマークが失敗し続けていましたのですが、ラップするものを皆が見られる状態にあまりしていなかったのが良くなかった - 一応、“isu vi”コマンドでラップスクリプト自体を編集できる機能はあったが、若干周知不足
+<ul>
+<li>それ以外でも、isuコマンドは機能追加してもあまり周知することができていなかった</li>
+</ul></li>
+<li>ベンチマークのラップコマンドを編集したことを周りに伝えなかったのが一番悪かった</li>
+<li>ベンチマークのラップコマンドをWebUIと一緒にバージョン管理していればよかった。そうしていなかっったため周りが変更に気づく土壌がなかった</li>
+<li>他のサーバのアクセスも監視していれば間違えに気づけた</li>
+<li>オプションを変更したらちゃんと動きを確認しましょう</li>
+</ul>
+<p>一日一日を大切に、反撃の牙を磨くのです！！！！！！</p>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'dekokun'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+          <ul class="social">
+            <li class="kindle"><div class="kindleWidget"><img style="vertical-align:middle;" src="https://d1xnn692s7u6t6.cloudfront.net/white-15.png"></img><span style="vertical-align:middle;margin-left:3px;">Send to Kindle</span></div></li>
+            <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
+            <li class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="dekokun" data-lang="ja">ツイート</a></li>
+            <li class="hatena-bookmark"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
+            <li><a data-pocket-label="pocket" data-pocket-count="horizontal" class="pocket-btn" data-lang="en"></a>
+            <script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script></li>
+          </ul>
+
+        </article>
+        <aside class="span3">
+          <div class="sidebar-module">
+            <div class="title">プロフィール</div>
+            <p class="id"><a href="https://twitter.com/dekokun">dekokun</a></p>
+            <p><a href="https://twitter.com/dekokun"><img src="../img/dekokun.png" alt="dekokun"></a></p>
+          </div>
+          <div class="sidebar-module hidden-phone">
+            <script language="javascript" type="text/javascript" src="http://b.hatena.ne.jp/js/widget.js" charset="utf-8"></script>
+            <script language="javascript" type="text/javascript">
+              Hatena.BookmarkWidget.url   = "http://dekokun.github.io/";
+              Hatena.BookmarkWidget.title = "人気エントリー";
+              Hatena.BookmarkWidget.sort  = "";
+              Hatena.BookmarkWidget.width = 200;
+              Hatena.BookmarkWidget.num   = 5;
+              Hatena.BookmarkWidget.theme = "hatenadiary";
+              Hatena.BookmarkWidget.load();
+            </script>
+          </div>
+          <div class="sidebar-module hidden-phone">
+            <script language="javascript" type="text/javascript" src="http://b.hatena.ne.jp/js/widget.js" charset="utf-8"></script>
+            <script language="javascript" type="text/javascript">
+              Hatena.BookmarkWidget.url   = "http://dekokun.github.com/";
+              Hatena.BookmarkWidget.title = "旧人気エントリー";
+              Hatena.BookmarkWidget.sort  = "";
+              Hatena.BookmarkWidget.width = 0;
+              Hatena.BookmarkWidget.num   = 5;
+              Hatena.BookmarkWidget.theme = "hatenadiary";
+              Hatena.BookmarkWidget.load();
+            </script>
+          </div>
+          <div class="sidebar-module visible-desktop">
+            <div class="title">twitter</div>
+            <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/dekokun" data-widget-id="306408547573440513">@dekokun からのツイート</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          </div>
+          <div class="sidebar-module hidden-phone">
+            <div class="title">RSS</div>
+            <p><a href="../rss.xml"><img src="../img/rss.gif" alt="rss"></a></p>
+          </div>
+        </aside> <!-- /span3 -->
+      </div> <!-- /row -->
+      <footer>
+        <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
+      </footer>
+    </div> <!-- /container -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+    <!-- /ツイートボタン -->
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+    <script src="../js/libs/bootstrap/bootstrap.min.js"></script>
+
+    <script src="../js/script.js"></script>
+    <script>
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+    <!-- Code syntax highlight -->
+    <script type="text/javascript" src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
+    <script type="text/javascript">
+    $(function(){ 
+        $('pre').css({
+            'overflow-x': 'scroll',
+            'background-color': '#f6f6f6',
+            'border': '1px dotted #ccc',
+            'padding': '0.8em'
+        });
+        $('pre code').addClass('prettyprint');
+        prettyPrint();
+    });
+    </script>
+    <script type="text/javascript" src="https://d1xnn692s7u6t6.cloudfront.net/widget.js"></script>
+    <script type="text/javascript">(function k(){window.$SendToKindle&&window.$SendToKindle.Widget?$SendToKindle.Widget.init({"content":"article"}):setTimeout(k,500);})();</script>
+  </body>
+</html>
