@@ -7709,8 +7709,14 @@ fi</code></pre>
 <h2 id="タイプヒンティングとは">タイプヒンティングとは</h2>
 <p>関数及びメソッドが受け取る引数がどのオブジェクトなのか(もしくはなんのインターフェースを備えるか)、配列なのか、コールバックなのかなどを指定することが出来る機能です。</p>
 <h3 id="具体例">具体例</h3>
-<p>// この“array $a”の“array”部分がタイプヒンティング function func(Iterator $a) { return $a-&gt;next(); }</p>
-<p>上記の “array”部分がタイプヒンティングとなります。</p>
+<p>こんな感じ</p>
+<pre><code>&lt;?php
+// この&quot;Iterator $a&quot;の&quot;Iterator&quot;部分がタイプヒンティング
+// ここで、$aはIteratorと同様のインターフェースを備えていることが保証される
+function func(Iterator $a) {
+    return $a-&gt;next();
+}</code></pre>
+<p>上記の “Iterator”部分がタイプヒンティングとなります。</p>
 <h3 id="違反するとどうなるの">違反するとどうなるの？</h3>
 <p>例えば、タイプヒンティングでクラスを指定したにもかかわらずスカラー値を指定された場合は例外が投げられます</p>
 <pre><code>&lt;?php
