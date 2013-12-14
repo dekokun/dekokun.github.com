@@ -7723,9 +7723,9 @@ function func(Iterator $a) {
 
 function func(TestClass $a) {
     return $a;
-    }
+}
 
-    func(1);</code></pre>
+func(1);</code></pre>
 <p>上記のようなコードは以下のような例外が投げられます</p>
 <pre><code>PHP Catchable fatal error:  Argument 1 passed to func() must be an instance of TestClass, integer given, called in /private/var/folders/hy/xc91_vr542z40knyzs4h9n2r0000gn/T/vHqWMFW/2 on line 8 and defined in /private/var/folders/hy/xc91_vr542z40knyzs4h9n2r0000gn/T/vHqWMFW/2 on line 4
 
