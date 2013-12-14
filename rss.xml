@@ -7610,6 +7610,269 @@ fi</code></pre>
     <pubDate>No date found.</pubDate>
     <guid>http://dekokun.github.io/posts/2013-11-09.html</guid>
 </item>
+<item>
+    <title>2013-12-14</title>
+    <link>http://dekokun.github.io/posts/2013-12-14.html</link>
+    <description><![CDATA[<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ja"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="ja"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ja"> <!--<![endif]-->
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>2013-12-14</title>
+    <meta name="description" content>
+    <meta name="author" content>
+
+    <meta name="viewport" content="width=device-width">
+    <meta property="fb:app_id" content="351187098330864">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="http://dekokun.github.com/img/dekokun.png">
+    <meta property="og:title" content="2013-12-14">
+    <meta property="og:description" content="@dekokunの技術日記">
+    <meta property="og:site_name" content="でこてっくろぐ">
+
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+    </style>
+    <link href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css" type="text/css" rel="stylesheet">
+    <script src="../js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-39650556-1', 'github.com');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <body>
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=351187098330864";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <header>
+      <nav class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="../index.html">でこてっくろぐ</a>
+            <div class="nav-collapse">
+              <ul class="nav">
+                <li><a href="../index.html">ほーむ</a></li>
+                <li><a href="../posts.html">あーかいぶ</a></li>
+                <li><a href="../aboutme.html">あばうとみー</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="row">
+        <article class="span9">
+          <h1>2013-12-14</h1>
+
+<p>by <em><a href="https://twitter.com/dekokun">$author$</a></em> on <strong>$date$</strong></p>
+
+<p>Tagged as: .</p>
+
+<table>
+<tbody>
+<tr class="odd">
+<td align="left">itle: 初心者向け タイプヒンティングとはなんなのかというお話</td>
+</tr>
+<tr class="even">
+<td align="left">uthor: @dekokun</td>
+</tr>
+<tr class="odd">
+<td align="left">ate: 2013/12/14 15:33</td>
+</tr>
+<tr class="even">
+<td align="left">ags: PHP</td>
+</tr>
+</tbody>
+</table>
+<p>どうも、<a href="http://qiita.com/advent-calendar/2013/php">PHP Advent Calendar 2013</a>の14日目の記事です。</p>
+<p>昨日は<a href="https://twitter.com/ockeghem">@ockeghem</a>の<a href="http://blog.tokumaru.org/2013/12/php12sql.html">PHPとセキュリティの解説書12種類を読んでSQLエスケープの解説状況を調べてみた</a>でしたね。</p>
+<p>最近、仕事を一緒にし始めた後輩がPHPに慣れておらず、PHPのタイプヒンティングのことを知らなかったので(そして、さっき一緒にお酒を飲んだ別の後輩もタイプヒンティングを知らなかったので)、彼らに向けて、タイプヒンティングとはなにか、なぜタイプヒンティングを使うのかを解説する記事となります。</p>
+<p>PHPのことをよく知っている皆様におかれましては特に得るものはないお話なのかなと思います。ご了承ください。なお、下記のような流れを経て、このブログの内容は当初の予定から変遷しました。</p>
+<blockquote class="twitter-tweet" lang="ja"><p>
+「returnとrequireでファイル間で値を受け渡しできるよ、でもonce系を使う場合は注意な」ってAdvent Calendarで書こうとしていたんだけど既にHirakuさんが全く同じこと書いてた。 <a href="http://t.co/FMhGllrYJz">http://t.co/FMhGllrYJz</a>
+</p>
+— でこくん (@dekokun) <a href="https://twitter.com/dekokun/statuses/405917922805047296">2013, 11月 28</a>
+</blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<h2 id="タイプヒンティングとは">タイプヒンティングとは</h2>
+<p>関数及びメソッドが受け取る引数がどのオブジェクトなのか(もしくはなんのインターフェースを備えるか)、配列なのか、コールバックなのかなどを指定することが出来る機能です。</p>
+<h3 id="具体例">具体例</h3>
+<p>// この“array $a”の“array”部分がタイプヒンティング function func(Iterator $a) { return $a-&gt;next(); }</p>
+<p>上記の “array”部分がタイプヒンティングとなります。</p>
+<h3 id="違反するとどうなるの">違反するとどうなるの？</h3>
+<p>例えば、タイプヒンティングでクラスを指定したにもかかわらずスカラー値を指定された場合は例外が投げられます</p>
+<pre><code>&lt;?php
+
+function func(TestClass $a) {
+    return $a;
+    }
+
+    func(1);</code></pre>
+<p>上記のようなコードは以下のような例外が投げられます</p>
+<pre><code>PHP Catchable fatal error:  Argument 1 passed to func() must be an instance of TestClass, integer given, called in /private/var/folders/hy/xc91_vr542z40knyzs4h9n2r0000gn/T/vHqWMFW/2 on line 8 and defined in /private/var/folders/hy/xc91_vr542z40knyzs4h9n2r0000gn/T/vHqWMFW/2 on line 4
+
+Catchable fatal error: Argument 1 passed to func() must be an instance of TestClass, integer given, called in /private/var/folders/hy/xc91_vr542z40knyzs4h9n2r0000gn/T/vHqWMFW/2 on line 8 and defined in /private/var/folders/hy/xc91_vr542z40knyzs4h9n2r0000gn/T/vHqWMFW/2 on line 4</code></pre>
+<h2 id="何が嬉しいの">何が嬉しいの？</h2>
+<ul>
+<li>エラーを早めに検知可能</li>
+<li>(コメントなどと比べて)検証可能、腐ることのない形(=メソッドのドックコメントなどとは違うのですよ)でメソッドの前提条件を指定可能</li>
+<li>そもそも、変なことが起きた時に例外が投げられるというのは、エラーを返り値で返しがちなPHPにとっては非常に重要なことだと思います</li>
+</ul>
+<h2 id="どんな時に使うの">どんな時に使うの？</h2>
+<p>少なくとも、現世利益的なことを話しますと、タイプヒンティングによって、期待しないクラス(とか配列とかコールバックとか)が引数にわたってこないことが保証されるため、バリデーションを減らすことができます。</p>
+<p>たとえば、以下のようなコードの場合、 if(is_array($a)) {throw new ;} とかやる必要はなくなります。</p>
+<pre><code>&lt;?php
+
+function func(array $a) {
+    return $a;
+}
+
+func(1);</code></pre>
+<h3 id="コールバック">コールバック</h3>
+<h3 id="とあるメソッドを持っているかどうかの検査">とあるメソッドを持っているかどうかの検査</h3>
+<h3 id="配列かどうか">配列かどうか</h3>
+<p>例外を投げずにエラーステータスを返す関数への防御になりますね。</p>
+<h2 id="最後">最後</h2>
+<p>便利だから積極的に使って行こったほうがいいと思います。後輩たちにおかれましても、少なくともライブラリのコードを読んで「ここはタイプヒンティングを使っているんだ！！」ということをわかるようになっていればと思います。</p>
+<p>というか、なんか色々骨抜きなブログだ！！！！！</p>
+<p>他にも、「名前空間の使い方」とか「composerをなぜ使うのか」とか、「migrationをなぜ使うのか」とか、伝えたいことは非常にたくさんあるのですが、本日は時間もないですしこのあたりで筆を置きます。</p>
+<p>酔っ払ってるしね。</p>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'dekokun'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+          <ul class="social">
+            <li class="kindle"><div class="kindleWidget"><img style="vertical-align:middle;" src="https://d1xnn692s7u6t6.cloudfront.net/white-15.png"></img><span style="vertical-align:middle;margin-left:3px;">Send to Kindle</span></div></li>
+            <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
+            <li class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="dekokun" data-lang="ja">ツイート</a></li>
+            <li class="hatena-bookmark"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
+            <li><a data-pocket-label="pocket" data-pocket-count="horizontal" class="pocket-btn" data-lang="en"></a>
+            <script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script></li>
+          </ul>
+
+        </article>
+        <aside class="span3">
+          <div class="sidebar-module">
+            <div class="title">プロフィール</div>
+            <p class="id"><a href="https://twitter.com/dekokun">dekokun</a></p>
+            <p><a href="https://twitter.com/dekokun"><img src="../img/dekokun.png" alt="dekokun"></a></p>
+          </div>
+          <div class="sidebar-module hidden-phone">
+            <script language="javascript" type="text/javascript" src="http://b.hatena.ne.jp/js/widget.js" charset="utf-8"></script>
+            <script language="javascript" type="text/javascript">
+              Hatena.BookmarkWidget.url   = "http://dekokun.github.io/";
+              Hatena.BookmarkWidget.title = "人気エントリー";
+              Hatena.BookmarkWidget.sort  = "";
+              Hatena.BookmarkWidget.width = 200;
+              Hatena.BookmarkWidget.num   = 5;
+              Hatena.BookmarkWidget.theme = "hatenadiary";
+              Hatena.BookmarkWidget.load();
+            </script>
+          </div>
+          <div class="sidebar-module hidden-phone">
+            <script language="javascript" type="text/javascript" src="http://b.hatena.ne.jp/js/widget.js" charset="utf-8"></script>
+            <script language="javascript" type="text/javascript">
+              Hatena.BookmarkWidget.url   = "http://dekokun.github.com/";
+              Hatena.BookmarkWidget.title = "旧人気エントリー";
+              Hatena.BookmarkWidget.sort  = "";
+              Hatena.BookmarkWidget.width = 0;
+              Hatena.BookmarkWidget.num   = 5;
+              Hatena.BookmarkWidget.theme = "hatenadiary";
+              Hatena.BookmarkWidget.load();
+            </script>
+          </div>
+          <div class="sidebar-module visible-desktop">
+            <div class="title">twitter</div>
+            <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/dekokun" data-widget-id="306408547573440513">@dekokun からのツイート</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          </div>
+          <div class="sidebar-module hidden-phone">
+            <div class="title">RSS</div>
+            <p><a href="../rss.xml"><img src="../img/rss.gif" alt="rss"></a></p>
+          </div>
+        </aside> <!-- /span3 -->
+      </div> <!-- /row -->
+      <footer>
+        <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
+      </footer>
+    </div> <!-- /container -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+    <!-- /ツイートボタン -->
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+    <script src="../js/libs/bootstrap/bootstrap.min.js"></script>
+
+    <script src="../js/script.js"></script>
+    <script>
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+    <!-- Code syntax highlight -->
+    <script type="text/javascript" src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
+    <script type="text/javascript">
+    $(function(){ 
+        $('pre').css({
+            'overflow-x': 'scroll',
+            'background-color': '#f6f6f6',
+            'border': '1px dotted #ccc',
+            'padding': '0.8em'
+        });
+        $('pre code').addClass('prettyprint');
+        prettyPrint();
+    });
+    </script>
+    <script type="text/javascript" src="https://d1xnn692s7u6t6.cloudfront.net/widget.js"></script>
+    <script type="text/javascript">(function k(){window.$SendToKindle&&window.$SendToKindle.Widget?$SendToKindle.Widget.init({"content":"article"}):setTimeout(k,500);})();</script>
+  </body>
+</html>
+]]></description>
+    <pubDate>No date found.</pubDate>
+    <guid>http://dekokun.github.io/posts/2013-12-14.html</guid>
+</item>
 
     </channel> 
 </rss>
