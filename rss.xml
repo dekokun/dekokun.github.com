@@ -7726,7 +7726,7 @@ function func(TestClass $a) {
 }
 
 func(1);</code></pre>
-<p>上記のようなコードは以下のような例外が投げられます</p>
+<p>上記のようなコードは以下のようなFatal errorが投げられます</p>
 <pre><code>PHP Catchable fatal error:  Argument 1 passed to func() must be an instance of TestClass, integer given, called in /private/var/folders/hy/xc91_vr542z40knyzs4h9n2r0000gn/T/vHqWMFW/2 on line 8 and defined in /private/var/folders/hy/xc91_vr542z40knyzs4h9n2r0000gn/T/vHqWMFW/2 on line 4
 
 Catchable fatal error: Argument 1 passed to func() must be an instance of TestClass, integer given, called in /private/var/folders/hy/xc91_vr542z40knyzs4h9n2r0000gn/T/vHqWMFW/2 on line 8 and defined in /private/var/folders/hy/xc91_vr542z40knyzs4h9n2r0000gn/T/vHqWMFW/2 on line 4</code></pre>
@@ -7734,11 +7734,11 @@ Catchable fatal error: Argument 1 passed to func() must be an instance of TestCl
 <ul>
 <li>エラーを早めに検知可能</li>
 <li>(コメントなどと比べて)検証可能、腐ることのない形(=メソッドのドックコメントなどとは違うのですよ)でメソッドの前提条件を指定可能</li>
-<li>そもそも、変なことが起きた時に例外が投げられるというのは、エラーを返り値で返しがちなPHPにとっては非常に重要なことだと思います</li>
+<li>そもそも、変なことが起きた時にエラーが起きて死ぬというのは、エラーを返り値で返しがちなPHPにとっては非常に重要なことだと思います</li>
 </ul>
 <h2 id="どんな時に使うの">どんな時に使うの？</h2>
 <p>少なくとも、現世利益的なことを話しますと、タイプヒンティングによって、期待しないクラス(とか配列とかコールバックとか)が引数にわたってこないことが保証されるため、バリデーションを減らすことができます。</p>
-<p>たとえば、以下のようなコードの場合、 if(is_array($a)) {throw new ;} とかやる必要はなくなります。</p>
+<p>たとえば、以下のようなコードの場合、<span class="math"><em>a</em><em>は</em><em>配</em><em>列</em><em>で</em><em>あ</em><em>る</em><em>こ</em><em>と</em><em>が</em><em>保</em><em>証</em><em>さ</em><em>れ</em><em>る</em><em>た</em><em>め</em>、<em>i</em><em>f</em>(<em>i</em><em>s</em><sub><em>a</em></sub><em>r</em><em>r</em><em>a</em><em>y</em>(</span>a)) {throw new ;} とかやる必要はなくなります。</p>
 <pre><code>&lt;?php
 
 function func(array $a) {
