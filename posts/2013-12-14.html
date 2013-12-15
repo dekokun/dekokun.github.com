@@ -130,7 +130,7 @@ function func(array $a) {
     return $a;
 }</code></pre>
 <p>$aは配列であることが保証されるため、func関数の中で</p>
-<pre><code>if(is_array($a)) {
+<pre><code>if(! is_array($a)) {
     throw new \InvalidArgumentException;
 }
 // do_something();</code></pre>
