@@ -7738,7 +7738,12 @@ Catchable fatal error: Argument 1 passed to func() must be an instance of TestCl
 </ul>
 <h2 id="どんな時に使うの">どんな時に使うの？</h2>
 <p>少なくとも、現世利益的なことを話しますと、タイプヒンティングによって、期待しないクラス(とか配列とかコールバックとか)が引数にわたってこないことが保証されるため、バリデーションを減らすことができます。</p>
-<p>たとえば、以下のようなコードの場合、<span class="math"><em>a</em><em>は</em><em>配</em><em>列</em><em>で</em><em>あ</em><em>る</em><em>こ</em><em>と</em><em>が</em><em>保</em><em>証</em><em>さ</em><em>れ</em><em>る</em><em>た</em><em>め</em>、<em>i</em><em>f</em>(<em>i</em><em>s</em><sub><em>a</em></sub><em>r</em><em>r</em><em>a</em><em>y</em>(</span>a)) {throw new ;} とかやる必要はなくなります。</p>
+<p>たとえば、以下のようなコードの場合、$aは配列であることが保証されるため、</p>
+<pre><code>if(is_array($a)) {
+    throw new \InvalidArgumentException;
+}
+// do_something();</code></pre>
+<p>とかやる必要はなくなります。</p>
 <pre><code>&lt;?php
 
 function func(array $a) {
