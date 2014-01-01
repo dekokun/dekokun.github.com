@@ -8268,7 +8268,8 @@ Ruby 「なんでもはオブジェクトじゃないわよ。オブジェクト
 
 <p>新年早々、去年全く使っていなかったNodeのブログを。</p>
 <h2 id="初めに">初めに</h2>
-<p>2年ほど前にNodeを使っていた時は、複数バージョン管理には<a href="https://github.com/creationix/nvm">npm</a>及び<a href="https://github.com/isaacs/nave">nave</a>が二大巨頭だった感じがありますが、調べたら<a href="https://github.com/visionmedia/n">n</a>というのが最近出ていたので使ってみました</p>
+<p>2年ほど前にNodeを使っていた時は、複数バージョン管理には<a href="https://github.com/creationix/nvm">npm</a>及び<a href="https://github.com/isaacs/nave">nave</a>が二大巨頭だった感じがありますが、調べたら<a href="https://github.com/visionmedia/n">n</a>というのがあったので使ってみました</p>
+<p>(2014/01/02 追記 nは、半年ほど前に開発が止まっているようだし、ちょっとイマイチなのかな…)</p>
 <h2 id="雰囲気">雰囲気</h2>
 <p>以下Readmeのトップにある動画を見ればわかるのではないかと。この、対話的にバージョンを選択する感じ、素敵ですね。</p>
 <ul>
