@@ -8506,12 +8506,12 @@ Ruby 「なんでもはオブジェクトじゃないわよ。オブジェクト
 <p>Tagged as: <a href="../tags/Zabbix.html">Zabbix</a>.</p>
 
 <p>忘れがちなので</p>
-<pre><code>アイテム名..count(直近何回から取得するか, 値, &quot;gtとかeqとか&quot;)&gt;回数
+<pre><code>アイテム名.count(直近何回から取得するか, 値, &quot;gtとかeqとか&quot;)&gt;回数
 
 例：
 {Template OS Linux:system.cpu.util[,iowait].count(#5, 30, &quot;gt&quot;)}&gt;3
 
-直近5回の計測でiowaitが30よりも大きい場合が3回より多くあったらトリガー発動
+上記は、直近5回の計測でiowaitが30よりも大きい場合が3回より多くあったらトリガー発動
 </code></pre>
 <p>それだけ。</p>
 
