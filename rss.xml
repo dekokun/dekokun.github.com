@@ -9039,12 +9039,12 @@ class HOGE
     }
 }</code></pre>
 <p>上記を実行すると、テストは全部通ります。めでたしめでたし。</p>
-<pre><code>vendor/bin/phpunit test.php
-    PHPUnit 3.7.32 by Sebastian Bergmann.
+<pre><code>$ vendor/bin/phpunit test.php
+PHPUnit 4.0.3 by Sebastian Bergmann.
 
 ....
 
-Time: 27 ms, Memory: 3.00Mb
+Time: 36 ms, Memory: 3.25Mb
 
 OK (4 tests, 4 assertions)</code></pre>
 <h2 id="まとめ">まとめ</h2>
