@@ -120,7 +120,7 @@ class MockeryTest extends PHPUnit_Framework_TestCase
     /**
     * @test
     */
-    public function withでの指定が2個目でも成功する()
+    public function withでの指定が2個目でもandReturnでの指定は成功する()
     {
         $this-&gt;assertEquals(0, $this-&gt;mock-&gt;get('fuga'));
     }
