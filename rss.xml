@@ -9245,28 +9245,23 @@ OK (4 tests, 4 assertions)</code></pre>
 <p>Tagged as: <a href="../tags/PHP.html">PHP</a>.</p>
 
 <p>どうも。来月結婚する@dekokunです。タイトルで言いたいことは全て言っているのですが、まぁ詳細書きます。</p>
-<h2 id="導入">導入</h2>
-<p>PHPのarray_searchは配列の中に値が存在するかどうかを判定し、存在したらその値が最初にマッチしたインデックスを返す関数です。 以下は本題ではありませんがまずは肩慣らしとして、「array_searchのバグじゃないか」としてよく言われる挙動を見ておきましょう。</p>
+<h2 id="導入-array_searchとは">導入 array_searchとは</h2>
+<blockquote>
+<p>指定した値を配列で検索し、見つかった場合に対応するキーを返す</p>
+</blockquote>
+<p>参照：<a href="http://www.php.net/manual/ja/function.array-search.php">array_search</a></p>
 <pre><code>&lt;?php
-
-function test() {
-  // 1は引数の配列の中に存在するし&quot;match&quot;が出力されるよね
-  if (array_search(1, [1, 2, 3])) {
-    echo 'match!';
-    return;
-  }
-  echo 'not match!';
-}
-
-test();
-// =&gt; &quot;not match!&quot;が出力される！！！</code></pre>
-<p>上記、PHPによく慣れている方は、すぐに「あ、検索する値が配列の0番目にあったのでarray_searchの返り値が0になりfalse判定されたんですね」とわかるかと思います。 はい、上記はまだ序の口です。というか、PHPを書いていればあまりにも普通のことです。</p>
+array_search(1, [2, 3, 4, 1]); // =&gt; 3
+// インデックス3の値が1なので、3が返ってきた
+array_search(1, [2, 1, 4, 1]); // =&gt; 1
+// 複数マッチした場合は最初にマッチした値を返す</code></pre>
+<p>という感じですね。</p>
 <h2 id="本題">本題</h2>
-<p>では、以下はわかりますでしょうか</p>
+<p>以下array_searchの挙動を見ましょう。</p>
 <pre><code>&lt;?php
 
 function test() {
-// 'hoge'なんて引数の配列の中に存在しないのでfalseが返るよね！
+  // 'hoge'なんて引数の配列の中に存在しないのでfalseが返るよね！
   if (array_search('hoge', [1, 2, 3, 0])) {
     echo 'match!';
     return;
@@ -9297,6 +9292,22 @@ test();
 =&gt; false
 // やった！これからはちゃんとstrictにしよう！！！</code></pre>
 <p>めでたしめでたしなのでしたー！！！</p>
+<h2 id="本題とは関係ないけどarray_searchについて">本題とは関係ないけどarray_searchについて</h2>
+<p>array_searchについて学んだついでに、上記の他に「array_searchのバグじゃないか」としてよく言われる挙動を見ておきましょう。</p>
+<pre><code>&lt;?php
+
+function test() {
+  // 1は引数の配列の中に存在するし&quot;match&quot;が出力されるよね
+  if (array_search(1, [1, 2, 3])) {
+    echo 'match!';
+    return;
+  }
+  echo 'not match!';
+}
+
+test();
+// =&gt; &quot;not match!&quot;が出力される！！！</code></pre>
+<p>上記、PHPによく慣れている方は、すぐに「あ、検索する値が配列の0番目にあったのでarray_searchの返り値が0になりfalse判定されたんですね」とわかるかと思います。 まぁ、こちらはわかりやすいですかね。PHPを書いていればあまりにも普通のことです。</p>
 <h2 id="あとがき">あとがき</h2>
 <p>PHPの曖昧さとうまく付き合っていく方法が未だによくわかっていない。 まぁ、とにかく厳密にできるところは一歩ずつ厳密にしていきましょう。</p>
 <p>あ、「来月結婚する」って書いたけど正確には入籍は一年くらい前に終わっていて、来月あるのは挙式です。</p>
