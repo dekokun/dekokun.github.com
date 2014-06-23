@@ -130,14 +130,15 @@ return array(
 <li>Web server: PHPのビルトインサーバ</li>
 <li>Apache Bench: Mac上から自分自身に対してApache Bench実施</li>
 </ul>
-<p>クラスファイルを1万ほど生成し、そのクラスのスタティックメソッドをひたすら呼び出すアプリケーションを作ってApache Benchをかけてみました。 (もろもろキャッシュに載せた結果を確認するため、2回同じことを行い、2回目の結果を採用しています)</p>
+<p>クラスファイルを1万ほど生成し(参考までに、素のSymfonyをインストールした際にvendorディレクトリ以下は6000ファイルほどとなっています)、そのクラスのスタティックメソッドをひたすら呼び出すアプリケーションを作ってApache Benchをかけてみました。 (もろもろキャッシュに載せた結果を確認するため、2回同じことを行い、2回目の結果を採用しています)</p>
 <pre><code>composer install 
 Time per request:       788.825 [ms] (mean)
 
 composer install --optimize-autoloader
 Time per request:       731.721 [ms] (mean)</code></pre>
-<p>はい、1割弱早くなりましたね。</p>
+<p>はい、少し早くなりましたね。</p>
 <p>何回かやりましたが全部こんなかんじでしたので、まぁある程度正しいんでしょうが、かなり適当に計測しているというのはご了承ください。</p>
+<p>なお、Composerが生成するautoloaderにおいてクラス名の最初の一文字というのは非常に重要なのですが、今回全てTestから始まるクラス名だったため、あまりにもこの計測は実態から乖離しまくっているなとは思いました。</p>
 <h2 id="結論">結論</h2>
 <p>composer install –optimize-autoloader をしよう ただ、まぁ、若干composer installにかかる時間が長くなる</p>
 <h2 id="自分が行ったテストについて">自分が行ったテストについて</h2>
