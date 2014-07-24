@@ -10205,7 +10205,7 @@ getrusageで使用するユーザー時間がとれるからそこからCPUの�
 </item>
 <item>
     <title>PHPにおけるタイプヒンティングでのClosureとcallableの違い</title>
-    <link>http://dekokun.github.io/posts/2014-07-24-2.html</link>
+    <link>http://dekokun.github.io/posts/2014-07-25-2.html</link>
     <description><![CDATA[<!doctype html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ja"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
@@ -10284,7 +10284,7 @@ getrusageで使用するユーザー時間がとれるからそこからCPUの�
         <article class="span9">
           <h1>PHPにおけるタイプヒンティングでのClosureとcallableの違い</h1>
 
-<p>by <em><a href="https://twitter.com/dekokun">@dekokun</a></em> on <strong>2014/07/24 00:26</strong></p>
+<p>by <em><a href="https://twitter.com/dekokun">@dekokun</a></em> on <strong>2014/07/25 00:26</strong></p>
 
 <p>Tagged as: <a href="../tags/PHP.html">PHP</a>, <a href="../tags/タイプヒンティング.html">タイプヒンティング</a>.</p>
 
@@ -10448,12 +10448,12 @@ closureTest(function() {}); // 問題なし</code></pre>
   </body>
 </html>
 ]]></description>
-    <pubDate>Thu, 24 Jul 2014 00:00:00 UT</pubDate>
-    <guid>http://dekokun.github.io/posts/2014-07-24-2.html</guid>
+    <pubDate>Fri, 25 Jul 2014 00:00:00 UT</pubDate>
+    <guid>http://dekokun.github.io/posts/2014-07-25-2.html</guid>
 </item>
 <item>
     <title>FuelPHPの脆弱性を再現出来た</title>
-    <link>http://dekokun.github.io/posts/2014-07-24.html</link>
+    <link>http://dekokun.github.io/posts/2014-07-25.html</link>
     <description><![CDATA[<!doctype html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ja"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
@@ -10532,7 +10532,7 @@ closureTest(function() {}); // 問題なし</code></pre>
         <article class="span9">
           <h1>FuelPHPの脆弱性を再現出来た</h1>
 
-<p>by <em><a href="https://twitter.com/dekokun">@dekokun</a></em> on <strong>2014/07/24 00:11</strong></p>
+<p>by <em><a href="https://twitter.com/dekokun">@dekokun</a></em> on <strong>2014/07/25 00:11</strong></p>
 
 <p>Tagged as: <a href="../tags/PHP.html">PHP</a>, <a href="../tags/FuelPHP.html">FuelPHP</a>.</p>
 
@@ -10656,7 +10656,7 @@ closureTest(function() {}); // 問題なし</code></pre>
 </html>
 ]]></description>
     <pubDate>No date found.</pubDate>
-    <guid>http://dekokun.github.io/posts/2014-07-24.html</guid>
+    <guid>http://dekokun.github.io/posts/2014-07-25.html</guid>
 </item>
 
     </channel> 
