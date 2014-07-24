@@ -6,7 +6,7 @@
   <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>FuelPHPの脆弱性を再現出来た</title>
+    <title>FuelPHPの脆弱性への攻撃を再現出来た</title>
     <meta name="description" content>
     <meta name="author" content>
 
@@ -14,7 +14,7 @@
     <meta property="fb:app_id" content="351187098330864">
     <meta property="og:type" content="article">
     <meta property="og:image" content="http://dekokun.github.com/img/dekokun.png">
-    <meta property="og:title" content="FuelPHPの脆弱性を再現出来た">
+    <meta property="og:title" content="FuelPHPの脆弱性への攻撃を再現出来た">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
 
@@ -74,23 +74,23 @@
     <div class="container">
       <div class="row">
         <article class="span9">
-          <h1>FuelPHPの脆弱性を再現出来た</h1>
+          <h1>FuelPHPの脆弱性への攻撃を再現出来た</h1>
 
 <p>by <em><a href="https://twitter.com/dekokun">@dekokun</a></em> on <strong>2014/07/25 00:11</strong></p>
 
 <p>Tagged as: <a href="../tags/PHP.html">PHP</a>, <a href="../tags/FuelPHP.html">FuelPHP</a>.</p>
 
 <h2 id="概要">概要</h2>
-<p>FuelPHPの脆弱性を再現出来て嬉しいんだけど、こういうのって公開していいものなの？</p>
+<p>FuelPHPの脆弱性への攻撃を再現出来て嬉しいんだけど、こういうのって公開していいものなの？</p>
 <h2 id="詳細">詳細</h2>
-<p><a href="http://codezine.jp/article/detail/79209">JVN#94791545 FuelPHP において任意のコードが実行される脆弱性</a>に書かれている脆弱性の再現できそうだったので再現に努めた。</p>
+<p><a href="http://codezine.jp/article/detail/79209">JVN#94791545 FuelPHP において任意のコードが実行される脆弱性</a>に書かれている脆弱性を突く攻撃を再現できそうだったので再現に努めた。</p>
 <p>無事再現出来たんだけど、こういう攻撃方法って、あんまり外に出しちゃいけないんですか。どうなんですか。</p>
 <ol style="list-style-type: decimal">
 <li>公開したら攻撃したい人が喜ぶだろ</li>
 <li>公開して危険さを広めることで皆のバージョンアップを促そう</li>
 </ol>
 <p>という２つの立ち位置がある感じがする。</p>
-<p>まぁ、そもそも今回の脆弱性はやり方を公開したところで普通の人はどうにもできない感はある。攻撃相手サーバの通信先に、攻撃コードを埋め込む必要があるので…</p>
+<p>まぁ、そもそも今回の脆弱性への攻撃はやり方を公開したところで普通の人はどうにもできない感はある。攻撃相手サーバの通信先に、攻撃コードを埋め込む必要があるので…</p>
 <h2 id="結論">結論</h2>
 <p>serializeされて渡された文字列をデフォルトでunserializeするような実装にしているのはさすがにもっとちゃんとしてくださいという気持ち。私もちゃんと気をつけたいです。</p>
 <p>FuelPHP、この脆弱性対応で、1.7.1と1.7.2というマイナーバージョンアップにもかかわらずRequest系クラスのインターフェースが結構変わってしまった感あるのだが大丈夫なのだろうかという気持ち。</p>
