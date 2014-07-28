@@ -118,7 +118,7 @@ function closureTest(\Closure $func) {
 }
 
 callableTest('printf'); // 問題なし
-closureTest('printf'); // PHP Catchable fatal error:  Argument 1 passed to closureTest() must be an instance of Closure, string given
+// closureTest('printf'); // PHP Catchable fatal error:  Argument 1 passed to closureTest() must be an instance of Closure, string given
 
 class Hoge {
   public function hoge() {
@@ -128,7 +128,7 @@ class Hoge {
 $hoge = new Hoge();
 
 callableTest([$hoge, 'hoge']); // 問題なし
-closureTest([$hoge, 'hoge']); // PHP Catchable fatal error:  Argument 1 passed to closureTest() must be an instance of Closure, string given
+// closureTest([$hoge, 'hoge']); // PHP Catchable fatal error:  Argument 1 passed to closureTest() must be an instance of Closure, array given,
 
 callableTest(function() {}); // 問題なし
 closureTest(function() {}); // 問題なし</code></pre>
