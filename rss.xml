@@ -10659,7 +10659,7 @@ closureTest(function() {}); // 問題なし</code></pre>
     <guid>http://dekokun.github.io/posts/2014-07-25.html</guid>
 </item>
 <item>
-    <title>2014-08-31</title>
+    <title>CEDEC AI CHALLENGE 決勝に参加して来ます</title>
     <link>http://dekokun.github.io/posts/2014-08-31.html</link>
     <description><![CDATA[<!doctype html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ja"> <![endif]-->
@@ -10669,7 +10669,7 @@ closureTest(function() {}); // 問題なし</code></pre>
   <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>2014-08-31</title>
+    <title>CEDEC AI CHALLENGE 決勝に参加して来ます</title>
     <meta name="description" content>
     <meta name="author" content>
 
@@ -10677,7 +10677,7 @@ closureTest(function() {}); // 問題なし</code></pre>
     <meta property="fb:app_id" content="351187098330864">
     <meta property="og:type" content="article">
     <meta property="og:image" content="http://dekokun.github.com/img/dekokun.png">
-    <meta property="og:title" content="2014-08-31">
+    <meta property="og:title" content="CEDEC AI CHALLENGE 決勝に参加して来ます">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
 
@@ -10737,13 +10737,12 @@ closureTest(function() {}); // 問題なし</code></pre>
     <div class="container">
       <div class="row">
         <article class="span9">
-          <h1>2014-08-31</h1>
+          <h1>CEDEC AI CHALLENGE 決勝に参加して来ます</h1>
 
-<p>by <em><a href="https://twitter.com/dekokun">$author$</a></em> on <strong>$date$</strong></p>
+<p>by <em><a href="https://twitter.com/dekokun">@dekokun</a></em> on <strong>2014/08/31 12:56</strong></p>
 
-<p>Tagged as: .</p>
+<p>Tagged as: <a href="../tags/PHP.html">PHP</a>.</p>
 
-<h1 id="cedec-ai-challenge-決勝に参加して来ます">CEDEC AI CHALLENGE 決勝に参加して来ます</h1>
 <h2 id="概要">概要</h2>
 <ul>
 <li>日本最大のゲーム開発者向けカンファレンスであるところのCEDECにて、AIコンテストが開かれる</li>
