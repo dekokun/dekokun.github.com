@@ -10885,6 +10885,310 @@ closureTest(function() {}); // 問題なし</code></pre>
     <pubDate>No date found.</pubDate>
     <guid>http://dekokun.github.io/posts/2014-08-31.html</guid>
 </item>
+<item>
+    <title>PHPを使ったり4000円課金したりしてCEDEC AI CHALLENGE 準優勝に至るまでの軌跡</title>
+    <link>http://dekokun.github.io/posts/2014-09-07.html</link>
+    <description><![CDATA[<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ja"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="ja"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ja"> <!--<![endif]-->
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>PHPを使ったり4000円課金したりしてCEDEC AI CHALLENGE 準優勝に至るまでの軌跡</title>
+    <meta name="description" content>
+    <meta name="author" content>
+
+    <meta name="viewport" content="width=device-width">
+    <meta property="fb:app_id" content="351187098330864">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="http://dekokun.github.com/img/dekokun.png">
+    <meta property="og:title" content="PHPを使ったり4000円課金したりしてCEDEC AI CHALLENGE 準優勝に至るまでの軌跡">
+    <meta property="og:description" content="@dekokunの技術日記">
+    <meta property="og:site_name" content="でこてっくろぐ">
+
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+    </style>
+    <link href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css" type="text/css" rel="stylesheet">
+    <script src="../js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-39650556-1', 'github.com');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <body>
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=351187098330864";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <header>
+      <nav class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="../index.html">でこてっくろぐ</a>
+            <div class="nav-collapse">
+              <ul class="nav">
+                <li><a href="../index.html">ほーむ</a></li>
+                <li><a href="../posts.html">あーかいぶ</a></li>
+                <li><a href="../aboutme.html">あばうとみー</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="row">
+        <article class="span9">
+          <h1>PHPを使ったり4000円課金したりしてCEDEC AI CHALLENGE 準優勝に至るまでの軌跡</h1>
+
+<p>by <em><a href="https://twitter.com/dekokun">@dekokun</a></em> on <strong>2014/09/08 00:07</strong></p>
+
+<p>Tagged as: <a href="../tags/PHP.html">PHP</a>, <a href="../tags/contest.html">contest</a>.</p>
+
+<h2 id="概要">概要</h2>
+<p>日本で最大のゲーム開発者向けカンファレンスであるところのCEDECにて、AIのプログラミングコンテストが開かれました。</p>
+<p>その名も<a href="http://www.ai-comp.net/cedec2014/">CEDEC AI CHELLENGE</a>。</p>
+<p>そこで、PHPを使って参戦したら見事準優勝したので何を行ったかを書きます</p>
+<p>なお、この大会はオンラインで行われる予選と、実際にCEDECの会場で行われる本選の2段階で行われるました。 上記「見事準優勝」等と言っておりますが、予選はともかく本選の方はほとんど運によって全てが支配されていたため、準優勝ってなんぼのもんなのかと言われると、「最低限瞬殺されないくらいの強さ」というくらいの話でしかないです。はい。</p>
+<p>参加者は、去年は11人だったようですが今年は5倍以上の60人。来年はもっと増えるんですかね。来年も参加したいですね。</p>
+<p>なお、タイトルに「PHP」と付けたのは、日々disられがちなPHP使いへのエールを込めてです(去年のISUCONブログでも同じ事を書いたよね <a href="http://dekokun.github.io/posts/2013-10-06.html">ISUCON予選にPHP実装で参加して3位になりましたーやったことなどまとめ</a>)</p>
+<h2 id="簡単なルール">簡単なルール</h2>
+<ul>
+<li>詳細はこちら <a href="http://www.ai-comp.net/cedec2014/#game-rules">Game Rules</a></li>
+<li>一回の対戦は4人で行われます。8人のバーチャルな女の子がいて、平日は5回、休日は2回、それぞれ誰かとデートをします</li>
+<li>平日に誰が誰とデートをしたかの情報は開示されるのですが、休日は、どの女の子がデートをしたかだけが開示され、誰とデートしかかは不明です</li>
+<li>それらの情報を元により多くの女の子の好感度をあげよう！</li>
+<li>女の子には一人ひとりに情熱度が付与され公開されていて、情熱度が高い女の子の好感度を上げるほど勝利は近いぞ！</li>
+<li>さて、他の人の情報が中途半端にわかっている状態で君は誰とデートする？！</li>
+<li>みたいなざっくりとしたルールはそんな感じです</li>
+<li>使用言語は、C, C++, Java, C#, Scala, Ruby, Python, Perl, PHP, Haskell, JavaScriptです</li>
+<li>今回私はPHPを使いました。最近disられがちなPHPの復権を望んでそんなことをしましたが、動的言語が遅いのはわかりきった話ではあるので、次はScalaで戦います</li>
+<li>多分、今回本選に参加したメンバーの中でPHP使ってたの私だけだろうなぁ</li>
+<li>別のところでGoが使わせてもらえるのならGoで書く</li>
+</ul>
+<h2 id="戦略概要">戦略概要</h2>
+<ul>
+<li>ルールベースAIとモンテカルロなAIの組み合わせ</li>
+<li>最初は「ただのルールベースAIで行くぞ」と思ってルールベースの土台を作ったが、結局「基本ははモンテカルロ法ルール。前半と後半でちょっとパラメータを変化させるためにルールベースAIを使った」という感じだったため、ルールベースAIを導入した意味はほとんどなかった</li>
+<li>どのようにモンテカルロ法を使ったか</li>
+<li>自分の取りうる全ての手に対して、その後自分と相手がランダムに全ての手を打ったと仮定した際に誰が勝つかを計算し、その中で自分の勝率が最も良かった手を打つ</li>
+<li>情報の不完全性を最大限利用して頭のいいAIに情報を与えないためにために、前半は休日の際は1ターンの中では2日とも同じ相手に点を入れるようにしてある</li>
+<li>上記を前半だけにしたのは、前半に混乱させれば後々それが効いてくるだろうというのと、後半はお互いの今後の可能性が減りより精緻なよみができるようになるのでその中でちゃんと最善の手を打たせたかったから</li>
+</ul>
+<h2 id="なぜモンテカルロ">なぜモンテカルロ？</h2>
+<p>意思決定の流れを時系列順に</p>
+<ul>
+<li>「このAI,モンテカルロが向いているんちゃいますか？」という後輩の進言によってモンテカルロ法のAIについて調べる</li>
+<li>調べたところ「どのような手を打っても確実にゲームは終了する」というゲームの特徴がモンテカルロ法にぴったりだった</li>
+<li>唯一の懸念点は、PHPを選択していることで「Scala等のコンパイル型の言語を選んだ参加者と比べて計算量が圧倒的に少なく試行回数が稼げない」ところ</li>
+<li>以下『工夫したところ』『反省点』にあるように、今回の問題はモンテカルロ法を選択した際に収束を早める工夫が色々できそうだったのでまぁ、他の参加者を出し抜くことも可能だろう</li>
+<li>モンテカルロに決定</li>
+</ul>
+<h2 id="aiで工夫したところ">AIで工夫したところ</h2>
+<ul>
+<li>自分が取りうる手は状況によって変わらないためプログラム内に自分の打ち得る手を最初に列挙しておいたところ</li>
+<li>こちら、実は手打ちでやっており、やばかった。700超通りの配列を延々手打ちで作成したのはものすごくプログラマとしてダメなことしてるなと思いながら延々手打ちをした</li>
+<li>過去のデート回数については、1ターン毎の各ヒロインのデート回数を、そのターンでの全デート回数で割った数を、自分以外の各プレイヤが取得した好感度として計算 &lt;- この考えを入れることで明らかに勝率が上がった</li>
+<li>今回、「敵がランダムに行動する」という仮定をとった際、自分がとった手は全く相手の手に影響を与えないため（例えば囲碁の場合、自分が打った場所には敵は打てないが、今回はそのような制約はない）、ランダムな、全プレイヤーが取りうる手の中で、自分がとる手を入れ替えていくことで計算量を減らすという戦略をとった</li>
+<li>このゲームでは、「敵がランダムに行動する」という仮定をとった際、「ある手を打つことが決まっているのであれば、それがどのタイミングだとしても最終結果は変わらない」ため、あるプレイヤーが今後取りうる手を計算する際に、「全45ポイントをどのヒロインに割り振るか」だけを計算することで、収束を早めることができた
+<ul>
+<li>これによって、一人のプレイヤーが取りうる手の組み合わせ結果が 8^45(ものすごくたくさん) から 52C8(752538150) まで減った(と思う。計算が間違っていなければ)</li>
+<li>ただ、この方法での敵のポイント分布は実際にランダムに敵が行動した場合のポイント分布と異なるという欠点はあるが収束を早めるためにやってよかったと思っている</li>
+</ul></li>
+</ul>
+<h2 id="aiの中身以外で良かった点">AIの中身以外で良かった点</h2>
+<ul>
+<li>Jenkinsを構築しGithubにコードがPUSHされたタイミングで、過去の自分と300回ほど対戦して極端に勝率が低くなっていないかを確認するCIを回していた</li>
+<li>これを実現するためにはCPUぶんまわしの並列実行バリバリできるサーバが必要であり、AWSのc3.8xlargeというかなり最強に近いインスタンスを使用し、2日で4000円ほどが吹き飛んだ</li>
+<li>勝率のグラフ化、plotプラグインが便利だった</li>
+<li>提出直前は、「ある施策を打つ」「JenkinsのCIで極端に勝率が落ちる」「revertする」の繰り返しで、弱いAIを提出しちゃわなかったという点で圧倒的に役に立った</li>
+<li>ライバルと一緒に参加したこと</li>
+<li>まぁ、ライバルというか会社の後輩なんだけど、二人で励まし合ったり情報交換したりして頑張れた</li>
+<li>なお、彼は予選の「最後に提出したAIが採用される」というルールを把握しておらずそんなに強くないAIで戦い死んだ</li>
+<li>予選終了後にライバルとの反省会</li>
+<li>予選が終わった後すぐにお互いがどのような戦略をとっていたのかをまじえつつ反省会を行った</li>
+<li>その結果は決勝のAIにフィードバックされております</li>
+<li>プロファイラでボトルネックを測定した</li>
+<li>PHPには、最強のプロファイリングツールであるxhprofがありまして、こいつのお陰でボトルネックらくらく特定でしたね</li>
+</ul>
+<h2 id="行おうとしたけどしなかった施策達">行おうとしたけどしなかった施策達</h2>
+<p>邪悪なものから、普通に実現できなかったものまで</p>
+<h3 id="並列実行">並列実行</h3>
+<ul>
+<li>そもそもPHPでは並列実行周り非常に弱いのだが、新しいプロセスを起動し自分自身を実行して標準出力でデータを受け渡すなどしてなんとかすれば並列実行できるしそちら頑張ってみようかなと思った</li>
+<li>そもそもコア数が1だったら意味が無いので計測した。具体的には、 予選サーバの/proc/cpuinfoファイルの中身をAI実行ファイルから覗き見た</li>
+<li>結果、コア数が1だとわかったため並列実行は断念</li>
+<li>後で運営の方に確認したところ、DigitalOceanの一番安いインスタンスを使用していたとのことだった</li>
+<li>事前にインスタンス情報も与えられていなかったし計測するのは本当に大切なことだ！</li>
+</ul>
+<h3 id="外部のサーバに頑張らせる">外部のサーバに頑張らせる</h3>
+<ul>
+<li>外部の超いいインスタンスを用意し、そのAPIを叩くことで高性能な外部のサーバに計算させることを考えた</li>
+<li>が、PHPから外部のサーバを叩こうとしたらエラーだったため「さすがに運営が止めているか。そりゃそうだよな」とすぐに諦めた</li>
+<li>運営によると「外部への通信は制限していなかったはず」と言っていたので何か間違えたかも</li>
+</ul>
+<h3 id="事前に計算結果を持っておく">事前に計算結果を持っておく</h3>
+<ul>
+<li>今回PHPを使ったわけだが最大の弱点として「遅い」という問題があるため、それを事前計算で解決しようとした</li>
+<li>具体的には、試行回数を増やしたモンテカルロ法で、事前にあらゆる手に対しての最善手を計算してファイルに格納しておき、実際の戦いでは現状から答えを読み取るだけで済むようにする</li>
+<li>ファイルアップロードの容量制限があるのは知っていたため、前半の手だけでも格納できないかなと考えていた</li>
+<li>実装時間がたりなさすぎてできなかった</li>
+</ul>
+<h3 id="複数aiの協調動作邪悪">複数AIの協調動作(邪悪)</h3>
+<ul>
+<li>複数アカウントを作成し、序盤はそれぞれのAIがある法則にしたがって自分の手を打ち他のAIにメッセージを投げる</li>
+<li>それぞれのAIが、序盤のメッセージを受け戦いの中に味方がいることを察すると、後はそれぞれが事前に決められたあるAIを勝たせるために協調動作する</li>
+<li>具体的には、勝たせるAIが狙っている女の子に対しては自分は一位の好感度を得ないようにし、他のAIが勝ちそうな女の子の好感度を上げて他のAIにポイントをとらせないみたいな</li>
+<li>この方法は予選突破にしか使えず、そもそも実装がかなり複雑になるため予選突破するためなら普通に頑張ったほうが早いと思ってやめた。そもそも発想が邪悪すぎる</li>
+</ul>
+<h2 id="感想">感想</h2>
+<ul>
+<li>アイデアをくれた後輩に感謝</li>
+<li>モンテカルロ法、実行結果をみても正しく動いているかがよくわからないためデバッグが著しく困難</li>
+<li>その反省を活かして決勝にJenkinsを導入したのはとてもよかった</li>
+<li>PHPの「division by zero エラーでもプログラムが止まらない」という特性を知った</li>
+<li>予選では上記エラーが出まくるプログラムを提出していました。動いていたから気付かなかった。恐ろしいですね</li>
+<li>懇親会の中華、おいしかったです</li>
+</ul>
+<h2 id="最後に">最後に</h2>
+<ul>
+<li>運営の方が、この対戦に使用される絵を描いていただける絵師さんを募集しているそうです</li>
+<li>コードはこちら https://github.com/dekokun/CEDECAI</li>
+<li>このブログ、めちゃ長いな</li>
+</ul>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'dekokun'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+          <ul class="social">
+            <li class="kindle"><div class="kindleWidget"><img style="vertical-align:middle;" src="https://d1xnn692s7u6t6.cloudfront.net/white-15.png" /><span style="vertical-align:middle;margin-left:3px;">Send to Kindle</span></div></li>
+            <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
+            <li class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="dekokun" data-lang="ja">ツイート</a></li>
+            <li class="hatena-bookmark"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
+            <li><a data-pocket-label="pocket" data-pocket-count="horizontal" class="pocket-btn" data-lang="en"></a>
+            <script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script></li>
+          </ul>
+
+        </article>
+        <aside class="span3">
+          <div class="sidebar-module">
+            <div class="title">プロフィール</div>
+            <p class="id"><a href="https://twitter.com/dekokun">dekokun</a></p>
+            <p><a href="https://twitter.com/dekokun"><img src="../img/dekokun.png" alt="dekokun"></a></p>
+          </div>
+          <div class="sidebar-module hidden-phone">
+            <script language="javascript" type="text/javascript" src="http://b.hatena.ne.jp/js/widget.js" charset="utf-8"></script>
+            <script language="javascript" type="text/javascript">
+              Hatena.BookmarkWidget.url   = "http://dekokun.github.io/";
+              Hatena.BookmarkWidget.title = "人気エントリー";
+              Hatena.BookmarkWidget.sort  = "";
+              Hatena.BookmarkWidget.width = 200;
+              Hatena.BookmarkWidget.num   = 5;
+              Hatena.BookmarkWidget.theme = "hatenadiary";
+              Hatena.BookmarkWidget.load();
+            </script>
+          </div>
+          <div class="sidebar-module hidden-phone">
+            <script language="javascript" type="text/javascript" src="http://b.hatena.ne.jp/js/widget.js" charset="utf-8"></script>
+            <script language="javascript" type="text/javascript">
+              Hatena.BookmarkWidget.url   = "http://dekokun.github.com/";
+              Hatena.BookmarkWidget.title = "旧人気エントリー";
+              Hatena.BookmarkWidget.sort  = "";
+              Hatena.BookmarkWidget.width = 0;
+              Hatena.BookmarkWidget.num   = 5;
+              Hatena.BookmarkWidget.theme = "hatenadiary";
+              Hatena.BookmarkWidget.load();
+            </script>
+          </div>
+          <div class="sidebar-module visible-desktop">
+            <div class="title">twitter</div>
+            <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/dekokun" data-widget-id="306408547573440513">@dekokun からのツイート</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          </div>
+          <div class="sidebar-module hidden-phone">
+            <div class="title">RSS</div>
+            <p><a href="../rss.xml"><img src="../img/rss.gif" alt="rss"></a></p>
+          </div>
+        </aside> <!-- /span3 -->
+      </div> <!-- /row -->
+      <footer>
+        <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
+      </footer>
+    </div> <!-- /container -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+    <!-- /ツイートボタン -->
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+    <script src="../js/libs/bootstrap/bootstrap.min.js"></script>
+
+    <script src="../js/script.js"></script>
+    <script>
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+    <!-- Code syntax highlight -->
+    <script type="text/javascript" src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
+    <script type="text/javascript">
+    $(function(){ 
+        $('pre').css({
+            'overflow-x': 'scroll',
+            'background-color': '#f6f6f6',
+            'border': '1px dotted #ccc',
+            'padding': '0.8em'
+        });
+        $('pre code').addClass('prettyprint');
+        prettyPrint();
+    });
+    </script>
+    <script type="text/javascript" src="https://d1xnn692s7u6t6.cloudfront.net/widget.js"></script>
+    <script type="text/javascript">(function k(){window.$SendToKindle&&window.$SendToKindle.Widget?$SendToKindle.Widget.init({"content":"article"}):setTimeout(k,500);})();</script>
+  </body>
+</html>
+]]></description>
+    <pubDate>No date found.</pubDate>
+    <guid>http://dekokun.github.io/posts/2014-09-07.html</guid>
+</item>
 
     </channel> 
 </rss>
