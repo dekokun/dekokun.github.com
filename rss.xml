@@ -29,6 +29,7 @@
     <meta property="og:title" content="「第2回 スタートHaskell2」行ってきた">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
+    <meta name="twitter:widgets:csp" content="on">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-responsive.css">
@@ -46,7 +47,8 @@
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-39650556-1', 'github.com');
+
+      ga('create', 'UA-39650556-1', 'auto');
       ga('send', 'pageview');
     </script>
   </head>
@@ -273,6 +275,7 @@ myOr _ b = b</code></pre>
     <meta property="og:title" content="ブログ移設しました！！！">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
+    <meta name="twitter:widgets:csp" content="on">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-responsive.css">
@@ -290,7 +293,8 @@ myOr _ b = b</code></pre>
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-39650556-1', 'github.com');
+
+      ga('create', 'UA-39650556-1', 'auto');
       ga('send', 'pageview');
     </script>
   </head>
@@ -508,6 +512,7 @@ myOr _ b = b</code></pre>
     <meta property="og:title" content="シェルスクリプトでクロージャ(的な何か)">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
+    <meta name="twitter:widgets:csp" content="on">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-responsive.css">
@@ -525,7 +530,8 @@ myOr _ b = b</code></pre>
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-39650556-1', 'github.com');
+
+      ga('create', 'UA-39650556-1', 'auto');
       ga('send', 'pageview');
     </script>
   </head>
@@ -797,6 +803,7 @@ func</code></pre>
     <meta property="og:title" content="シンタックスハイライト追加">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
+    <meta name="twitter:widgets:csp" content="on">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-responsive.css">
@@ -814,7 +821,8 @@ func</code></pre>
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-39650556-1', 'github.com');
+
+      ga('create', 'UA-39650556-1', 'auto');
       ga('send', 'pageview');
     </script>
   </head>
@@ -1028,6 +1036,7 @@ $(function(){
     <meta property="og:title" content="Hakyllで作成したブログにRSS機能追加">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
+    <meta name="twitter:widgets:csp" content="on">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-responsive.css">
@@ -1045,7 +1054,8 @@ $(function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-39650556-1', 'github.com');
+
+      ga('create', 'UA-39650556-1', 'auto');
       ga('send', 'pageview');
     </script>
   </head>
@@ -1237,6 +1247,7 @@ $(function(){
     <meta property="og:title" content="GitHub Pagesでのビルド失敗">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
+    <meta name="twitter:widgets:csp" content="on">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-responsive.css">
@@ -1254,7 +1265,8 @@ $(function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-39650556-1', 'github.com');
+
+      ga('create', 'UA-39650556-1', 'auto');
       ga('send', 'pageview');
     </script>
   </head>
@@ -1456,6 +1468,7 @@ $(function(){
     <meta property="og:title" content="夏サミ感想(グリーを支えるソーシャルコーディングのすべてについて)">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
+    <meta name="twitter:widgets:csp" content="on">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-responsive.css">
@@ -1473,7 +1486,8 @@ $(function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-39650556-1', 'github.com');
+
+      ga('create', 'UA-39650556-1', 'auto');
       ga('send', 'pageview');
     </script>
   </head>
@@ -1748,6 +1762,7 @@ $(function(){
     <meta property="og:title" content="シェルスクリプトでMaybeモナド(その1)">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
+    <meta name="twitter:widgets:csp" content="on">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-responsive.css">
@@ -1765,7 +1780,8 @@ $(function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-39650556-1', 'github.com');
+
+      ga('create', 'UA-39650556-1', 'auto');
       ga('send', 'pageview');
     </script>
   </head>
@@ -2036,6 +2052,7 @@ ret &quot;fuga:存在しない&quot; | bind &quot;maybe_ls&quot; | bind &quot;ma
     <meta property="og:title" content="「HTML5 Conference」行ってきた 「次世代Web技術を切り開くゲーム開発者たち」メモ">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
+    <meta name="twitter:widgets:csp" content="on">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-responsive.css">
@@ -2053,7 +2070,8 @@ ret &quot;fuga:存在しない&quot; | bind &quot;maybe_ls&quot; | bind &quot;ma
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-39650556-1', 'github.com');
+
+      ga('create', 'UA-39650556-1', 'auto');
       ga('send', 'pageview');
     </script>
   </head>
@@ -2464,6 +2482,7 @@ ret &quot;fuga:存在しない&quot; | bind &quot;maybe_ls&quot; | bind &quot;ma
     <meta property="og:title" content="PHP5.3にてタイプヒンティングでスカラー型が使える！？(勘違い編)">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
+    <meta name="twitter:widgets:csp" content="on">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-responsive.css">
@@ -2481,7 +2500,8 @@ ret &quot;fuga:存在しない&quot; | bind &quot;maybe_ls&quot; | bind &quot;ma
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-39650556-1', 'github.com');
+
+      ga('create', 'UA-39650556-1', 'auto');
       ga('send', 'pageview');
     </script>
   </head>
@@ -2779,6 +2799,7 @@ myfunc(new Integer(1));</code></pre>
     <meta property="og:title" content="DevLOVE Conference 2012 に参加した後、これからの私にとって最も大切なこと">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
+    <meta name="twitter:widgets:csp" content="on">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-responsive.css">
@@ -2796,7 +2817,8 @@ myfunc(new Integer(1));</code></pre>
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-39650556-1', 'github.com');
+
+      ga('create', 'UA-39650556-1', 'auto');
       ga('send', 'pageview');
     </script>
   </head>
@@ -3011,6 +3033,7 @@ myfunc(new Integer(1));</code></pre>
     <meta property="og:title" content="PHPにおいてstaticメソッドの呼び出し元クラスを動的に変更">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
+    <meta name="twitter:widgets:csp" content="on">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-responsive.css">
@@ -3028,7 +3051,8 @@ myfunc(new Integer(1));</code></pre>
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-39650556-1', 'github.com');
+
+      ga('create', 'UA-39650556-1', 'auto');
       ga('send', 'pageview');
     </script>
   </head>
@@ -3244,6 +3268,7 @@ $className::method();</code></pre>
     <meta property="og:title" content="「第7回 スタートHaskell2(最終回)」行ってきた">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
+    <meta name="twitter:widgets:csp" content="on">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-responsive.css">
@@ -3261,7 +3286,8 @@ $className::method();</code></pre>
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-39650556-1', 'github.com');
+
+      ga('create', 'UA-39650556-1', 'auto');
       ga('send', 'pageview');
     </script>
   </head>
@@ -3491,6 +3517,7 @@ $className::method();</code></pre>
     <meta property="og:title" content="GREE Tech Talk #2 へ行って来ました">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
+    <meta name="twitter:widgets:csp" content="on">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-responsive.css">
@@ -3508,7 +3535,8 @@ $className::method();</code></pre>
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-39650556-1', 'github.com');
+
+      ga('create', 'UA-39650556-1', 'auto');
       ga('send', 'pageview');
     </script>
   </head>
@@ -3705,6 +3733,7 @@ $className::method();</code></pre>
     <meta property="og:title" content="GitLabにGitoliteが必要なくなるよ いいことばかりじゃないけど">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
+    <meta name="twitter:widgets:csp" content="on">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-responsive.css">
@@ -3722,7 +3751,8 @@ $className::method();</code></pre>
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-39650556-1', 'github.com');
+
+      ga('create', 'UA-39650556-1', 'auto');
       ga('send', 'pageview');
     </script>
   </head>
@@ -3929,6 +3959,7 @@ $className::method();</code></pre>
     <meta property="og:title" content="SQLアンチパターンを読みました">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
+    <meta name="twitter:widgets:csp" content="on">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-responsive.css">
@@ -3946,7 +3977,8 @@ $className::method();</code></pre>
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-39650556-1', 'github.com');
+
+      ga('create', 'UA-39650556-1', 'auto');
       ga('send', 'pageview');
     </script>
   </head>
@@ -4179,6 +4211,7 @@ $className::method();</code></pre>
     <meta property="og:title" content="Composerからプロジェクト内にインストールしたPhingをJenkinsで実行">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
+    <meta name="twitter:widgets:csp" content="on">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-responsive.css">
@@ -4196,7 +4229,8 @@ $className::method();</code></pre>
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-39650556-1', 'github.com');
+
+      ga('create', 'UA-39650556-1', 'auto');
       ga('send', 'pageview');
     </script>
   </head>
@@ -4391,6 +4425,7 @@ $className::method();</code></pre>
     <meta property="og:title" content="ブログにSend to Kindleボタンを追加してKindleでブログを読めるようにしよう">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
+    <meta name="twitter:widgets:csp" content="on">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-responsive.css">
@@ -4408,7 +4443,8 @@ $className::method();</code></pre>
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-39650556-1', 'github.com');
+
+      ga('create', 'UA-39650556-1', 'auto');
       ga('send', 'pageview');
     </script>
   </head>
@@ -4648,6 +4684,7 @@ $className::method();</code></pre>
     <meta property="og:title" content="Python製デプロイツール Fabricを初めて使う際に役立つTips">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
+    <meta name="twitter:widgets:csp" content="on">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-responsive.css">
@@ -4665,7 +4702,8 @@ $className::method();</code></pre>
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-39650556-1', 'github.com');
+
+      ga('create', 'UA-39650556-1', 'auto');
       ga('send', 'pageview');
     </script>
   </head>
@@ -5096,6 +5134,7 @@ def _get_servers(file_name):
     <meta property="og:title" content="デプロイツール比較 CapistranoとFabric">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
+    <meta name="twitter:widgets:csp" content="on">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-responsive.css">
@@ -5113,7 +5152,8 @@ def _get_servers(file_name):
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-39650556-1', 'github.com');
+
+      ga('create', 'UA-39650556-1', 'auto');
       ga('send', 'pageview');
     </script>
   </head>
@@ -5370,6 +5410,7 @@ def _get_servers(file_name):
     <meta property="og:title" content="httpdでconfigtestが成功しても起動できない時の切なさ">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
+    <meta name="twitter:widgets:csp" content="on">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-responsive.css">
@@ -5387,7 +5428,8 @@ def _get_servers(file_name):
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-39650556-1', 'github.com');
+
+      ga('create', 'UA-39650556-1', 'auto');
       ga('send', 'pageview');
     </script>
   </head>
@@ -5597,6 +5639,7 @@ DocumentRoot must be a directory
     <meta property="og:title" content="Chef Server 11系にてadminのパスワードがわからなくなった場合の対処法">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
+    <meta name="twitter:widgets:csp" content="on">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-responsive.css">
@@ -5614,7 +5657,8 @@ DocumentRoot must be a directory
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-39650556-1', 'github.com');
+
+      ga('create', 'UA-39650556-1', 'auto');
       ga('send', 'pageview');
     </script>
   </head>
@@ -5813,6 +5857,7 @@ COMMIT;</code></pre>
     <meta property="og:title" content="「Gitの使用には免許が必要。危険だから初心者に使わせるな」とか思っちゃいますよね。そんな人に向けて">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
+    <meta name="twitter:widgets:csp" content="on">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-responsive.css">
@@ -5830,7 +5875,8 @@ COMMIT;</code></pre>
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-39650556-1', 'github.com');
+
+      ga('create', 'UA-39650556-1', 'auto');
       ga('send', 'pageview');
     </script>
   </head>
@@ -6010,6 +6056,7 @@ COMMIT;</code></pre>
     <meta property="og:title" content="PostgreSQLのhstoreを触ってみた">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
+    <meta name="twitter:widgets:csp" content="on">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-responsive.css">
@@ -6027,7 +6074,8 @@ COMMIT;</code></pre>
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-39650556-1', 'github.com');
+
+      ga('create', 'UA-39650556-1', 'auto');
       ga('send', 'pageview');
     </script>
   </head>
@@ -6295,6 +6343,7 @@ Time: 0.604 ms</code></pre>
     <meta property="og:title" content="git ls-remoteコマンドの終了ステータスがデフォルトでは期待するものと違う件とその対策">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
+    <meta name="twitter:widgets:csp" content="on">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-responsive.css">
@@ -6312,7 +6361,8 @@ Time: 0.604 ms</code></pre>
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-39650556-1', 'github.com');
+
+      ga('create', 'UA-39650556-1', 'auto');
       ga('send', 'pageview');
     </script>
   </head>
@@ -6530,6 +6580,7 @@ fi</code></pre>
     <meta property="og:title" content="トランザクションが存在しないDBにてその弱点をどのようにカバーするか">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
+    <meta name="twitter:widgets:csp" content="on">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-responsive.css">
@@ -6547,7 +6598,8 @@ fi</code></pre>
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-39650556-1', 'github.com');
+
+      ga('create', 'UA-39650556-1', 'auto');
       ga('send', 'pageview');
     </script>
   </head>
@@ -6842,6 +6894,7 @@ fi</code></pre>
     <meta property="og:title" content="ISUCON予選にPHP実装で参加して3位になりましたーやったことなどまとめ">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
+    <meta name="twitter:widgets:csp" content="on">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-responsive.css">
@@ -6859,7 +6912,8 @@ fi</code></pre>
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-39650556-1', 'github.com');
+
+      ga('create', 'UA-39650556-1', 'auto');
       ga('send', 'pageview');
     </script>
   </head>
@@ -7145,6 +7199,7 @@ fi</code></pre>
     <meta property="og:title" content="Chef Serverにてクックブックの実行時間が長いとForbiddenエラーが出る件">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
+    <meta name="twitter:widgets:csp" content="on">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-responsive.css">
@@ -7162,7 +7217,8 @@ fi</code></pre>
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-39650556-1', 'github.com');
+
+      ga('create', 'UA-39650556-1', 'auto');
       ga('send', 'pageview');
     </script>
   </head>
@@ -7356,6 +7412,7 @@ fi</code></pre>
     <meta property="og:title" content="#isucon 本選惨敗！！！！">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
+    <meta name="twitter:widgets:csp" content="on">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-responsive.css">
@@ -7373,7 +7430,8 @@ fi</code></pre>
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-39650556-1', 'github.com');
+
+      ga('create', 'UA-39650556-1', 'auto');
       ga('send', 'pageview');
     </script>
   </head>
@@ -7632,6 +7690,7 @@ fi</code></pre>
     <meta property="og:title" content="初心者向け タイプヒンティングとはなんなのかというお話">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
+    <meta name="twitter:widgets:csp" content="on">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-responsive.css">
@@ -7649,7 +7708,8 @@ fi</code></pre>
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-39650556-1', 'github.com');
+
+      ga('create', 'UA-39650556-1', 'auto');
       ga('send', 'pageview');
     </script>
   </head>
@@ -7920,6 +7980,7 @@ function test(runnable $a) {
     <meta property="og:title" content="PHP書きが久しぶりにRubyの言語仕様を詳しく思い出して抱いた感想たち">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
+    <meta name="twitter:widgets:csp" content="on">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-responsive.css">
@@ -7937,7 +7998,8 @@ function test(runnable $a) {
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-39650556-1', 'github.com');
+
+      ga('create', 'UA-39650556-1', 'auto');
       ga('send', 'pageview');
     </script>
   </head>
@@ -8203,6 +8265,7 @@ Ruby 「なんでもはオブジェクトじゃないわよ。オブジェクト
     <meta property="og:title" content="Nodeの複数バージョン管理のお供にnをどうぞ">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
+    <meta name="twitter:widgets:csp" content="on">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-responsive.css">
@@ -8220,7 +8283,8 @@ Ruby 「なんでもはオブジェクトじゃないわよ。オブジェクト
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-39650556-1', 'github.com');
+
+      ga('create', 'UA-39650556-1', 'auto');
       ga('send', 'pageview');
     </script>
   </head>
@@ -8442,6 +8506,7 @@ Ruby 「なんでもはオブジェクトじゃないわよ。オブジェクト
     <meta property="og:title" content="Zabbixで「○回のうち○回失敗したら」というトリガー設定">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
+    <meta name="twitter:widgets:csp" content="on">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-responsive.css">
@@ -8459,7 +8524,8 @@ Ruby 「なんでもはオブジェクトじゃないわよ。オブジェクト
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-39650556-1', 'github.com');
+
+      ga('create', 'UA-39650556-1', 'auto');
       ga('send', 'pageview');
     </script>
   </head>
@@ -8644,6 +8710,7 @@ Ruby 「なんでもはオブジェクトじゃないわよ。オブジェクト
     <meta property="og:title" content="Lang-8はiOSエンジニアを募集しているとのことです！ #lang8_sushi_karaage 及びささたつさんとお話しした技術的なこと">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
+    <meta name="twitter:widgets:csp" content="on">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-responsive.css">
@@ -8661,7 +8728,8 @@ Ruby 「なんでもはオブジェクトじゃないわよ。オブジェクト
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-39650556-1', 'github.com');
+
+      ga('create', 'UA-39650556-1', 'auto');
       ga('send', 'pageview');
     </script>
   </head>
@@ -8896,6 +8964,7 @@ migrationとrollbackを行い、DBが元の形に戻っているかを検出す�
     <meta property="og:title" content="PHPのMockeryでメソッドが特定の引数を受け取った時のみ動作を変えるモック作成方法">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
+    <meta name="twitter:widgets:csp" content="on">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-responsive.css">
@@ -8913,7 +8982,8 @@ migrationとrollbackを行い、DBが元の形に戻っているかを検出す�
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-39650556-1', 'github.com');
+
+      ga('create', 'UA-39650556-1', 'auto');
       ga('send', 'pageview');
     </script>
   </head>
@@ -9181,6 +9251,7 @@ OK (4 tests, 4 assertions)</code></pre>
     <meta property="og:title" content="PHPのarray_searchが全く見当違い(に見える)値を出力する件について(ちゃんとstrictフラグ立てよう)">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
+    <meta name="twitter:widgets:csp" content="on">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-responsive.css">
@@ -9198,7 +9269,8 @@ OK (4 tests, 4 assertions)</code></pre>
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-39650556-1', 'github.com');
+
+      ga('create', 'UA-39650556-1', 'auto');
       ga('send', 'pageview');
     </script>
   </head>
@@ -9455,6 +9527,7 @@ PHPの array_searchですが、返り値が0になりうるのでfalseと判定�
     <meta property="og:title" content="MySQL5.6.5からDATETIME型で行生成時刻と更新時刻を自動でセットすることができるようになりましたよ">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
+    <meta name="twitter:widgets:csp" content="on">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-responsive.css">
@@ -9472,7 +9545,8 @@ PHPの array_searchですが、返り値が0になりうるのでfalseと判定�
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-39650556-1', 'github.com');
+
+      ga('create', 'UA-39650556-1', 'auto');
       ga('send', 'pageview');
     </script>
   </head>
@@ -9690,6 +9764,7 @@ mysql&gt; select * from foo;
     <meta property="og:title" content="composer installをproduct環境で使う際はoptimize-autoloaderオプションを使おう">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
+    <meta name="twitter:widgets:csp" content="on">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-responsive.css">
@@ -9707,7 +9782,8 @@ mysql&gt; select * from foo;
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-39650556-1', 'github.com');
+
+      ga('create', 'UA-39650556-1', 'auto');
       ga('send', 'pageview');
     </script>
   </head>
@@ -9984,6 +10060,7 @@ class Test1 {
     <meta property="og:title" content="xhprofって実行時間だけじゃなくてメモリとかCPU使用率のプロファイリングとかもしてくれるんだね知らなかった">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
+    <meta name="twitter:widgets:csp" content="on">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-responsive.css">
@@ -10001,7 +10078,8 @@ class Test1 {
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-39650556-1', 'github.com');
+
+      ga('create', 'UA-39650556-1', 'auto');
       ga('send', 'pageview');
     </script>
   </head>
@@ -10225,6 +10303,7 @@ getrusageで使用するユーザー時間がとれるからそこからCPUの�
     <meta property="og:title" content="PHPにおけるタイプヒンティングでのClosureとcallableの違い">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
+    <meta name="twitter:widgets:csp" content="on">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-responsive.css">
@@ -10242,7 +10321,8 @@ getrusageで使用するユーザー時間がとれるからそこからCPUの�
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-39650556-1', 'github.com');
+
+      ga('create', 'UA-39650556-1', 'auto');
       ga('send', 'pageview');
     </script>
   </head>
@@ -10473,6 +10553,7 @@ closureTest(function() {}); // 問題なし</code></pre>
     <meta property="og:title" content="FuelPHPの脆弱性への攻撃を再現出来たけど公開していいものなんだっけ">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
+    <meta name="twitter:widgets:csp" content="on">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-responsive.css">
@@ -10490,7 +10571,8 @@ closureTest(function() {}); // 問題なし</code></pre>
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-39650556-1', 'github.com');
+
+      ga('create', 'UA-39650556-1', 'auto');
       ga('send', 'pageview');
     </script>
   </head>
@@ -10680,6 +10762,7 @@ closureTest(function() {}); // 問題なし</code></pre>
     <meta property="og:title" content="CEDEC AI CHALLENGE 決勝に参加して来ます">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
+    <meta name="twitter:widgets:csp" content="on">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-responsive.css">
@@ -10697,7 +10780,8 @@ closureTest(function() {}); // 問題なし</code></pre>
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-39650556-1', 'github.com');
+
+      ga('create', 'UA-39650556-1', 'auto');
       ga('send', 'pageview');
     </script>
   </head>
@@ -10907,6 +10991,7 @@ closureTest(function() {}); // 問題なし</code></pre>
     <meta property="og:title" content="PHPを使ったり4000円課金したりしてCEDEC AI CHALLENGE 準優勝に至るまでの軌跡">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
+    <meta name="twitter:widgets:csp" content="on">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-responsive.css">
@@ -10924,7 +11009,8 @@ closureTest(function() {}); // 問題なし</code></pre>
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-39650556-1', 'github.com');
+
+      ga('create', 'UA-39650556-1', 'auto');
       ga('send', 'pageview');
     </script>
   </head>
@@ -11236,6 +11322,7 @@ closureTest(function() {}); // 問題なし</code></pre>
     <meta property="og:title" content="PHPカンファレンス2014でLTしてきました">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
+    <meta name="twitter:widgets:csp" content="on">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-responsive.css">
@@ -11253,7 +11340,8 @@ closureTest(function() {}); // 問題なし</code></pre>
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-39650556-1', 'github.com');
+
+      ga('create', 'UA-39650556-1', 'auto');
       ga('send', 'pageview');
     </script>
   </head>
@@ -11468,6 +11556,7 @@ closureTest(function() {}); // 問題なし</code></pre>
     <meta property="og:title" content="#isucon 2014で11位でした">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
+    <meta name="twitter:widgets:csp" content="on">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-responsive.css">
@@ -11485,7 +11574,8 @@ closureTest(function() {}); // 問題なし</code></pre>
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-39650556-1', 'github.com');
+
+      ga('create', 'UA-39650556-1', 'auto');
       ga('send', 'pageview');
     </script>
   </head>
@@ -11747,6 +11837,7 @@ PHPの復権ならず…！！
     <meta property="og:title" content="宣言すればコンピューターがいい感じに解決してくれる未来を目指して~理想の世界と現実の壁~">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
+    <meta name="twitter:widgets:csp" content="on">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-responsive.css">
@@ -11764,7 +11855,8 @@ PHPの復権ならず…！！
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-39650556-1', 'github.com');
+
+      ga('create', 'UA-39650556-1', 'auto');
       ga('send', 'pageview');
     </script>
   </head>
