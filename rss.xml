@@ -12438,6 +12438,295 @@ PHPの復権ならず…！！
     <pubDate>No date found.</pubDate>
     <guid>http://dekokun.github.io/posts/2014-12-31.html</guid>
 </item>
+<item>
+    <title>2015年の抱負</title>
+    <link>http://dekokun.github.io/posts/2015-01-01.html</link>
+    <description><![CDATA[<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ja"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="ja"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ja"> <!--<![endif]-->
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>2015年の抱負</title>
+    <meta name="description" content>
+    <meta name="author" content>
+
+    <meta name="viewport" content="width=device-width">
+    <meta property="fb:app_id" content="351187098330864">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="http://dekokun.github.com/img/dekokun.png">
+    <meta property="og:title" content="2015年の抱負">
+    <meta property="og:description" content="@dekokunの技術日記">
+    <meta property="og:site_name" content="でこてっくろぐ">
+    <meta name="twitter:widgets:csp" content="on">
+
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+    </style>
+    <link href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css" type="text/css" rel="stylesheet">
+    <script src="../js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-39650556-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <body>
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=351187098330864";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <header>
+      <nav class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="../index.html">でこてっくろぐ</a>
+            <div class="nav-collapse">
+              <ul class="nav">
+                <li><a href="../index.html">ほーむ</a></li>
+                <li><a href="../posts.html">あーかいぶ</a></li>
+                <li><a href="../aboutme.html">あばうとみー</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="row">
+        <article class="span9">
+          <h1>2015年の抱負</h1>
+
+<p>by <em><a href="https://twitter.com/dekokun">@dekokun</a></em> on <strong>2014/01/04 11:37</strong></p>
+
+<p>Tagged as: <a href="../tags/ポエム.html">ポエム</a>.</p>
+
+<p><a href="http://dekokun.github.io/posts/2014-12-31.html">12/31に紅白見ながら書いたブログ</a>に「明日(2015/1/1)はちゃんと新年の抱負をブログに書こうと思います」などと書きましたが1/2になってしまいました。お正月っていろいろな行事が多いですね。頑張って書きます。 その後、1/4になってしまいました。仕事が始まる前には書き上げる</p>
+<h2 id="仕事">仕事</h2>
+<h3 id="去年中盤からやってるプロジェクト">去年中盤からやってるプロジェクト</h3>
+<ul>
+<li>年初にリリースする</li>
+</ul>
+<h3 id="みんなが情報共有するように頑張る">みんなが情報共有するように頑張る</h3>
+<ul>
+<li>チームメンバーが日報の良さを認識して日報を書くようになる</li>
+<li>外を通じての情報共有も皆がすると楽しいので、そっちでも積極的にいい感じになるようやっていきたい。去年のAdvent Calendarみたいな</li>
+</ul>
+<h3 id="収入を増やす">収入を増やす</h3>
+<p>今後子どもを産んだりすることを考えると収入の重要さを痛感するので収入は増やす</p>
+<ul>
+<li>幸い、最近は会社から求められているものと自分が行いたい方向が一致している感じがするし、とにかく時間はかけずに頑張る</li>
+<li>具体的には、少し会計の勉強をするのと、社内で勉強会を開いたりする
+<ul>
+<li>技術への感度も忘れずに</li>
+</ul></li>
+</ul>
+<h3 id="自由な時間を増やす仕事時間を減らす">自由な時間を増やす(仕事時間を減らす)</h3>
+<p>最近、かなり仕事一辺倒な生活をしていて、こんなんじゃ人生ダメだという思いが強いのでなんとかする</p>
+<ul>
+<li>まずは、早起きをして早く会社に行って決まった時間に早く帰るというのを繰り返して早く帰る癖をつけながら徐々に出社時間を遅くしていって勤務時間を減らしていきたい</li>
+<li>ポモドーロ・テクニックを使う(ただ、これ、使っているときは非常に調子がいいのに1~2ヶ月経つといつの間にか使わなくなっていっちゃっていて、その理由がまだ良くつかめていないんだよな…何を変えればポモドーロを何ヶ月も続けられるのか…)</li>
+</ul>
+<h2 id="その他技術とか学びとか系">その他、技術とか学びとか系</h2>
+<h3 id="samurai-coding-2014-15"><a href="http://samuraicoding.info/index-jp.html">SamurAI Coding 2014-15</a></h3>
+<ul>
+<li>決勝進出して我が母校であるところの京大に久しぶりに行きたいですね</li>
+</ul>
+<h3 id="isucon">ISUCON</h3>
+<ul>
+<li>今年こそ優勝</li>
+<li>ISUCONは優勝するために具体的に何をやるっていうのはあんまりないですが、まぁ、いろいろなものの積み重ねとして優勝したい</li>
+</ul>
+<h3 id="ctmcp勉強会">CTMCP勉強会</h3>
+<ul>
+<li>http://www.zusaar.com/event/7517008</li>
+<li>前に立って解説する人やる</li>
+</ul>
+<h3 id="その他外部発表">その他外部発表</h3>
+<ul>
+<li>3回くらいは外部の勉強会で発表したいです</li>
+<li>回数は適当に決めた</li>
+</ul>
+<h3 id="会計">会計</h3>
+<ul>
+<li>「設計の力で人間の意思判断を正しくしていく」というのを強く意識し始めた私にとって、管理会計の考え方は非常に強く「学びたい」と思わせるものであった</li>
+<li>ものすごい長い歴史を持つ会計学の一旦に触れることは今後の私にとっていい影響を与えるだろうと思われる</li>
+<li>手始めに、妻が持っていた「経理以外の人のための日本一やさしくて使える会計の本」を読んだ。門外漢でも非常にわかりやすくて良かった <iframe src="http://rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=dekokun-22&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=ss_til&amp;asins=488759836X" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe></li>
+<li>簿記3級を少し学んでみて、良さそうだったら取得したいと思っている</li>
+</ul>
+<h3 id="新しい言語">新しい言語</h3>
+<ul>
+<li>goかscalaで何かを作る</li>
+</ul>
+<h3 id="ossへのコミット">OSSへのコミット</h3>
+<ul>
+<li>なんでもいいから30コミットがなんらかのOSSに取り込まれることを目標とする
+<ul>
+<li>30という数字はなんの根拠もない</li>
+</ul></li>
+<li>自分で適当にソフトウェア作れば30コミットなんて一瞬やんという話はあるが、まぁそれはそれでいいか…</li>
+</ul>
+<h2 id="私事">私事</h2>
+<h3 id="実家を大切にする">実家を大切にする</h3>
+<p>去年結婚して、「隔年でお互いの実家に帰る」みたいにしたけど、なんかそれだと実家が寂しい気がしたので、以下をしたいなと思いました</p>
+<ul>
+<li>妻は出張などで実家に帰るタイミングが結構あり、そのタイミングで私も実家に帰る</li>
+<li>実家は兼業農家なのだが、稲刈りやら田植えの人が必要なタイミングで実家に帰る</li>
+<li>父の日、母の日にプレゼントを送る</li>
+</ul>
+<h3 id="旅行">旅行</h3>
+<p>妻が行きたがっているのに去年は私が出不精でそんなに行っていなかったので今年は行く</p>
+<ul>
+<li>台湾</li>
+<li>九州</li>
+</ul>
+<h2 id="漠然とした思い">漠然とした思い</h2>
+<ul>
+<li>設計の力で人間を正しい判断に導いていかなくてはならない
+<ul>
+<li>プログラミングの設計とかチームビルディングとかもそうだし、それ以外に、管理会計の力とかそういうのも含めて、人類の目指すべき道だ</li>
+<li>正しい設計というのは、常に変化していくという、設計の設計に関する考えも忘れてはいけない(というかそっちのほうが大切)</li>
+</ul></li>
+<li>人間が何かを宣言したらコンピュータがなんとかしてくれる世界を目指したい
+<ul>
+<li><a href="http://dekokun.github.io/posts/2014-12-25.html">宣言すればコンピューターがいい感じに解決してくれる未来を目指して<sub>理想の世界と現実の壁</sub></a></li>
+</ul></li>
+<li>ただ、Web系で現在必要なソフトウェアについての知識を得てるだけだと悲しいので、なんかみたいに向けた何かをしたい感</li>
+</ul>
+<h2 id="最後に">最後に</h2>
+<p>なんかモリモリ多すぎる気はするが、来年の振り返りがどうなるかですね</p>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'dekokun'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+          <ul class="social">
+            <li class="kindle"><div class="kindleWidget"><img style="vertical-align:middle;" src="https://d1xnn692s7u6t6.cloudfront.net/white-15.png" /><span style="vertical-align:middle;margin-left:3px;">Send to Kindle</span></div></li>
+            <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
+            <li class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="dekokun" data-lang="ja">ツイート</a></li>
+            <li class="hatena-bookmark"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
+            <li><a data-pocket-label="pocket" data-pocket-count="horizontal" class="pocket-btn" data-lang="en"></a>
+            <script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script></li>
+          </ul>
+
+        </article>
+        <aside class="span3">
+          <div class="sidebar-module">
+            <div class="title">プロフィール</div>
+            <p class="id"><a href="https://twitter.com/dekokun">dekokun</a></p>
+            <p><a href="https://twitter.com/dekokun"><img src="../img/dekokun.png" alt="dekokun"></a></p>
+          </div>
+          <div class="sidebar-module hidden-phone">
+            <script language="javascript" type="text/javascript" src="http://b.hatena.ne.jp/js/widget.js" charset="utf-8"></script>
+            <script language="javascript" type="text/javascript">
+              Hatena.BookmarkWidget.url   = "http://dekokun.github.io/";
+              Hatena.BookmarkWidget.title = "人気エントリー";
+              Hatena.BookmarkWidget.sort  = "";
+              Hatena.BookmarkWidget.width = 200;
+              Hatena.BookmarkWidget.num   = 5;
+              Hatena.BookmarkWidget.theme = "hatenadiary";
+              Hatena.BookmarkWidget.load();
+            </script>
+          </div>
+          <div class="sidebar-module hidden-phone">
+            <script language="javascript" type="text/javascript" src="http://b.hatena.ne.jp/js/widget.js" charset="utf-8"></script>
+            <script language="javascript" type="text/javascript">
+              Hatena.BookmarkWidget.url   = "http://dekokun.github.com/";
+              Hatena.BookmarkWidget.title = "旧人気エントリー";
+              Hatena.BookmarkWidget.sort  = "";
+              Hatena.BookmarkWidget.width = 0;
+              Hatena.BookmarkWidget.num   = 5;
+              Hatena.BookmarkWidget.theme = "hatenadiary";
+              Hatena.BookmarkWidget.load();
+            </script>
+          </div>
+          <div class="sidebar-module visible-desktop">
+            <div class="title">twitter</div>
+            <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/dekokun" data-widget-id="306408547573440513">@dekokun からのツイート</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          </div>
+          <div class="sidebar-module hidden-phone">
+            <div class="title">RSS</div>
+            <p><a href="../rss.xml"><img src="../img/rss.gif" alt="rss"></a></p>
+          </div>
+        </aside> <!-- /span3 -->
+      </div> <!-- /row -->
+      <footer>
+        <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
+      </footer>
+    </div> <!-- /container -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+    <!-- /ツイートボタン -->
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+    <script src="../js/libs/bootstrap/bootstrap.min.js"></script>
+
+    <script src="../js/script.js"></script>
+    <script>
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+    <!-- Code syntax highlight -->
+    <script type="text/javascript" src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
+    <script type="text/javascript">
+    $(function(){ 
+        $('pre').css({
+            'overflow-x': 'scroll',
+            'background-color': '#f6f6f6',
+            'border': '1px dotted #ccc',
+            'padding': '0.8em'
+        });
+        $('pre code').addClass('prettyprint');
+        prettyPrint();
+    });
+    </script>
+    <script type="text/javascript" src="https://d1xnn692s7u6t6.cloudfront.net/widget.js"></script>
+    <script type="text/javascript">(function k(){window.$SendToKindle&&window.$SendToKindle.Widget?$SendToKindle.Widget.init({"content":"article"}):setTimeout(k,500);})();</script>
+  </body>
+</html>
+]]></description>
+    <pubDate>No date found.</pubDate>
+    <guid>http://dekokun.github.io/posts/2015-01-01.html</guid>
+</item>
 
     </channel> 
 </rss>
