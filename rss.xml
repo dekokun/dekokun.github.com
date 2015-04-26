@@ -12728,6 +12728,219 @@ PHPの復権ならず…！！
     <pubDate>No date found.</pubDate>
     <guid>http://dekokun.github.io/posts/2015-01-01.html</guid>
 </item>
+<item>
+    <title>Erlang書きはじめた</title>
+    <link>http://dekokun.github.io/posts/2015-04-26.html</link>
+    <description><![CDATA[<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ja"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="ja"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ja"> <!--<![endif]-->
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Erlang書きはじめた</title>
+    <meta name="description" content>
+    <meta name="author" content>
+
+    <meta name="viewport" content="width=device-width">
+    <meta property="fb:app_id" content="351187098330864">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="http://dekokun.github.com/img/dekokun.png">
+    <meta property="og:title" content="Erlang書きはじめた">
+    <meta property="og:description" content="@dekokunの技術日記">
+    <meta property="og:site_name" content="でこてっくろぐ">
+    <meta name="twitter:widgets:csp" content="on">
+
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+    </style>
+    <link href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css" type="text/css" rel="stylesheet">
+    <script src="../js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-39650556-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <body>
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=351187098330864";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <header>
+      <nav class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="../index.html">でこてっくろぐ</a>
+            <div class="nav-collapse">
+              <ul class="nav">
+                <li><a href="../index.html">ほーむ</a></li>
+                <li><a href="../posts.html">あーかいぶ</a></li>
+                <li><a href="../aboutme.html">あばうとみー</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="row">
+        <article class="span9">
+          <h1>Erlang書きはじめた</h1>
+
+<p>by <em><a href="https://twitter.com/dekokun">@dekokun</a></em> on <strong>2015/04/26 22:26</strong></p>
+
+<p>Tagged as: <a href="../tags/Erlang.html">Erlang</a>.</p>
+
+<p>すごいErlang本を1ヶ月くらいかけてひと通り読み終わったので、何か作らにゃいかんと思っていたら社内でWebSocketのリアルタイムほげほげ系開発ツールの話が出てきたため、一旦作ってみるかという感じでまずはWebSocketを使って云々なやつをさっきから作り始めた。</p>
+<p>まだ1時間くらいの進捗だけ(というよりは、ほとんど何も進んでいない)だが、かなり雑にハマったことを以下に記述する。</p>
+<h2 id="参考にしたもの">参考にしたもの</h2>
+<ul>
+<li><a href="http://www.google.co.jp/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;ved=0CB8QFjAA&amp;url=http://www.amazon.co.jp/%E3%81%99%E3%81%94%E3%81%84Erlang%E3%82%86%E3%81%8B%E3%81%84%E3%81%AB%E5%AD%A6%E3%81%BC%E3%81%86-Fred-Hebert/dp/4274069125&amp;ei=5Og8Vc_zM4K5mwWB0oHQCA&amp;usg=AFQjCNEZHrq06TFgh4Ojj7sx8dPQRjKtbQ&amp;sig2=73m-9UP9uLSPkri56S7d5g&amp;bvm=bv.91665533,d.dGY">すごいErlangゆかいに学ぼう!</a></li>
+<li><a href="http://clina.jp/blog/cowboy-websocket.html">Erlang WebサーバCowboy - WebSocket編</a></li>
+</ul>
+<p>すごいErlang本、すごいHaskell本と比べても非常に情報量が多く、実践的な内容が大量にあって素敵だった。</p>
+<iframe src="http://rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=dekokun-22&amp;o=9&amp;p=8&amp;l=as1&amp;m=amazon&amp;f=ifr&amp;ref=qf_sp_asin_til&amp;asins=4274069125" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+
+<h2 id="ハマった点">ハマった点</h2>
+<p>初めてのErlangなのですが、なんかよくわからんところでよくコケている</p>
+<p>参考URL(<a href="http://clina.jp/blog/cowboy-websocket.html">Erlang WebサーバCowboy - WebSocket編</a>)にweb socketのサンプルの作り方があったのでそれ通りプログラムを作成したんだけど、makeしても参考URLに記載の実行コマンド、<code>./_rel/message_wall_release/bin/message_wall_release</code>なぞというファイルは存在しない。何が起きているのかよくわからんかったのですが、しょうがないので以下のように起動していた。 <code>erl -pa message_wall/ebin message_wall/deps/*/ebin</code> -&gt; <code>{ok, _} = application:ensure_all_started(message_wall).</code></p>
+<p>なお、最初はmessage_wallディレクトリ内で上記erlコマンドを実行したりしていたんだけど、“priv_dirが存在しねぇぜ”みたいなエラーが出てて、そういえばディレクトリ構造大切だったねと思い出して一つ上のディレクトリで起動したらうまくいった。デバッグの過程で<code>code:priv_dir/1</code>を覚えた。</p>
+<p>後でMakefile(erlang.mk)みてたらbootstrap-relターゲットがあったので<code>make bootstrap-rel</code>打ってみたらmakeで<code>./_rel/message_wall_release/bin/message_wall_release</code> ができてた。めでたい。</p>
+<h2 id="感想">感想</h2>
+<p>この雑な記事、感想も何もないのですが、まぁ、上記「WebSocketのリアルタイムほげほげ系開発ツールの話」が続く限りは今後も制作過程を書いていけたらと思います。多分。</p>
+<p>ここ数週間は、は会社でひたすらChefのcookbookを書いてはサーバを構築していて、それも非常に楽しいのですがプログラムを書くのも好きです(まだこの段階では写経をして動く段階まで持っていっただけだけど)</p>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'dekokun'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+          <ul class="social">
+            <li class="kindle"><div class="kindleWidget"><img style="vertical-align:middle;" src="https://d1xnn692s7u6t6.cloudfront.net/white-15.png" /><span style="vertical-align:middle;margin-left:3px;">Send to Kindle</span></div></li>
+            <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
+            <li class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="dekokun" data-lang="ja">ツイート</a></li>
+            <li class="hatena-bookmark"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
+            <li><a data-pocket-label="pocket" data-pocket-count="horizontal" class="pocket-btn" data-lang="en"></a>
+            <script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script></li>
+          </ul>
+
+        </article>
+        <aside class="span3">
+          <div class="sidebar-module">
+            <div class="title">プロフィール</div>
+            <p class="id"><a href="https://twitter.com/dekokun">dekokun</a></p>
+            <p><a href="https://twitter.com/dekokun"><img src="../img/dekokun.png" alt="dekokun"></a></p>
+          </div>
+          <div class="sidebar-module hidden-phone">
+            <script language="javascript" type="text/javascript" src="http://b.hatena.ne.jp/js/widget.js" charset="utf-8"></script>
+            <script language="javascript" type="text/javascript">
+              Hatena.BookmarkWidget.url   = "http://dekokun.github.io/";
+              Hatena.BookmarkWidget.title = "人気エントリー";
+              Hatena.BookmarkWidget.sort  = "";
+              Hatena.BookmarkWidget.width = 200;
+              Hatena.BookmarkWidget.num   = 5;
+              Hatena.BookmarkWidget.theme = "hatenadiary";
+              Hatena.BookmarkWidget.load();
+            </script>
+          </div>
+          <div class="sidebar-module hidden-phone">
+            <script language="javascript" type="text/javascript" src="http://b.hatena.ne.jp/js/widget.js" charset="utf-8"></script>
+            <script language="javascript" type="text/javascript">
+              Hatena.BookmarkWidget.url   = "http://dekokun.github.com/";
+              Hatena.BookmarkWidget.title = "旧人気エントリー";
+              Hatena.BookmarkWidget.sort  = "";
+              Hatena.BookmarkWidget.width = 0;
+              Hatena.BookmarkWidget.num   = 5;
+              Hatena.BookmarkWidget.theme = "hatenadiary";
+              Hatena.BookmarkWidget.load();
+            </script>
+          </div>
+          <div class="sidebar-module visible-desktop">
+            <div class="title">twitter</div>
+            <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/dekokun" data-widget-id="306408547573440513">@dekokun からのツイート</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          </div>
+          <div class="sidebar-module hidden-phone">
+            <div class="title">RSS</div>
+            <p><a href="../rss.xml"><img src="../img/rss.gif" alt="rss"></a></p>
+          </div>
+        </aside> <!-- /span3 -->
+      </div> <!-- /row -->
+      <footer>
+        <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
+      </footer>
+    </div> <!-- /container -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+    <!-- /ツイートボタン -->
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+    <script src="../js/libs/bootstrap/bootstrap.min.js"></script>
+
+    <script src="../js/script.js"></script>
+    <script>
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+    <!-- Code syntax highlight -->
+    <script type="text/javascript" src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
+    <script type="text/javascript">
+    $(function(){ 
+        $('pre').css({
+            'overflow-x': 'scroll',
+            'background-color': '#f6f6f6',
+            'border': '1px dotted #ccc',
+            'padding': '0.8em'
+        });
+        $('pre code').addClass('prettyprint');
+        prettyPrint();
+    });
+    </script>
+    <script type="text/javascript" src="https://d1xnn692s7u6t6.cloudfront.net/widget.js"></script>
+    <script type="text/javascript">(function k(){window.$SendToKindle&&window.$SendToKindle.Widget?$SendToKindle.Widget.init({"content":"article"}):setTimeout(k,500);})();</script>
+  </body>
+</html>
+]]></description>
+    <pubDate>No date found.</pubDate>
+    <guid>http://dekokun.github.io/posts/2015-04-26.html</guid>
+</item>
 
     </channel> 
 </rss>
