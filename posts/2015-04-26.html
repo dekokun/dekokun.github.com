@@ -95,7 +95,7 @@
 <h2 id="ハマった点">ハマった点</h2>
 <p>初めてのErlangなのですが、なんかよくわからんところでよくコケている</p>
 <p>参考URL(<a href="http://clina.jp/blog/cowboy-websocket.html">Erlang WebサーバCowboy - WebSocket編</a>)にweb socketのサンプルの作り方があったのでそれ通りプログラムを作成したんだけど、makeしても参考URLに記載の実行コマンド、<code>./_rel/message_wall_release/bin/message_wall_release</code>なぞというファイルは存在しない。何が起きているのかよくわからんかったのですが、しょうがないので以下のように起動していた。 <code>erl -pa message_wall/ebin message_wall/deps/*/ebin</code> -&gt; <code>{ok, _} = application:ensure_all_started(message_wall).</code></p>
-<p>なお、最初はmessage_wallディレクトリ内で上記erlコマンドを実行したりしていたんだけど、“priv_dirが存在しねぇぜ”みたいなエラーが出てて、そういえばディレクトリ構造大切だったねと思い出して一つ上のディレクトリで起動したらうまくいった。デバッグの過程で<code>code:priv_dir/1</code>を覚えた。</p>
+<p>なお、最初はmessage_wallディレクトリ内で上記erlコマンドを実行したりしていたんだけど、“priv_dirが存在しねぇぜ”エラー(Can’t resolve the priv_dir of application message_wall)が出てて、そういえばディレクトリ構造大切だったねと思い出して一つ上のディレクトリで起動したらうまくいった。デバッグの過程で<code>code:priv_dir/1</code>を覚えた。</p>
 <p>後でMakefile(erlang.mk)みてたらbootstrap-relターゲットがあったので<code>make bootstrap-rel</code>打ってみたらmakeで<code>./_rel/message_wall_release/bin/message_wall_release</code> ができてた。めでたい。</p>
 <h2 id="感想">感想</h2>
 <p>この雑な記事、感想も何もないのですが、まぁ、上記「WebSocketのリアルタイムほげほげ系開発ツールの話」が続く限りは今後も制作過程を書いていけたらと思います。多分。</p>
