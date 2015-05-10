@@ -6,7 +6,7 @@
   <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>でこてっくろぐ</title>
+    <title>Erlangで一旦何か作ってみた</title>
     <meta name="description" content>
     <meta name="author" content>
 
@@ -14,14 +14,14 @@
     <meta property="fb:app_id" content="351187098330864">
     <meta property="og:type" content="article">
     <meta property="og:image" content="http://dekokun.github.com/img/dekokun.png">
-    <meta property="og:title" content="でこてっくろぐ">
+    <meta property="og:title" content="Erlangで一旦何か作ってみた">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
     <meta name="twitter:widgets:csp" content="on">
 
-    <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="./css/bootstrap-responsive.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="../css/style.css">
     <style>
     body {
       padding-top: 60px;
@@ -29,7 +29,7 @@
     }
     </style>
     <link href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css" type="text/css" rel="stylesheet">
-    <script src="./js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>
+    <script src="../js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -60,12 +60,12 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </a>
-            <a class="brand" href="./index.html">でこてっくろぐ</a>
+            <a class="brand" href="../index.html">でこてっくろぐ</a>
             <div class="nav-collapse">
               <ul class="nav">
-                <li><a href="./index.html">ほーむ</a></li>
-                <li><a href="./posts.html">あーかいぶ</a></li>
-                <li><a href="./aboutme.html">あばうとみー</a></li>
+                <li><a href="../index.html">ほーむ</a></li>
+                <li><a href="../posts.html">あーかいぶ</a></li>
+                <li><a href="../aboutme.html">あばうとみー</a></li>
               </ul>
             </div><!--/.nav-collapse -->
           </div>
@@ -76,39 +76,95 @@
     <div class="container">
       <div class="row">
         <article class="span9">
-          <div id="posts">
-    <h2>最近の日記</h2>
-    <ul>
-        <li>
-    <a href="./posts/2015-05-10.html">Erlangで一旦何か作ってみた</a>
-    - <em>2015/05/10 15:46</em> - by <em><a href="https://twitter.com/dekokun">@dekokun</a></em>
-</li>
-<li>
-    <a href="./posts/2015-04-26.html">Erlang書きはじめた</a>
-    - <em>2015/04/26 22:26</em> - by <em><a href="https://twitter.com/dekokun">@dekokun</a></em>
-</li>
-<li>
-    <a href="./posts/2015-01-01.html">2015年の抱負</a>
-    - <em>2014/01/04 11:37</em> - by <em><a href="https://twitter.com/dekokun">@dekokun</a></em>
-</li>
+          <h1>Erlangで一旦何か作ってみた</h1>
 
-    </ul>
-    <a href="./posts.html">Archive…</a>
-    <h2>Tags</h2>
-    <div>
-        <a style="font-size: 101%" href="./tags/Advent Calender.html">Advent Calender</a> <a style="font-size: 100%" href="./tags/Capistrano.html">Capistrano</a> <a style="font-size: 101%" href="./tags/Chef Server.html">Chef Server</a> <a style="font-size: 100%" href="./tags/Composer.html">Composer</a> <a style="font-size: 101%" href="./tags/Erlang.html">Erlang</a> <a style="font-size: 101%" href="./tags/Fabric.html">Fabric</a> <a style="font-size: 100%" href="./tags/FuelPHP.html">FuelPHP</a> <a style="font-size: 100%" href="./tags/Git.html">Git</a> <a style="font-size: 101%" href="./tags/GitHub.html">GitHub</a> <a style="font-size: 100%" href="./tags/GitLab.html">GitLab</a> <a style="font-size: 100%" href="./tags/HTML5.html">HTML5</a> <a style="font-size: 101%" href="./tags/Haskell.html">Haskell</a> <a style="font-size: 100%" href="./tags/Heroku.html">Heroku</a> <a style="font-size: 100%" href="./tags/Jenkins.html">Jenkins</a> <a style="font-size: 100%" href="./tags/Kindle.html">Kindle</a> <a style="font-size: 100%" href="./tags/Lang-8.html">Lang-8</a> <a style="font-size: 100%" href="./tags/Mockery.html">Mockery</a> <a style="font-size: 100%" href="./tags/MySQL.html">MySQL</a> <a style="font-size: 100%" href="./tags/NoSQL.html">NoSQL</a> <a style="font-size: 100%" href="./tags/Node.html">Node.js</a> <a style="font-size: 118%" href="./tags/PHP.html">PHP</a> <a style="font-size: 100%" href="./tags/Phing.html">Phing</a> <a style="font-size: 100%" href="./tags/PostgreSQL.html">PostgreSQL</a> <a style="font-size: 100%" href="./tags/Python.html">Python</a> <a style="font-size: 100%" href="./tags/Ruby.html">Ruby</a> <a style="font-size: 100%" href="./tags/SQL.html">SQL</a> <a style="font-size: 101%" href="./tags/ShellScript.html">ShellScript</a> <a style="font-size: 100%" href="./tags/WebSocket.html">WebSocket</a> <a style="font-size: 100%" href="./tags/Zabbix.html">Zabbix</a> <a style="font-size: 100%" href="./tags/composer.html">composer</a> <a style="font-size: 104%" href="./tags/contest.html">contest</a> <a style="font-size: 101%" href="./tags/git.html">git</a> <a style="font-size: 100%" href="./tags/hstore.html">hstore</a> <a style="font-size: 100%" href="./tags/httpd.html">httpd</a> <a style="font-size: 100%" href="./tags/xhprof.html">xhprof</a> <a style="font-size: 100%" href="./tags/タイプヒンティング.html">タイプヒンティング</a> <a style="font-size: 100%" href="./tags/デプロイツール.html">デプロイツール</a> <a style="font-size: 103%" href="./tags/ポエム.html">ポエム</a> <a style="font-size: 107%" href="./tags/勉強会.html">勉強会</a> <a style="font-size: 106%" href="./tags/日記改造.html">日記改造</a> <a style="font-size: 100%" href="./tags/書籍.html">書籍</a>
-    </div>
-</div>
+<p>by <em><a href="https://twitter.com/dekokun">@dekokun</a></em> on <strong>2015/05/10 15:46</strong></p>
 
-<div class="about">
-    <h2>この日記について</h2>
-    <p>
-    このブログは<a href="http://jaspervdj.be/hakyll/">Haskellでできています</a>
-    </p>
-    <p>
-        RSSはこちら http://dekokun.github.io/rss.xml
-    </p>
-</div>
+<p>Tagged as: <a href="../tags/Erlang.html">Erlang</a>, <a href="../tags/WebSocket.html">WebSocket</a>, <a href="../tags/Heroku.html">Heroku</a>.</p>
+
+<p>前回のブログ「<a href="http://dekokun.github.io/posts/2015-04-26.html">Erlang書きはじめた</a>」で何か作っていたと思いますが、一旦雑ながらもそれっぽいものができたので公開します。</p>
+<h2 id="何作ったの">何作ったの？</h2>
+<p>Markdownを入力するとそれをレンダリングしたものが表示され、同じページを開いている他の人のところにも反映されて、同時編集っぽいことが出来る感じです。 まぁ、よくあるやつの超機能劣化バージョンっていう感じです。</p>
+<ul>
+<li><a href="http://erl-editor.herokuapp.com/">erlang editor</a></li>
+</ul>
+<p>サーバサイドはErlang + Cowboyで静的ページ配信及びWebsocketサーバとして動いており、クライアントサイドはReact.jsでマークダウン変換する感じです</p>
+<h2 id="使っているもの-ライブラリとか言語とかpaasとか">使っているもの ライブラリとか言語とかPaaSとか</h2>
+<h3 id="サーバサイド">サーバサイド</h3>
+<ul>
+<li>Erlang
+<ul>
+<li><a href="https://github.com/ninenines/cowboy">Cowboy</a></li>
+</ul></li>
+<li>Heroku</li>
+</ul>
+<h3 id="クライアントサイド">クライアントサイド</h3>
+<ul>
+<li>JavaScript
+<ul>
+<li><a href="https://github.com/facebook/react">React</a></li>
+<li><a href="https://github.com/mizchi/md2react">md2react</a>
+<ul>
+<li>md2reactのplaygroundをほぼそのまま使わせてもらっています</li>
+</ul></li>
+<li><a href="http://browserify.org/">browserify</a></li>
+<li><a href="http://coffeescript.org/">CoffeeScript</a>
+<ul>
+<li>md2reactのplaygroundがcoffeeで書かれていたので全部をそのままcoffeeで書きました</li>
+<li>久しぶりに三項演算子の罠にハマった。coffeeには三項演算子はない</li>
+</ul></li>
+</ul></li>
+</ul>
+<h2 id="大変だったところ">大変だったところ</h2>
+<ul>
+<li>HerokuでErlang動かすの、少し詰まると一気にどうやればいいのか全然わからなくなって大変だった。code:priv_dir/1が{error, bad_name}返すなぁとか、そもそもcompileできないなぁとか
+<ul>
+<li>結果、依存ライブラリの情報がrebar.configとMakefileに重複している…</li>
+<li><a href="https://github.com/ninenines/erlang.mk">erlang.mk</a>ファイルを使っていて、そもそもErlangがどうやってcompileされてリリースまで行っているのかもよくわからず、すごいErlang本のリリースの章を読みなおしたりしていた</li>
+<li>手元のforemanでは動くのにherokuでは動かんなぁとかもあって厳しかった。</li>
+<li><a href="https://github.com/6/heroku-erlang-example">heroku-erlang-example</a>や<a href="http://voluntas.hatenablog.com/entry/20111218/1324167999">Heroku 上で WebMachine (Erlang) を動かす</a>を参考にさせていただきました。安心のvoluntasさんブログ</li>
+</ul></li>
+<li>erlang自体は、何も考えずに「とにかく動けばいい」というスタンスで全く以って大したことを行っていないためそんなに大変なことはなかった
+<ul>
+<li>コードをupdateする際にプロセスを殺さずにupdateするとかそういうことは一切やっていないため、まぁ、なんでErlang使っているのみたいなところはある</li>
+<li>あと、負荷試験なども全くやっていないのでどんな問題が起き得るかも分かっていない</li>
+</ul></li>
+</ul>
+<h2 id="herokuでの学び">Herokuでの学び</h2>
+<ul>
+<li>Procfileのデバッグにはforemanを使おう</li>
+<li>複数のbuildpackを使用したいときは<a href="https://github.com/ddollar/heroku-buildpack-multi">buildpack-multi</a>を使おう</li>
+</ul>
+<h2 id="雑なところ">雑なところ</h2>
+<ul>
+<li>編集対象のルーム的なやつが1つしかない</li>
+<li>Markdownを複数人で同時に編集した場合、他の人の編集内容を適用するアルゴリズムが「全てを送り、送られてきた全てをそのまま上書きする」というもののため、盛大に変更内容がバッティングしすぐにめちゃくちゃになる。ちゃんと差分を送るようにしないとダメだ
+<ul>
+<li>差分、せっかくReact使っているんだし、実はReactの差分DOMをおくればいいんじゃないかという気もしたがそれをちゃんと動かすとするとhtmlからmarkdownに変換するやつも必要になったりするよねー</li>
+</ul></li>
+<li>他の人の編集によってMarkdownが変更された際にキャレット位置を保持するように少し頑張りましたが、雑なのでイマイチな動きをします。textareaの先頭からなん文字目かを保持してその位置に戻しているため、キャレット位置より手前を編集されると死ぬ</li>
+<li>データはETSがメモリ上に保持しているだけなのでいとも簡単にデータが消える</li>
+<li>あと、妻のAndroid端末で試してみたら動かなかった</li>
+</ul>
+<h2 id="感想">感想</h2>
+<p>作っているものの先にはそんなに可能性が感じられないので、このプログラムはこれからは特に進展はないと思う。 差分解決アルゴリズムだけちょっとなんとかしたい感じはある</p>
+<p>今日は結婚一年目です。八芳園で結婚式を挙げたのですが、アニュアルレターっていう、毎年夫婦がそれぞれお互いへのメッセージを書いていく本をもらったので今年も書きました。 50年分あります。50歳まで、いやもっと仲良く過ごせるといいですね。</p>
+<p>これから、八芳園で夕ごはん食べていきます。</p>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'dekokun'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
           <ul class="social">
             <li class="kindle"><div class="kindleWidget"><img style="vertical-align:middle;" src="https://d1xnn692s7u6t6.cloudfront.net/white-15.png" /><span style="vertical-align:middle;margin-left:3px;">Send to Kindle</span></div></li>
@@ -124,7 +180,7 @@
           <div class="sidebar-module">
             <div class="title">プロフィール</div>
             <p class="id"><a href="https://twitter.com/dekokun">dekokun</a></p>
-            <p><a href="https://twitter.com/dekokun"><img src="./img/dekokun.png" alt="dekokun"></a></p>
+            <p><a href="https://twitter.com/dekokun"><img src="../img/dekokun.png" alt="dekokun"></a></p>
           </div>
           <div class="sidebar-module hidden-phone">
             <script language="javascript" type="text/javascript" src="http://b.hatena.ne.jp/js/widget.js" charset="utf-8"></script>
@@ -157,7 +213,7 @@
           </div>
           <div class="sidebar-module hidden-phone">
             <div class="title">RSS</div>
-            <p><a href="./rss.xml"><img src="./img/rss.gif" alt="rss"></a></p>
+            <p><a href="../rss.xml"><img src="../img/rss.gif" alt="rss"></a></p>
           </div>
         </aside> <!-- /span3 -->
       </div> <!-- /row -->
@@ -167,13 +223,13 @@
     </div> <!-- /container -->
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="./js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+    <script>window.jQuery || document.write('<script src="../js/libs/jquery-1.7.2.min.js"><\/script>')</script>
     <!-- /ツイートボタン -->
   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
-    <script src="./js/libs/bootstrap/bootstrap.min.js"></script>
+    <script src="../js/libs/bootstrap/bootstrap.min.js"></script>
 
-    <script src="./js/script.js"></script>
+    <script src="../js/script.js"></script>
     <script>
       var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
       (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
