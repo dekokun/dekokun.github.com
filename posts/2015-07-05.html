@@ -6,7 +6,7 @@
   <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>TCP_NODELAYによるNagleアルゴリズム封じとTCP_CORKについて</title>
+    <title>バックエンドにAWS Lambdaを使ってサーバレスな動的サイトを作った</title>
     <meta name="description" content>
     <meta name="author" content>
 
@@ -14,7 +14,7 @@
     <meta property="fb:app_id" content="351187098330864">
     <meta property="og:type" content="article">
     <meta property="og:image" content="http://dekokun.github.com/img/dekokun.png">
-    <meta property="og:title" content="TCP_NODELAYによるNagleアルゴリズム封じとTCP_CORKについて">
+    <meta property="og:title" content="バックエンドにAWS Lambdaを使ってサーバレスな動的サイトを作った">
     <meta property="og:description" content="@dekokunの技術日記">
     <meta property="og:site_name" content="でこてっくろぐ">
     <meta name="twitter:widgets:csp" content="on">
@@ -76,40 +76,67 @@
     <div class="container">
       <div class="row">
         <article class="span9">
-          <h1>TCP_NODELAYによるNagleアルゴリズム封じとTCP_CORKについて</h1>
+          <h1>バックエンドにAWS Lambdaを使ってサーバレスな動的サイトを作った</h1>
 
-<p>by <em><a href="https://twitter.com/dekokun">@dekokun</a></em> on <strong>2015/06/03 8:17</strong></p>
+<p>by <em><a href="https://twitter.com/dekokun">@dekokun</a></em> on <strong>2015/07/05 8:17</strong></p>
 
-<p>Tagged as: <a href="../tags/TCP.html">TCP</a>.</p>
+<p>Tagged as: <a href="../tags/AWS.html">AWS</a>.</p>
 
-<p>こんな理解でいいんですか。教えてください。あと、Nagleアルゴリズムについて詳細は後で書く</p>
-<blockquote class="twitter-tweet" lang="ja"><p lang="ja" dir="ltr">
-NagleアルゴリズムとTCP遅延ACKとTCP CORK覚えた。 / “nginxのパフォーマンスチューニング // Speaker Deck” <a href="http://t.co/HbOKeoNQc8">http://t.co/HbOKeoNQc8</a>
-</p>
-— でこくん (@dekokun) <a href="https://twitter.com/dekokun/status/605820330729349121">2015, 6月 2</a>
-</blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<blockquote class="twitter-tweet" lang="ja"><p lang="ja" dir="ltr">
-さっきの資料にも載ってたけど、TCP_NODELAYとTCP_CORKの組み合わせ、コルクの抜くタイミングをいい感じにしながら、コルクを抜いてしまえば一気にフラッシュできますよってことだよね。コルクを抜くタイミングはどう制御されてる？
-</p>
-— でこくん (@dekokun) <a href="https://twitter.com/dekokun/status/605821565024870400">2015, 6月 2</a>
-</blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<blockquote class="twitter-tweet" lang="ja"><p lang="ja" dir="ltr">
-まぁ、そこはnginxがよしなにやってくれるわけなのかな。TCP_NODELAYとTCP_CORKの組み合わせは、パケット送信タイミングの最適化をカーネルに任せずにアプリケーション(今回はnginx)に任せるってことという理解でいいのかな。
-</p>
-— でこくん (@dekokun) <a href="https://twitter.com/dekokun/status/605823744972455939">2015, 6月 2</a>
-</blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<h2 id="nagleアルゴリズム">Nagleアルゴリズム</h2>
-<p>非常に雑に書いている。後でちゃんと書きたい</p>
+<p>どうも。<a href="http://dekolife.hatenablog.com/entry/2015/07/03/153402">もう一つのブログの方に書いていた</a>のですが、東京から京都まで歩いて行くことになりまして、私の位置情報が把握しやすいようにサイトを作りました。なお、明日(7/6)出発します</p>
 <ul>
-<li>なるべく複数のTCP通信を1回にまとめちゃおうというアルゴリズム</li>
-<li>パケット数の減少によるヘッダ容量の削減及び輻輳の回避を狙っている模様</li>
+<li><a href="http://twittermap.dekokun.info/">京都まで歩こう</a></li>
 </ul>
+<p>このためだけにサーバ代を払うのは馬鹿らしいと思いまして、なんとかサーバを構築せずにある程度安く済ませることはできないかと考えた結果、バックエンドをAWS Lambdaに任せてサイト自体はS3上に構築するという形にしました。</p>
+<p>なお、「バックエンドをAWS Lambdaに任せた」といった場合、普通はクライアントのAWS SDKからLambda関数をキックするようなものになるかと思いますが、今回はLambda関数を無限ループのバッチ的に使い、クライアントはS3を経由してその結果を取得するような作りにしています。詳しくは以下。</p>
+<h2 id="構成">構成</h2>
+<p>以下図をみてもらったほうが早いかもしれませんが、以下のとおりです。</p>
+<h3 id="バックエンド">バックエンド</h3>
+<p><a href="http://qiita.com/toritori0318/items/3ab95e94c5fc47530447">AWS Lambdaをcronの代わりに使ってみるよ</a>を参考にしています。</p>
+<ol style="list-style-type: decimal">
+<li>AWS Lambdaを最初に手動でキックする</li>
+<li>登録してあるLambda関数が動きtwitterのAPIから私のtweetを取得、Web用のS3 bucketにjson形式でアップロードする</li>
+<li>上記Lambda関数が最後にLambda用のS3 bucketにファイルをアップロードする</li>
+<li>Lambda用のS3 bucketへのファイルアップロードイベントがLambdaに通知される (2. に戻る。無限ループ)</li>
+</ol>
+<h3 id="フロントエンド">フロントエンド</h3>
+<ol style="list-style-type: decimal">
+<li>ブラウザがS3からindex.htmlを取得</li>
+<li>index.htmlのJSから定期的にLambdaによってアップデートされたjsonファイルを取得して地図に反映</li>
+</ol>
+<h3 id="構成図">構成図</h3>
+<div class="figure">
+<img src="../img/2015-07-05-aws-lambda.png" /><p class="caption"></p>
+</div>
+<h2 id="料金">料金</h2>
+<p>大雑把に言うとS3のデータ転送量及びデータへのリクエスト数と、Route53のクエリ数、Lambda関数の実行回数と実行時間に対して料金がかかっていますが、Lambda関数は月の無料枠に収まるレベルになっておりまして、これからの転送量にもよりますが、現在はだいたい1日あたり0.05ドルな感じです。月に1.5ドルくらいでこんな環境ができるなんて嬉しいですね。</p>
+<p>S3へのPUTリクエスト数による課金が比較的高いです。現在、tweets.jsonは以前と内容が同じでも毎回S3にtweets.jsonをPUTしているのですがそれをなくせば更に安くなる模様。もう明日の朝には京都に向けて出発するのでそちらを修正するのはやめておきます。</p>
+<h2 id="lambdaで良かったこと">Lambdaで良かったこと</h2>
+<h3 id="テストが結構簡単">テストが結構簡単</h3>
+<p>例えばindex.jsのhandlerを登録しているような環境のテストがしたい場合は、手元の環境でLambda関数に渡しているロールとと同じ権限を付与して、以下みたいな形で簡単にテストできます。いいね！</p>
+<pre><code>var main = require('./index');
+var context = {done: function(var1, var2) {console.log(var1), console.log(var2)}}
+main.handler('イベントデータ', context);</code></pre>
+<h3 id="デプロイが結構簡単">デプロイが結構簡単</h3>
+<p>以下のコマンドを実行するだけでデプロイできちまうので非常に簡単でした。</p>
+<p><code>rm -f lamda.zip &amp;&amp; zip -r lambda.zip index.js node_modules &amp;&amp; aws lambda update-function-code --function-name 関数名どうぞ --zip-file fileb://./lambda.zip --region ap-northeast-1 | jq '.'</code></p>
+<p><code>npm run deploy</code>で実行できるようにして超楽だった。npmのscripts便利。</p>
+<h2 id="lambdaでハマったところ">Lambdaでハマったところ</h2>
+<p>結構ハマりどころは多かったです。まぁ、一度わかると超便利ではあるのですが…なかなか…</p>
+<h3 id="sourceを指定してなかった">sourceを指定してなかった</h3>
+<p>Lambda関数を登録するだけ登録して、event sourceを追加せず、「自分でinvokeするとうまくうごくけどS3にファイルをアップロードしても動かないなぁ」「ってか、全てのS3へのイベントが全部通知されるのか！やばいな！！」と悩みました。そんなわけありませんでした。</p>
+<p>Management ConsoleのLambdaのところからAction -&gt; Add event source で必要なイベントソース(今回だと、S3のlambda用bucketへのPUTの通知)を追加することで動くようになりました。</p>
+<h3 id="zipにする際にフォルダごとzipにしてて怒られた">zipにする際にフォルダごとzipにしてて怒られた</h3>
+<p>Lambda関数はzipをアップロードして登録することができるのですが、その際に、最初はindex.jsが存在しているディレクトリごとzipコマンドにかけてアップロード(例： <code>zip -r lambda.zip lambda_dir</code>)していたのですがそれではダメで、<code>zip -r lambda.zip index.js node_modules</code>みたいに、直接index.jsをzipしてあげる必要があります。</p>
+<p>まぁ、そりゃ、アップロードされる側もzipされたディレクトリの名前なんて知らねぇでしょうし当然といえば当然なのですが、少し悩んだ。</p>
+<h3 id="s3にputobjectする際にaclをいじろうとしたら失敗した">S3にputobjectする際にACLをいじろうとしたら失敗した</h3>
+<p>Lambda関数、登録する時にその関数が動く際の権限をroleで付与するのですが、結構賢くて「S3に何かするならいい感じにロールを作ってやるよ」みたいな感じでロールを作ってくれます。</p>
+<p>S3へのPUTとGETが行える権限(s3:PutObject及びs3:GetObject)はついてくるのですが、PUTする際にACLを付与する権限(s3:PutObjectAcl)はついてきません。</p>
+<p>ですので、PUTする際にACLを指定する際は、ロールにs3:PutObjectAclを付与してあげる必要があります。</p>
+<h2 id="感想">感想</h2>
+<p>明日から京都に向けて歩き始めるから早く寝ようと思っていたが結構遅くなりつつある。いかんいかん。</p>
+<p>以下のブログで実況中継しているので、皆さん応援してね！！</p>
+<p><a href="http://dekolife.hatenablog.com/">でこらいふろぐ http://dekolife.hatenablog.com/</a></p>
+<p>応援してね！！応援してね！！！！</p>
 
 <div id="disqus_thread"></div>
 <script type="text/javascript">

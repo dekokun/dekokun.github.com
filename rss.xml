@@ -13584,7 +13584,7 @@ PHPの復権ならず…！！
 
 <p>Tagged as: <a href="../tags/TCP.html">TCP</a>.</p>
 
-<p>こんな理解でいいんですか。教えてください。あと、Nagleアルゴリズムについては後で書く</p>
+<p>こんな理解でいいんですか。教えてください。あと、Nagleアルゴリズムについて詳細は後で書く</p>
 <blockquote class="twitter-tweet" lang="ja"><p lang="ja" dir="ltr">
 NagleアルゴリズムとTCP遅延ACKとTCP CORK覚えた。 / “nginxのパフォーマンスチューニング // Speaker Deck” <a href="http://t.co/HbOKeoNQc8">http://t.co/HbOKeoNQc8</a>
 </p>
@@ -13606,7 +13606,12 @@ NagleアルゴリズムとTCP遅延ACKとTCP CORK覚えた。 / “nginxのパ�
 </blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-
+<h2 id="nagleアルゴリズム">Nagleアルゴリズム</h2>
+<p>非常に雑に書いている。後でちゃんと書きたい</p>
+<ul>
+<li>なるべく複数のTCP通信を1回にまとめちゃおうというアルゴリズム</li>
+<li>パケット数の減少によるヘッダ容量の削減及び輻輳の回避を狙っている模様</li>
+</ul>
 
 <div id="disqus_thread"></div>
 <script type="text/javascript">
@@ -13714,6 +13719,256 @@ NagleアルゴリズムとTCP遅延ACKとTCP CORK覚えた。 / “nginxのパ�
 ]]></description>
     <pubDate>No date found.</pubDate>
     <guid>http://dekokun.github.io/posts/2015-06-03.html</guid>
+</item>
+<item>
+    <title>バックエンドにAWS Lambdaを使ってサーバレスな動的サイトを作った</title>
+    <link>http://dekokun.github.io/posts/2015-07-05.html</link>
+    <description><![CDATA[<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ja"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="ja"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ja"> <!--<![endif]-->
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>バックエンドにAWS Lambdaを使ってサーバレスな動的サイトを作った</title>
+    <meta name="description" content>
+    <meta name="author" content>
+
+    <meta name="viewport" content="width=device-width">
+    <meta property="fb:app_id" content="351187098330864">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="http://dekokun.github.com/img/dekokun.png">
+    <meta property="og:title" content="バックエンドにAWS Lambdaを使ってサーバレスな動的サイトを作った">
+    <meta property="og:description" content="@dekokunの技術日記">
+    <meta property="og:site_name" content="でこてっくろぐ">
+    <meta name="twitter:widgets:csp" content="on">
+
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+    </style>
+    <link href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css" type="text/css" rel="stylesheet">
+    <script src="../js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-39650556-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <body>
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=351187098330864";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <header>
+      <nav class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="../index.html">でこてっくろぐ</a>
+            <div class="nav-collapse">
+              <ul class="nav">
+                <li><a href="../index.html">ほーむ</a></li>
+                <li><a href="../posts.html">あーかいぶ</a></li>
+                <li><a href="../aboutme.html">あばうとみー</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="row">
+        <article class="span9">
+          <h1>バックエンドにAWS Lambdaを使ってサーバレスな動的サイトを作った</h1>
+
+<p>by <em><a href="https://twitter.com/dekokun">@dekokun</a></em> on <strong>2015/07/05 8:17</strong></p>
+
+<p>Tagged as: <a href="../tags/AWS.html">AWS</a>.</p>
+
+<p>どうも。<a href="http://dekolife.hatenablog.com/entry/2015/07/03/153402">もう一つのブログの方に書いていた</a>のですが、東京から京都まで歩いて行くことになりまして、私の位置情報が把握しやすいようにサイトを作りました。なお、明日(7/6)出発します</p>
+<ul>
+<li><a href="http://twittermap.dekokun.info/">京都まで歩こう</a></li>
+</ul>
+<p>このためだけにサーバ代を払うのは馬鹿らしいと思いまして、なんとかサーバを構築せずにある程度安く済ませることはできないかと考えた結果、バックエンドをAWS Lambdaに任せてサイト自体はS3上に構築するという形にしました。</p>
+<p>なお、「バックエンドをAWS Lambdaに任せた」といった場合、普通はクライアントのAWS SDKからLambda関数をキックするようなものになるかと思いますが、今回はLambda関数を無限ループのバッチ的に使い、クライアントはS3を経由してその結果を取得するような作りにしています。詳しくは以下。</p>
+<h2 id="構成">構成</h2>
+<p>以下図をみてもらったほうが早いかもしれませんが、以下のとおりです。</p>
+<h3 id="バックエンド">バックエンド</h3>
+<p><a href="http://qiita.com/toritori0318/items/3ab95e94c5fc47530447">AWS Lambdaをcronの代わりに使ってみるよ</a>を参考にしています。</p>
+<ol style="list-style-type: decimal">
+<li>AWS Lambdaを最初に手動でキックする</li>
+<li>登録してあるLambda関数が動きtwitterのAPIから私のtweetを取得、Web用のS3 bucketにjson形式でアップロードする</li>
+<li>上記Lambda関数が最後にLambda用のS3 bucketにファイルをアップロードする</li>
+<li>Lambda用のS3 bucketへのファイルアップロードイベントがLambdaに通知される (2. に戻る。無限ループ)</li>
+</ol>
+<h3 id="フロントエンド">フロントエンド</h3>
+<ol style="list-style-type: decimal">
+<li>ブラウザがS3からindex.htmlを取得</li>
+<li>index.htmlのJSから定期的にLambdaによってアップデートされたjsonファイルを取得して地図に反映</li>
+</ol>
+<h3 id="構成図">構成図</h3>
+<div class="figure">
+<img src="../img/2015-07-05-aws-lambda.png" /><p class="caption"></p>
+</div>
+<h2 id="料金">料金</h2>
+<p>大雑把に言うとS3のデータ転送量及びデータへのリクエスト数と、Route53のクエリ数、Lambda関数の実行回数と実行時間に対して料金がかかっていますが、Lambda関数は月の無料枠に収まるレベルになっておりまして、これからの転送量にもよりますが、現在はだいたい1日あたり0.05ドルな感じです。月に1.5ドルくらいでこんな環境ができるなんて嬉しいですね。</p>
+<p>S3へのPUTリクエスト数による課金が比較的高いです。現在、tweets.jsonは以前と内容が同じでも毎回S3にtweets.jsonをPUTしているのですがそれをなくせば更に安くなる模様。もう明日の朝には京都に向けて出発するのでそちらを修正するのはやめておきます。</p>
+<h2 id="lambdaで良かったこと">Lambdaで良かったこと</h2>
+<h3 id="テストが結構簡単">テストが結構簡単</h3>
+<p>例えばindex.jsのhandlerを登録しているような環境のテストがしたい場合は、手元の環境でLambda関数に渡しているロールとと同じ権限を付与して、以下みたいな形で簡単にテストできます。いいね！</p>
+<pre><code>var main = require('./index');
+var context = {done: function(var1, var2) {console.log(var1), console.log(var2)}}
+main.handler('イベントデータ', context);</code></pre>
+<h3 id="デプロイが結構簡単">デプロイが結構簡単</h3>
+<p>以下のコマンドを実行するだけでデプロイできちまうので非常に簡単でした。</p>
+<p><code>rm -f lamda.zip &amp;&amp; zip -r lambda.zip index.js node_modules &amp;&amp; aws lambda update-function-code --function-name 関数名どうぞ --zip-file fileb://./lambda.zip --region ap-northeast-1 | jq '.'</code></p>
+<p><code>npm run deploy</code>で実行できるようにして超楽だった。npmのscripts便利。</p>
+<h2 id="lambdaでハマったところ">Lambdaでハマったところ</h2>
+<p>結構ハマりどころは多かったです。まぁ、一度わかると超便利ではあるのですが…なかなか…</p>
+<h3 id="sourceを指定してなかった">sourceを指定してなかった</h3>
+<p>Lambda関数を登録するだけ登録して、event sourceを追加せず、「自分でinvokeするとうまくうごくけどS3にファイルをアップロードしても動かないなぁ」「ってか、全てのS3へのイベントが全部通知されるのか！やばいな！！」と悩みました。そんなわけありませんでした。</p>
+<p>Management ConsoleのLambdaのところからAction -&gt; Add event source で必要なイベントソース(今回だと、S3のlambda用bucketへのPUTの通知)を追加することで動くようになりました。</p>
+<h3 id="zipにする際にフォルダごとzipにしてて怒られた">zipにする際にフォルダごとzipにしてて怒られた</h3>
+<p>Lambda関数はzipをアップロードして登録することができるのですが、その際に、最初はindex.jsが存在しているディレクトリごとzipコマンドにかけてアップロード(例： <code>zip -r lambda.zip lambda_dir</code>)していたのですがそれではダメで、<code>zip -r lambda.zip index.js node_modules</code>みたいに、直接index.jsをzipしてあげる必要があります。</p>
+<p>まぁ、そりゃ、アップロードされる側もzipされたディレクトリの名前なんて知らねぇでしょうし当然といえば当然なのですが、少し悩んだ。</p>
+<h3 id="s3にputobjectする際にaclをいじろうとしたら失敗した">S3にputobjectする際にACLをいじろうとしたら失敗した</h3>
+<p>Lambda関数、登録する時にその関数が動く際の権限をroleで付与するのですが、結構賢くて「S3に何かするならいい感じにロールを作ってやるよ」みたいな感じでロールを作ってくれます。</p>
+<p>S3へのPUTとGETが行える権限(s3:PutObject及びs3:GetObject)はついてくるのですが、PUTする際にACLを付与する権限(s3:PutObjectAcl)はついてきません。</p>
+<p>ですので、PUTする際にACLを指定する際は、ロールにs3:PutObjectAclを付与してあげる必要があります。</p>
+<h2 id="感想">感想</h2>
+<p>明日から京都に向けて歩き始めるから早く寝ようと思っていたが結構遅くなりつつある。いかんいかん。</p>
+<p>以下のブログで実況中継しているので、皆さん応援してね！！</p>
+<p><a href="http://dekolife.hatenablog.com/">でこらいふろぐ http://dekolife.hatenablog.com/</a></p>
+<p>応援してね！！応援してね！！！！</p>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'dekokun'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+          <ul class="social">
+            <li class="kindle"><div class="kindleWidget"><img style="vertical-align:middle;" src="https://d1xnn692s7u6t6.cloudfront.net/white-15.png" /><span style="vertical-align:middle;margin-left:3px;">Send to Kindle</span></div></li>
+            <li class="facebook"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" data-font="arial"></div></li>
+            <li class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="dekokun" data-lang="ja">ツイート</a></li>
+            <li class="hatena-bookmark"><a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
+            <li><a data-pocket-label="pocket" data-pocket-count="horizontal" class="pocket-btn" data-lang="en"></a>
+            <script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script></li>
+          </ul>
+
+        </article>
+        <aside class="span3">
+          <div class="sidebar-module">
+            <div class="title">プロフィール</div>
+            <p class="id"><a href="https://twitter.com/dekokun">dekokun</a></p>
+            <p><a href="https://twitter.com/dekokun"><img src="../img/dekokun.png" alt="dekokun"></a></p>
+          </div>
+          <div class="sidebar-module hidden-phone">
+            <script language="javascript" type="text/javascript" src="http://b.hatena.ne.jp/js/widget.js" charset="utf-8"></script>
+            <script language="javascript" type="text/javascript">
+              Hatena.BookmarkWidget.url   = "http://dekokun.github.io/";
+              Hatena.BookmarkWidget.title = "人気エントリー";
+              Hatena.BookmarkWidget.sort  = "";
+              Hatena.BookmarkWidget.width = 200;
+              Hatena.BookmarkWidget.num   = 5;
+              Hatena.BookmarkWidget.theme = "hatenadiary";
+              Hatena.BookmarkWidget.load();
+            </script>
+          </div>
+          <div class="sidebar-module hidden-phone">
+            <script language="javascript" type="text/javascript" src="http://b.hatena.ne.jp/js/widget.js" charset="utf-8"></script>
+            <script language="javascript" type="text/javascript">
+              Hatena.BookmarkWidget.url   = "http://dekokun.github.com/";
+              Hatena.BookmarkWidget.title = "旧人気エントリー";
+              Hatena.BookmarkWidget.sort  = "";
+              Hatena.BookmarkWidget.width = 0;
+              Hatena.BookmarkWidget.num   = 5;
+              Hatena.BookmarkWidget.theme = "hatenadiary";
+              Hatena.BookmarkWidget.load();
+            </script>
+          </div>
+          <div class="sidebar-module visible-desktop">
+            <div class="title">twitter</div>
+            <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/dekokun" data-widget-id="306408547573440513">@dekokun からのツイート</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          </div>
+          <div class="sidebar-module hidden-phone">
+            <div class="title">RSS</div>
+            <p><a href="../rss.xml"><img src="../img/rss.gif" alt="rss"></a></p>
+          </div>
+        </aside> <!-- /span3 -->
+      </div> <!-- /row -->
+      <footer>
+        <p>©<script type="text/javascript">$y=2012;$ny=new Date().getFullYear();document.write($ny>$y?$y+'-'+$ny:$y);</script> <a href="https://twitter.com/dekokun">dekokun</a></p>
+      </footer>
+    </div> <!-- /container -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+    <!-- /ツイートボタン -->
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+    <script src="../js/libs/bootstrap/bootstrap.min.js"></script>
+
+    <script src="../js/script.js"></script>
+    <script>
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+    <!-- Code syntax highlight -->
+    <script type="text/javascript" src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
+    <script type="text/javascript">
+    $(function(){ 
+        $('pre').css({
+            'overflow-x': 'scroll',
+            'background-color': '#f6f6f6',
+            'border': '1px dotted #ccc',
+            'padding': '0.8em'
+        });
+        $('pre code').addClass('prettyprint');
+        prettyPrint();
+    });
+    </script>
+    <script type="text/javascript" src="https://d1xnn692s7u6t6.cloudfront.net/widget.js"></script>
+    <script type="text/javascript">(function k(){window.$SendToKindle&&window.$SendToKindle.Widget?$SendToKindle.Widget.init({"content":"article"}):setTimeout(k,500);})();</script>
+  </body>
+</html>
+]]></description>
+    <pubDate>No date found.</pubDate>
+    <guid>http://dekokun.github.io/posts/2015-07-05.html</guid>
 </item>
 
     </channel> 
